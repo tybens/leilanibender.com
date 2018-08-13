@@ -1,0 +1,69 @@
+@keyframes fadein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+.jumbotron {
+  background-color: transparent;
+  animation: fadein 2s;
+  padding-top: 10%; }
+
+#home {
+  background-image: url("../img/mt.svg");
+  background-color: #AB47BC;
+  background-position: center;
+  background-size: cover;
+  opacity: 1;
+  -webkit-transition: background 1.5s linear;
+  -moz-transition: background 1.5s linear;
+  -ms-transition: background 1.5s linear;
+  -o-transition: background 1.5s linear;
+  transition: background 1.5s linear;
+  text-align: center;
+  height: 100vh; }
+  #home .section-heading {
+    font-size: 4em; }
+  @media screen and (orientation: portrait) {
+    #home {
+      padding-top: 25%; } }
+
+.person-graphic {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 33vw;
+  z-index: 0; }
+  @media screen and (orientation: portrait) {
+    .person-graphic {
+      width: 50vw; } }
+
+.quote {
+  font-size: 1.5em;
+  color: white; }
+
+p .quote-content {
+  font-weight: bolder; }
+
+#about {
+  height: 100%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+  padding-left: 10%;
+  padding-right: 10%;
+  background: repeating-linear-gradient(45deg, rgba(171, 71, 188, 0.05), rgba(171, 71, 188, 0.05) 40px, rgba(171, 71, 188, 0.09) 40px, rgba(171, 71, 188, 0.09) 80px);
+  box-shadow: inset 0px -100px 100px -45px white; }
+  #about h2 {
+    color: #555555; }
+  #about p {
+    color: #AB47BC;
+    font-size: 2em; }
+  @media (min-width: 650px) {
+    #about {
+      padding-left: 20%;
+      padding-right: 20%; } }
+  #about a {
+    margin: 2px;
+    color: #AB47BC; }
+    #about a:hover {
+      color: #793186; }

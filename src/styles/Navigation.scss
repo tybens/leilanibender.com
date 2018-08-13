@@ -1,0 +1,120 @@
+@import '../styles/mixins.scss';
+@import '../styles/variables.scss';
+
+// Navigation
+.navbar-default {
+    border-style: none;
+    font-family: 'Montserrat', sans-serif !important;
+    @include transition-all();
+    border-color: rgba(white, 70%);
+    .navbar-toggle, .navbar-toggle:focus{
+        border: none;
+        border-radius: 0;
+        color: mix($dark, $primary);
+        top: 0;
+        @include transition-all();
+        &:hover{
+            background-color: transparent!important;
+            border: none;
+        }
+
+    }
+
+    .navbar-header{
+        color: rgba(white, 95%)!important;
+        border-bottom: rgba(white, 50%) solid 1px;
+    }
+    .nav{
+        left: 20px;
+        @media (min-width: 768px) {
+          left:50px;
+        }
+        position: relative;
+        width: 100%;
+        text-align: center;
+        > li {
+            float: none ;
+            display: inline-block;
+            > a,
+            > a:focus {
+                text-transform: uppercase;
+                font-weight: 600;
+                font-size: 1.25em;
+                color: $dark;
+                &:hover {
+                    color: $primary;
+                }
+            }
+
+            &.active {
+                > a,
+                > a:focus {
+                    color: lighter($primary, 10%)!important;
+                    background-color: transparent!important;
+                    &:hover {
+                        background-color: transparent!important;
+                    }
+                }
+            }
+        }
+    }
+    .st0{fill:#FAFAFA;}
+    @media (min-width: 768px) {
+        background-color: transparent;
+        border-style: solid;
+        border-color: rgba(white, 30%);
+
+        .nav > li > a,
+        .nav > li > a:focus {
+            color: rgba(white, 70%);
+            &:hover {
+                color: white;
+            }
+        }
+        &.affix {
+            .st0{fill:#AB47BC;}
+            background-color: rgba(white, 95%);
+            border-color: rgba($dark, 15%);
+            min-height: 40px;
+
+            .nav > li > a,
+            .nav > li > a:focus {
+                color: darken($primary, 20%);
+                padding-top: 10px;
+                padding-bottom: 10px;
+                &:hover {
+                    color: black;
+                }
+            }
+            a {
+                color: darken($primary, 20%)!important;
+            }
+        }
+    }
+
+    @media (max-width: 767px){
+        .st0{fill:$primary;
+
+        }
+        .logo{
+
+                position: relative;
+                left: calc(50% - 5px);
+                // left: 50px;
+        }
+
+        // position: auto;
+        left: -35px;
+        .navbar-collapse{
+            background-color: white;
+            position: absolute;
+            top: 0;
+            padding-left: 35px;
+            width: 100%;
+
+        }
+        .nav > li {
+                display: block;
+        }
+    }
+}
