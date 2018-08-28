@@ -23,11 +23,11 @@ hr.light {
   border-color: white; }
 
 a {
-  -webkit-transition: all 0.35s;
-  -moz-transition: all 0.35s;
-  -ms-transition: all 35s;
-  -o-transition: all 0.35s;
-  transition: all 0.35s;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
   color: #AB47BC; }
   a:hover, a:focus {
     color: #8a3898; }

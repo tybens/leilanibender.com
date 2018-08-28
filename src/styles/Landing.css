@@ -57,11 +57,11 @@ p .quote-content {
     color: #555555; }
   #about p {
     color: #AB47BC;
-    font-size: 2em; }
+    font-size: 1.5em; }
   @media (min-width: 650px) {
     #about {
-      padding-left: 20%;
-      padding-right: 20%; } }
+      padding-left: 10%;
+      padding-right: 10%; } }
   #about a {
     margin: 2px;
     color: #AB47BC; }

@@ -61,11 +61,11 @@ p .quote-content {
   }
   p {
     color: $primary;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   @media (min-width:650px) {
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
   a {
     margin: 2px;

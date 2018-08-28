@@ -1,10 +1,10 @@
 
-@mixin transition-all(){
-    -webkit-transition: all 0.35s;
-    -moz-transition: all 0.35s;
-    -ms-transition: all 35s;
-    -o-transition: all.35s;
-    transition: all 0.35s;
+@mixin transition-all($seconds: 0.4s){
+    -webkit-transition: all $seconds;
+    -moz-transition: all $seconds;
+    -ms-transition: all $seconds;
+    -o-transition: all $seconds;
+    transition: all $seconds;
 }
 
 @mixin transition($transition){
