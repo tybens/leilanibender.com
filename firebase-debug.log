@@ -1,0 +1,40 @@
+[debug] [2018-08-29T22:40:56.009Z] ----------------------------------------------------------------------
+[debug] [2018-08-29T22:40:56.011Z] Command:       /usr/local/Cellar/node/9.10.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2018-08-29T22:40:56.011Z] CLI Version:   3.17.7
+[debug] [2018-08-29T22:40:56.012Z] Platform:      darwin
+[debug] [2018-08-29T22:40:56.012Z] Node Version:  v9.10.0
+[debug] [2018-08-29T22:40:56.012Z] Time:          Wed Aug 29 2018 18:40:56 GMT-0400 (EDT)
+[debug] [2018-08-29T22:40:56.012Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2018-08-29T22:40:56.022Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2018-08-29T22:40:56.022Z] > authorizing via signed-in user
+[debug] [2018-08-29T22:40:56.023Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects/personal-site-c03f4  
+  
+ Wed Aug 29 2018 18:40:56 GMT-0400 (EDT)
+[debug] [2018-08-29T22:40:56.480Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-29T22:40:56.481Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/database/personal-site-c03f4/tokens  
+  
+ Wed Aug 29 2018 18:40:56 GMT-0400 (EDT)
+[debug] [2018-08-29T22:40:56.769Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'personal-site-c03f4'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2018-08-29T22:40:57.050Z] >>> HTTP REQUEST PUT https://personal-site-c03f4.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+} 
+ Wed Aug 29 2018 18:40:57 GMT-0400 (EDT)
+[debug] [2018-08-29T22:40:57.285Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database personal-site-c03f4 is valid
+[info] i  hosting: preparing build directory for upload...
+[debug] [2018-08-29T22:40:57.769Z] >>> HTTP REQUEST PUT https://deploy.firebase.com/v1/hosting/personal-site-c03f4/uploads/-LL6qBqeDEaP10SC51hl?fileCount=56&message=  
+  
+ Wed Aug 29 2018 18:40:57 GMT-0400 (EDT)
+[debug] [2018-08-29T22:41:03.698Z] <<< HTTP RESPONSE 200
+[debug] [2018-08-29T22:41:03.698Z] [hosting] .tgz uploaded successfully, waiting for extraction
