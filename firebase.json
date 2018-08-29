@@ -5,7 +5,15 @@
   "hosting": {
     "public": "build",
     "headers": [
-      {"source": "/service-worker.js", "headers": [{"key": "Cache-Control", "value": "no-cache"}]}
+      {
+        "source": "/service-worker.js",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
     ],
     "ignore": [
       "firebase.json",
@@ -14,12 +22,16 @@
     ],
     "rewrites": [
       {
-      "source": "/blog",
-      "destination": "/blog/index.html"
+        "source": "/blog",
+        "destination": "/blog/index.html"
       },
       {
-      "source": "/",
-      "destination": "/index.html"
+        "source": "/resume",
+        "destination": "/CarolChenResume.pdf"
+      },
+      {
+        "source": "/",
+        "destination": "/index.html"
       }
     ]
   }

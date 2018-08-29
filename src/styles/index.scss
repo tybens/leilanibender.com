@@ -1,6 +1,9 @@
 @import '../styles/mixins.scss';
 @import '../styles/variables.scss';
 
+@import '../styles/components/Landing.scss';
+@import '../styles/components/Portfolio.scss';
+
 html{
     overflow-x: hidden;
 }

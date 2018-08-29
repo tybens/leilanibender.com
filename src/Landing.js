@@ -7,7 +7,14 @@ import Envelope from 'react-icons/lib/fa/envelope';
 
 import personSvg from './img/person.svg';
 import meImg from './img/me.jpg';
-import './styles/Landing.css';
+import meImg2 from './img/me2.jpg';
+import meImg3 from './img/me3.jpg';
+import meImg4 from './img/me4.jpg';
+import meImg5 from './img/me5.jpg';
+
+import Signature from './Signature';
+
+const meImages = [meImg, meImg2, meImg3, meImg4, meImg5];
 
 const Landing = () => (
   <main>
@@ -22,7 +29,7 @@ const Landing = () => (
     <section id="about">
       <Row>
         <Col xs={12} md={5} style={{ paddingTop: 50 }}>
-          <img src={meImg} className="img-responsive img-circle" alt="carol at hackathon" />
+          <img src={meImages[Math.floor(Math.random() * meImages.length)]} className="img-responsive img-circle" alt="carol at hackathon" />
         </Col>
         <Col xs={12} md={6} style={{ paddingLeft: 50, paddingRight: 50 }}>
           <h2 className="section-heading">ABOUT ME</h2>
@@ -33,14 +40,14 @@ const Landing = () => (
           <p>
             I started programming in grade nine, and I've been to a lot of Hackathons, contributed to One Laptop per Child software,
             and completed internships at Shopify and Hatch Canada.
-            Check out <a href="CarolChenResume.pdf" style={{ textDecoration: 'underline' }}>my resume</a>!
+            Check out <a href="https://carolchen.me/CarolChenResume.pdf" style={{ textDecoration: 'underline' }}>my resume</a>!
           </p>
           <p>
             I like solving little contest problems, and I'm working on become less-bad at doing so. In the future, I also intend
             on learning cybersecurity, computer graphics and machine learning / statistics.
           </p>
           <p>
-            For non-recruiters (or <b>really</b> awesome recruiters), I keep a <a href="/blog" style={{ textDecoration: 'underline' }}>blog</a> about life, travel, and shit I do.
+            For non-recruiters (or <b>really</b> awesome recruiters), I keep a <a href="https://carolchen.me/blog" style={{ textDecoration: 'underline' }}>blog</a> about life, travel, and shit I do.
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>
@@ -50,6 +57,7 @@ const Landing = () => (
         </Col>
       </Row>
     </section>
+    <Signature />
   </main>
 );
 

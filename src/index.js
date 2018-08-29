@@ -1,18 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
 
-import 'bootstrap/dist/css/bootstrap.css';
-import './styles/index.css';
+import './styles/themes/purple.css';
 
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
   (
-    <HashRouter>
+    <div>
       <App />
-    </HashRouter>
+    </div>
   ), document.getElementById('root'),
 );
 registerServiceWorker();

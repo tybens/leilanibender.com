@@ -1,0 +1,317 @@
+{
+  "experience": [
+    {
+      "company": "Shopify",
+      "position" : "Software Developer Intern, Merchant Marketing",
+      "date": "Jul - Aug 2018",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Developed feature for <b>reporting Facebook ad analytics to Shopify</b>. "
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Documented and built components for moving to a new authentication system for internal tools. "
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "<b>Made multiple apps GDPR compliant</b>, many in prerelease and including one with over 30 000 users. "
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Built <b>GraphQL endpoints</b> in Shopify core for the merchant marketing section and migration from REST. "
+        }
+      ]
+    },
+    {
+      "company": "Hatch Canada",
+      "position" : "Software Developer",
+      "date": "Aug 2017 - Jul 2018",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "<b>Designed a new CS curriculum</b> with a focus on self-learning, targeted at high school students."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Used <b>React, Django and MySQL to build a platform</b> for coaches and students to track progress for the new curriculum. Implemented React into Django to migrate off Angular."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Added end-to-end testing with <a target=\"_blank\" href='https://www.cypress.io/'>Cypress</a> while working on small features and bugs."
+        }
+      ]
+    },
+    {
+      "company": "Lakeridge Ski Resort",
+      "position" : "Ski Instructor",
+      "date": "Jan - Mar 2017",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": []
+    }
+  ],
+  "awards": [
+    {
+      "thing": "Google Code-in Grand Prize Winner",
+      "description": "Sugar Labs",
+      "date": "Jan 2018",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Among fifty winners of over 3500 contestants for two months of <b>open source contribution for One Laptop per Child</b> software. Worked in Python GTK and Javascript."
+        },
+        {
+          "toggle": [2],
+          "content": "Won for two months of <b>open source contribution for One Laptop per Child</b> software. Worked in Python GTK and Javascript."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Merged 27 pull requests and committed <b>2636 lines of code</b>, worked on translations and documentation."
+        }
+      ]
+    },
+    {
+      "thing": "Speaker",
+      "description": "Wolfram Technology Conference",
+      "date": "Oct 2017",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "Finalist and Google Prize",
+      "description": "Hack the North (1000 Participants)",
+      "date": "Sept 2017",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Built <a href='https://devpost.com/software/hilite'>a highlighter</a> that sends highlighted text to mobile app in real time with React Native and Python."
+        }
+      ]
+    },
+    {
+      "thing": "Best Use of Stdlib",
+      "description": "Hack the 6ix (300 Participants)",
+      "date": "Aug 2018",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Built a <a href='https://devpost.com/software/polycode'>command line tool and Atom plugin</a> that translates JS and Python between spoken languages."
+        }
+      ]
+    },
+    {
+      "thing": "Finalist and Best Use of Stdlib",
+      "description": "U of T Hacks (500 Participants)",
+      "date": "Jan 2018",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Built a native Android app to play a <a href='https://devpost.com/software/sms-treasure'>location-based game</a> based on a peer-to-peer SMS network."
+        }
+      ]
+    },
+    {
+      "thing": "2nd Place and Wolfram Prize",
+      "description": "MHacks9 (300 Participants)",
+      "date": "March 2017",
+      "toggle": [3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "2nd Place and Best Game",
+      "description": "Massey Hacks 3",
+      "date": "March 2017",
+      "toggle": [3, 4, 5],
+      "points": []
+    }
+  ],
+  "extracurriculars": [
+    {
+      "thing": "Event Coordinator",
+      "description": "Toronto Hacker Club",
+      "date": "Dec 2016 - Oct 2017",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Organized workshops with Google and Mozilla, as well computing contests and children's events."
+        }
+      ]
+    },
+    {
+      "thing": "Student Council",
+      "description": "Richmond Hill High School",
+      "date": "May 2017 - Present",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Organizes school dances, carnivals, and spirit days."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Builds software solutions, such as matchmaking apps or websites."
+        }
+      ]
+    },
+    {
+      "thing": "Carnivorous Plant Collector",
+      "description": "My Basement",
+      "date": "May 2016 - Sept 2018",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Collected nearly 30 species of carnivorous plants, including nepenthes, sarracenia, drosera, dionaea, utricularia and pinguicula"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Grew plants from seed, leaf cuttings and had a custom built lighting and watering setup."
+        }
+      ]
+    }
+  ],
+  "skills": [
+    {
+      "category": "Client Side",
+      "toggle": [2, 3, 4, 5],
+      "things": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "HTML5"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "CSS3 + LESS & SASS"
+        },
+        {
+          "toggle": [2],
+          "content": "LESS & SASS"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Bootstrap"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "React"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "React Native"
+        }
+      ]
+    },
+    {
+      "category": "Backend",
+      "toggle": [2, 3, 4, 5],
+      "things": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "NodeJS"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Flask"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Django"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "MySQL"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Ruby on Rails"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Firebase"
+        }
+      ]
+    },
+    {
+      "category": "Other Dev Things",
+      "toggle": [2, 3, 4, 5],
+      "things": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "AWS"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Git"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Docker"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Vim"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Kubernetes"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "GraphQL"
+        }
+      ]
+    },
+    {
+      "category": "Languages",
+      "toggle": [2, 3, 4, 5],
+      "things": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Java"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Javascript"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Python"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Ruby"
+        }
+      ]
+    },
+    {
+      "category": "All",
+      "toggle": [1],
+      "things": [
+        {
+          "toggle": [1],
+          "content": "Codes"
+        },
+        {
+          "toggle": [1],
+          "content": "Non nerd things"
+        },
+        {
+          "toggle": [1],
+          "content": "Non-coding nerd things"
+        }
+      ]
+    }
+  ]
+
+}

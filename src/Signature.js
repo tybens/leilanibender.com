@@ -1,17 +1,45 @@
-<div class="triangle"/>
-<div class="signature"/>
-<div id="typed-strings">
-<p> <i class="fa fa-heart" aria-hidden="true"></i> Carol Chen</p>
-<p>Dvorak User</p>
-<p>Sysadmin</p>
-<p>Wizard</p>
-<p>Developer</p>
-<p>Plant Lover</p>
-<p><i class="fa fa-heart" aria-hidden="true"></i> Carol Chen</p>
-<p>Designer</p>
-<p>Engineer</p>
-<p>Student</p>
-<p>Skier</p>
-<p>Creator</p>
-<p></p>
-</div>
+import React from 'react';
+
+import Typist from 'react-typist';
+
+class Signature extends React.Component {
+  constructor(props){
+    super(props);
+    this.state = {
+      typing: true
+    }
+  }
+done = () => {
+  this.setState({ typing: false }, () => {
+    this.setState({ typing: true })
+  });
+}
+
+  render() {
+    return (
+      <div>
+        <div className="triangle" />
+        {this.state.typing
+            ? <Typist className="signature" avgTypingDelay={40} onTypingDone={this.done}>
+              <span>Dvorak User</span>
+              <Typist.Backspace count={11} delay={200} />
+              <span>Carnivorous Plant Collector</span>
+              <Typist.Backspace count={27} delay={200} />
+              <span>Wizard™</span>
+              <Typist.Backspace count={7} delay={200} />
+              <span>Hackathon Organizer</span>
+              <Typist.Backspace count={19} delay={200} />
+              <span>Ski Instructor</span>
+              <Typist.Backspace count={14} delay={200} />
+              <span>Carol Chen</span>
+              <Typist.Backspace count={12} delay={200} />
+              </Typist>
+            : ''
+          }
+
+      </div>
+    );
+  }
+}
+
+export default Signature;
