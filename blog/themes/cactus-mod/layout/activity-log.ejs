@@ -1,0 +1,17 @@
+<div id="archive">
+  <ul class="post-list">
+    <% site.categories.findOne({name: 'activity-log'}).posts.each(function(post) { %>
+      <li class="post-item">
+        <div>
+          <span><%- partial('_partial/post/title', { post: post, index: true, class_name: '' }) %></span>
+          <p class="post-excerpt">
+              <%- truncate(strip_html(post.content), {length: 150, omission: '...'}) %>
+          </p>
+          <div style="height: 50vh; background-image: url('/blog/<%- post.path + post.featured_image %>'); background-size: cover; background-position: center;">
+          </div>
+        </div>
+      </li>
+    <% }); %>
+  </ul>
+  <%- partial('_partial/pagination') %>
+</div>

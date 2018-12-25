@@ -22,16 +22,17 @@ class Portfolio extends Component {
         <section id="portfolio">
           <h2 className="section-heading">THINGS I'VE DONE</h2>
           <center>
+            <span style={{color: '#808080'}}>Last Updated August 2018</span>
             <Slider
               defaultValue={3}
               min={1}
-              max={3}
+              max={5}
               marks={{
                 1: 'Very Little Things',
                 2: 'Less Things',
                 3: 'Default',
-                // 4: 'More Things',
-                // 5: 'Excruciating Number of Things with Excruciating Detail',
+                4: 'More Things',
+                5: 'Excruciating Number of Things with Excruciating Detail',
               }}
               dots
               onChange={v => this.setState({ slider: v })}
@@ -40,11 +41,11 @@ class Portfolio extends Component {
           <div className="portfolio-box">
             <Row>
               <Col xs={12} md={6} className="item">
-                <h1>Experience</h1>
+                <h1>Work</h1>
                 <ReactCSSTransitionGroup
                   transitionName="points"
-                  transitionEnterTimeout={600}
-                  transitionLeaveTimeout={400}
+                  transitionEnterTimeout={2000}
+                  transitionLeaveTimeout={200}
                 >
                   {
                     this.state.data.experience.map((item) => {
@@ -70,9 +71,9 @@ class Portfolio extends Component {
                             <ReactCSSTransitionGroup
                               transitionName="points"
                               transitionAppear
-                              transitionAppearTimeout={600}
-                              transitionEnterTimeout={600}
-                              transitionLeaveTimeout={400}
+                              transitionAppearTimeout={400}
+                              transitionEnterTimeout={2000}
+                              transitionLeaveTimeout={200}
                             >
                               {points}
                             </ReactCSSTransitionGroup>
@@ -83,15 +84,15 @@ class Portfolio extends Component {
                   }
                 </ReactCSSTransitionGroup>
 
-                <h1>Extracurriculars</h1>
+                <h1>Community</h1>
                 <ReactCSSTransitionGroup
                   transitionName="points"
-                  transitionEnterTimeout={600}
-                  transitionLeaveTimeout={400}
+                  transitionEnterTimeout={2000}
+                  transitionLeaveTimeout={200}
                 >
 
                   {
-                    this.state.data.extracurriculars.map((item) => {
+                    this.state.data.community.map((item) => {
                       if (item.toggle.indexOf(this.state.slider) === -1) {
                         return '';
                       }
@@ -114,9 +115,9 @@ class Portfolio extends Component {
                             <ReactCSSTransitionGroup
                               transitionName="points"
                               transitionAppear
-                              transitionAppearTimeout={600}
-                              transitionEnterTimeout={600}
-                              transitionLeaveTimeout={400}
+                              transitionAppearTimeout={400}
+                              transitionEnterTimeout={2000}
+                              transitionLeaveTimeout={200}
                             >
 
                               {points}
@@ -129,11 +130,55 @@ class Portfolio extends Component {
                 </ReactCSSTransitionGroup>
               </Col>
               <Col xs={12} md={6} className="item">
-                <h1>Awards and Honours</h1>
+                <h1>Hobbies</h1>
                 <ReactCSSTransitionGroup
                   transitionName="points"
-                  transitionEnterTimeout={600}
-                  transitionLeaveTimeout={400}
+                  transitionEnterTimeout={2000}
+                  transitionLeaveTimeout={200}
+                >
+
+                  {
+                    this.state.data.hobbies.map((item) => {
+                      if (item.toggle.indexOf(this.state.slider) === -1) {
+                        return '';
+                      }
+                      const points = item.points.map((p) => {
+                        if (p.toggle.indexOf(this.state.slider) === -1) {
+                          return '';
+                        }
+                        return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
+                      });
+                      return (
+                        <div className="portfolio-item">
+                          <div className="header">
+                            <span className="title">{item.thing}</span>
+                            <span className="divider-strong"> // </span>
+                            <span className="desc">{item.description}</span>
+                            <span className="divider-weak"> // </span>
+                            <span className="date"> {item.date}</span>
+                          </div>
+                          <ul>
+                            <ReactCSSTransitionGroup
+                              transitionName="points"
+                              transitionAppear
+                              transitionAppearTimeout={400}
+                              transitionEnterTimeout={2000}
+                              transitionLeaveTimeout={200}
+                            >
+
+                              {points}
+                            </ReactCSSTransitionGroup>
+                          </ul>
+                        </div>
+                      );
+                    })
+                  }
+                </ReactCSSTransitionGroup>
+                                <h1>Awards and Honours</h1>
+                <ReactCSSTransitionGroup
+                  transitionName="points"
+                  transitionEnterTimeout={2000}
+                  transitionLeaveTimeout={200}
                 >
 
                   {
@@ -160,9 +205,9 @@ class Portfolio extends Component {
                           <ReactCSSTransitionGroup
                             transitionName="points"
                             transitionAppear
-                            transitionAppearTimeout={600}
-                            transitionEnterTimeout={600}
-                            transitionLeaveTimeout={400}
+                            transitionAppearTimeout={400}
+                            transitionEnterTimeout={2000}
+                            transitionLeaveTimeout={200}
                           >
 
                             {points}
@@ -173,53 +218,6 @@ class Portfolio extends Component {
                   })
                 }
                 </ReactCSSTransitionGroup>
-                <h1>Education</h1>
-                <div className="header">
-                  <span className="title">High School - Current</span>
-                  <span className="divider-strong"> // </span>
-                  <span className="desc">Richmond Hill High School</span>
-                  <span className="divider-weak"> // </span>
-                  <span className="date">2015 - Jun 2019</span>
-                </div>
-                <h1>Skills</h1>
-                <ReactCSSTransitionGroup
-                  transitionName="points"
-                  transitionEnterTimeout={600}
-                  transitionLeaveTimeout={400}
-                >
-
-                  {
-                    this.state.data.skills.map((item) => {
-                      if (item.toggle.indexOf(this.state.slider) === -1) {
-                        return '';
-                      }
-                      const skills = item.things.map((s) => {
-                        if (s.toggle.indexOf(this.state.slider) === -1) {
-                          return '';
-                        }
-                        return <span>{s.content}<span className="divider-weak">&nbsp;// </span></span>;
-                      });
-                      return (
-                        <div className="portfolio-item">
-                          <div className="header">
-                            <span className="title">{item.category}</span>
-                            <span className="divider-strong"> // </span>
-                            <ReactCSSTransitionGroup
-                              transitionName="points"
-                              transitionAppear
-                              transitionAppearTimeout={600}
-                              transitionEnterTimeout={600}
-                              transitionLeaveTimeout={400}
-                            >
-                              {skills}
-                            </ReactCSSTransitionGroup>
-                          </div>
-                        </div>
-                      );
-                    })
-                  }
-                </ReactCSSTransitionGroup>
-
               </Col>
             </Row>
           </div>

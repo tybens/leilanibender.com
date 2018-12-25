@@ -1,0 +1,12 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+
+.Lyra {
+  .section-heading {
+    color: lighten($dark, 25%);;
+  }
+  img {
+    object-fit: cover; 
+  }
+}

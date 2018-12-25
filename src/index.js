@@ -1,16 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-
-import './styles/themes/purple.css';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import Lyra from './pages/Lyra';
+
 
 ReactDOM.render(
   (
-    <div>
-      <App />
-    </div>
+    <Router> 
+      <div>
+        <Route exact path="/" component={App} />
+        <Route path="/pages/lyra" component={Lyra} />
+      </div>
+    </Router> 
   ), document.getElementById('root'),
 );
-registerServiceWorker();

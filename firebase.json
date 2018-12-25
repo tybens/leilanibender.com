@@ -15,18 +15,22 @@
         ]
       },
       {
-        "source" : "**/*.@(js|css)",
-        "headers" : [ {
-          "key" : "Cache-Control",
-          "value" : "max-age=604800"
-        } ]
+        "source": "**/*.@(js|css)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
       },
       {
-        "source" : "**/*.@(jpg|jpeg|gif|png)",
-        "headers" : [ {
-          "key" : "Cache-Control",
-          "value" : "max-age=604800"
-        } ]
+        "source": "**/*.@(jpg|jpeg|gif|png|svg)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=604800"
+          }
+        ]
       }
     ],
     "ignore": [
@@ -36,17 +40,22 @@
     ],
     "rewrites": [
       {
+        "source": "/banana",
+        "destination": "/index.html"
+      },
+      {
         "source": "/blog",
         "destination": "/blog/index.html"
       },
       {
         "source": "/resume",
         "destination": "/CarolChenResume.pdf"
-      },
-      {
-        "source": "/",
-        "destination": "/index.html"
       }
+    ]
+  },
+  "functions": {
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   }
 }

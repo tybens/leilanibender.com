@@ -23,8 +23,8 @@ done = () => {
             ? <Typist className="signature" avgTypingDelay={40} onTypingDone={this.done}>
               <span>Dvorak User</span>
               <Typist.Backspace count={11} delay={200} />
-              <span>Carnivorous Plant Collector</span>
-              <Typist.Backspace count={27} delay={200} />
+              <span>Pole Dancer and Aerialist</span>
+              <Typist.Backspace count={25} delay={200} />
               <span>Wizard™</span>
               <Typist.Backspace count={7} delay={200} />
               <span>Hackathon Organizer</span>

@@ -1,5 +1,5 @@
 {
-  "name": "kipply.github.io",
+  "name": "carolchen.me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -13,14 +13,17 @@
     "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-icons": "^2.2.7",
+    "react-images": "^0.5.19",
+    "react-photo-gallery": "^6.2.2",
     "react-router-dom": "^4.2.2",
     "react-scripts": "^1.1.0",
     "react-transition-group": "^1.2.1",
-    "react-typist": "^2.0.4"
+    "react-typist": "^2.0.4",
+    "request": "^2.88.0"
   },
   "scripts": {
-    "build-css": "node-sass-chokidar src/ -o src/ --output-style compressed",
-    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive  --output-style compressed",
+    "build-css": "node-sass-chokidar src/ -o public/ --output-style compressed",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o public/ --watch --recursive  --output-style compressed",
     "start-js": "react-scripts start",
     "start": "npm-run-all -p watch-css start-js",
     "build-js": "react-scripts build",

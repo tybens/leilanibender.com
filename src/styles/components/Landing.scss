@@ -71,6 +71,9 @@ p .quote-content {
     padding-left: 10%;
     padding-right: 10%;
   }
+  @media screen and (orientation:portrait) {
+    padding: 5%;
+  }
   a {
     margin: 2px;
     color: $primary;
@@ -86,8 +89,8 @@ p .quote-content {
   position: fixed;
   font-family: 'Montserrat', sans-serif !important;
   top: 8px;
-  right: 20px;
-  z-index: 999999;
+  right: 10px;
+  z-index: 3;
 }
 
 .triangle{
@@ -95,11 +98,10 @@ p .quote-content {
   height: 40px;
   position: fixed;
   background: rgba($primary, .9);
-  transform-style: preserve-3d;
-  z-index: 99999;
-  -webkit-transform: skew(40deg) translateZ(1px);
-    -moz-transform: skew(40deg) translateZ(1px);
-      -o-transform: skew(40deg) translateZ(1px);
+  z-index: 2;
+  -webkit-transform: skew(40deg) ;
+    -moz-transform: skew(40deg) ;
+      -o-transform: skew(40deg);
   top: 0;
   right: -50px;
 }

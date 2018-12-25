@@ -8,19 +8,31 @@
       "points": [
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Developed feature for <b>reporting Facebook ad analytics to Shopify</b>. "
+          "content": "Developed feature for reporting Facebook ad analytics to Shopify. "
         },
         {
-          "toggle": [3, 4, 5],
+          "toggle": [5],
+          "content": "Worked in a super hipster framework known as Ruby on Rails."
+        },
+        {
+          "toggle": [4, 5],
           "content": "Documented and built components for moving to a new authentication system for internal tools. "
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "<b>Made multiple apps GDPR compliant</b>, many in prerelease and including one with over 30 000 users. "
+          "content": "Made multiple apps GDPR compliant, many in prerelease and including one with over 30 000 users. "
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Built <b>GraphQL endpoints</b> in Shopify core for the merchant marketing section and migration from REST. "
+          "content": "Built GraphQL endpoints in Shopify core."
+        },
+        {
+          "toggle": [5],
+          "content": "Worked on small bugs and features for the Facebook Ads app."
+        },
+        {
+          "toggle": [5],
+          "content": "Played a lot of foosball, in fact, played foosball daily. Earned a foosperson on the last day of work."
         }
       ]
     },
@@ -31,16 +43,24 @@
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "<b>Designed a new CS curriculum</b> with a focus on self-learning, targeted at high school students."
+          "toggle": [2, 3, 4],
+          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students."
+        },
+        {
+          "toggle": [5],
+          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students. Curriculum was designed with educators and was recently released into beta."
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Used <b>React, Django and MySQL to build a platform</b> for coaches and students to track progress for the new curriculum. Implemented React into Django to migrate off Angular."
+          "content": "Used React, Django and MySQL to build a platform for coaches and students to track progress for the new curriculum. Implemented React into Django to migrate off Angular."
         },
         {
-          "toggle": [3, 4, 5],
+          "toggle": [4, 5],
           "content": "Added end-to-end testing with <a target=\"_blank\" href='https://www.cypress.io/'>Cypress</a> while working on small features and bugs."
+        },
+        {
+          "toggle": [5],
+          "content": "Learned that end-to-end tests are very often flakey and a huge pain to update."
         }
       ]
     },
@@ -49,7 +69,20 @@
       "position" : "Ski Instructor",
       "date": "Jan - Mar 2017",
       "toggle": [1, 2, 3, 4, 5],
-      "points": []
+      "points": [
+        {
+          "toggle": [4, 5],
+          "content": "Taught skiing to a variety of ages and skill levels as a licensed instructor."
+        },
+        {
+          "toggle": [5],
+          "content": "Started teaching after two years of volunteering as an apprentice."
+        },
+        {
+          "toggle": [5],
+          "content": "Won the honours of signing a bent golden(no sparkles or glitter unfortunately) pole as an Instructor of the Week Award."
+        }
+      ]
     }
   ],
   "awards": [
@@ -61,15 +94,35 @@
       "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "Among fifty winners of over 3500 contestants for two months of <b>open source contribution for One Laptop per Child</b> software. Worked in Python GTK and Javascript."
+          "content": "Among fifty winners of over 3500 contestants for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
         },
         {
           "toggle": [2],
-          "content": "Won for two months of <b>open source contribution for One Laptop per Child</b> software. Worked in Python GTK and Javascript."
+          "content": "Won for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Merged 27 pull requests and committed <b>2636 lines of code</b>, worked on translations and documentation."
+          "content": "Merged 27 pull requests and committed 2636 lines of code, worked on translations and documentation."
+        },
+        {
+          "toggle": [5],
+          "content": "Designed a new tshirt for the organization! No one wanted to put it in print because it was ugly. Oof."
+        },
+        {
+          "toggle": [5],
+          "content": "Went on a fun trip to Mountain View where I got to meet some cute GCI winners. Proudly skipped a week of school."
+        }
+      ]
+    },
+    {
+      "thing": "Code Jam to I/O for Women",
+      "description": "Was 155th but got bumped up five places so managed to get a prize",
+      "date": "Oct 2017",
+      "toggle": [5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Won $500 USD and tickets to Google I/O worth 1300USD. Top 150 got the prize."
         }
       ]
     },
@@ -78,7 +131,12 @@
       "description": "Wolfram Technology Conference",
       "date": "Oct 2017",
       "toggle": [1, 2, 3, 4, 5],
-      "points": []
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
+        }
+      ]
     },
     {
       "thing": "Finalist and Google Prize",
@@ -89,6 +147,14 @@
         {
           "toggle": [3, 4, 5],
           "content": "Built <a href='https://devpost.com/software/hilite'>a highlighter</a> that sends highlighted text to mobile app in real time with React Native and Python."
+        },
+        {
+          "toggle": [5],
+          "content": "End product was a $20 webcam taped to a can of redbull with a beer bottle opener as a 'nib'."
+        },
+        {
+          "toggle": [],
+          "content": "Won a set of Nintendo Switches, and the finalist prize which was basically just 'spend a couple hundred dollars however you want'. I chose to get new speakers, airpods and a brand new standing desk. I don't actually use the standing desk because I'm lazy."
         }
       ]
     },
@@ -101,6 +167,10 @@
         {
           "toggle": [3, 4, 5],
           "content": "Built a <a href='https://devpost.com/software/polycode'>command line tool and Atom plugin</a> that translates JS and Python between spoken languages."
+        },
+        {
+          "toggle": [5],
+          "content": "Took home a third Nintendo Switch in less than a year. Kijiji history getting real sketchy."
         }
       ]
     },
@@ -113,6 +183,10 @@
         {
           "toggle": [3, 4, 5],
           "content": "Built a native Android app to play a <a href='https://devpost.com/software/sms-treasure'>location-based game</a> based on a peer-to-peer SMS network."
+        },
+        {
+          "toggle": [5],
+          "content": "Won a Nintendo switch. Also the project is what I claim to be the second most useless hack ever to make finalist at a hackathon. The first is a game where you guess if Trump's tweet is 'bullshit'."
         }
       ]
     },
@@ -121,17 +195,74 @@
       "description": "MHacks9 (300 Participants)",
       "date": "March 2017",
       "toggle": [3, 4, 5],
-      "points": []
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Built a smart notetaker designed to integrate with drawing diagrams and doing math. Also recorded audio intelligently, though some would argue it to be unethical."
+        }
+      ]
     },
     {
       "thing": "2nd Place and Best Game",
       "description": "Massey Hacks 3",
       "date": "March 2017",
       "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Built 'Faight', an online game where people can get AIs to compete by programming in any language. Supported Brianfuck."
+        }
+      ]
+    },
+    {
+      "thing": "Best Use of Target API",
+      "description": "MHacks 8",
+      "date": "October 2016",
+      "toggle": [5],
       "points": []
+    },
+    {
+      "thing": "Cup Stacking Champion",
+      "description": "Hack the Hammer",
+      "date": "February 2018",
+      "toggle": [5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Made the tallest stack of cups. Only won because our team had taller people."
+        }
+      ]
+    },
+    {
+      "thing": "Avogadro Contest",
+      "description": "Top 200 in Canada",
+      "date": "May 2017",
+      "toggle": [5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "It's a chemistry contest. Wow look a non-software thing."
+        }
+      ]
     }
   ],
-  "extracurriculars": [
+  "community": [
+    {
+      "thing": "Organizer",
+      "description": "U of T Hacks",
+      "date": "Aug 2018 - Feb 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [4, 5],
+          "content": "Yikes this hackathon is literally the weekend in the middle of my exams."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Coordinates events and logistics during the hackathon. Works on scheduling, programming and application review."
+        }
+      ]
+    },
     {
       "thing": "Event Coordinator",
       "description": "Toronto Hacker Club",
@@ -151,7 +282,7 @@
     {
       "thing": "Student Council",
       "description": "Richmond Hill High School",
-      "date": "May 2017 - Present",
+      "date": "May 2017 - Jun 2019",
       "toggle": [2, 3, 4, 5],
       "points": [
         {
@@ -161,6 +292,59 @@
         {
           "toggle": [3, 4, 5],
           "content": "Builds software solutions, such as matchmaking apps or websites."
+        }
+      ]
+    },
+    {
+      "thing": "Organizing Events",
+      "description": "With Organizations",
+      "date": "All the time",
+      "toggle": [1],
+      "points": []
+    },
+    {
+      "thing": "Hackathoner",
+      "description": "Various of Universities and Venues",
+      "date": "November 2015 - Now",
+      "toggle": [4, 5],
+      "points": [
+        {
+          "toggle": [4],
+          "content": "Mentored at several hackathons, gave workshops and judged at others. You can find me probably at most hackathons I'm near!"
+        },
+        {
+          "toggle": [5],
+          "content": "Stellar win rate of 70%™™™™™!!!!"
+        },
+        {
+          "toggle": [5],
+          "content": "Judged at Hack the Hammer and JAM Hacks 2. Gave a workshop at Hack the Hammer"
+        },
+        {
+          "toggle": [5],
+          "content": "Mentored at a lot of hackathons. For hackathons that have a system where the mentor is assigned to a team, all my teams have won something <3. They're smart cookies."
+        }
+      ]
+    }
+  ],
+  "hobbies": [
+    {
+      "thing": "Competitive Programming",
+      "description": "Online Judges",
+      "date": "Occasionally",
+      "toggle": [4, 5],
+      "points": [
+        {
+          "toggle": [4, 5],
+          "content": "Writes <a href='https://github.com/kipply/competitive-programming'>solutions</a> to contest problems. Has authored <a href='https://dmoj.ca/user/kipply/solved#pp-load-link-wrapper'>some problems</a> too."
+        },
+        {
+          "toggle": [5],
+          "content": "Wrote and published some problems."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Helped organize logistics DMPG, an onsite contest with 200 attendees from the region."
         }
       ]
     },
@@ -179,139 +363,46 @@
           "content": "Grew plants from seed, leaf cuttings and had a custom built lighting and watering setup."
         }
       ]
-    }
-  ],
-  "skills": [
+    },
     {
-      "category": "Client Side",
+      "thing": "Dance",
+      "description": "Brass Vixens",
+      "date": "May 2018 - Now",
       "toggle": [2, 3, 4, 5],
-      "things": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "HTML5"
-        },
+      "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "CSS3 + LESS & SASS"
-        },
-        {
-          "toggle": [2],
-          "content": "LESS & SASS"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Bootstrap"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "React"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "React Native"
+          "content": "Practices pole and aerial hoop to look pretty and get strong!"
         }
       ]
     },
     {
-      "category": "Backend",
-      "toggle": [2, 3, 4, 5],
-      "things": [
+      "thing": "SHAD Valley Fellow",
+      "description": "University of Saskatchewan",
+      "date": "July 2017",
+      "toggle": [4, 5],
+      "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "NodeJS"
+          "toggle": [4],
+          "content": "Month-long entrepreneurship focused program, did a research project with the synchrotron."
         },
         {
-          "toggle": [3, 4, 5],
-          "content": "Flask"
+          "toggle": [5],
+          "content": "Month-long entrepreneurship and engineering program."
         },
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "Django"
+          "toggle": [5],
+          "content": "Was one of eight hundred students internaionally to be accepted into the program."
         },
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "MySQL"
+          "toggle": [5],
+          "content": "Attended daily lectures and workshops."
         },
         {
-          "toggle": [3, 4, 5],
-          "content": "Ruby on Rails"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Firebase"
-        }
-      ]
-    },
-    {
-      "category": "Other Dev Things",
-      "toggle": [2, 3, 4, 5],
-      "things": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "AWS"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Git"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Docker"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Vim"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Kubernetes"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "GraphQL"
-        }
-      ]
-    },
-    {
-      "category": "Languages",
-      "toggle": [2, 3, 4, 5],
-      "things": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Java"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Javascript"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Python"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Ruby"
-        }
-      ]
-    },
-    {
-      "category": "All",
-      "toggle": [1],
-      "things": [
-        {
-          "toggle": [1],
-          "content": "Codes"
-        },
-        {
-          "toggle": [1],
-          "content": "Non nerd things"
-        },
-        {
-          "toggle": [1],
-          "content": "Non-coding nerd things"
+          "toggle": [5],
+          "content": "Conducted a research project at the CLS with the synchrotron particle accelerator. Found evidence of Apple's work into strengthening the glass on their device, disproving the common conception of Apple attempting to lower build quality."
         }
       ]
     }
   ]
-
 }

@@ -3,7 +3,9 @@
 
 
 #portfolio {
-  // padding: 10%;
+  z-index: 10;
+  position: relative; 
+  background-color: white; 
   h2 {
     color: lighten($dark, 20%);
     margin-bottom: 50px
@@ -11,7 +13,9 @@
 
   .rc-slider{
     max-width: 400px;
-
+    @media screen and (orientation:portrait) {
+      max-width: 70vw;
+    }
     .rc-slider-track {
       background-color: lighten($primary, 25%);
     }
@@ -44,6 +48,7 @@
 
     li {
       font-size: 1.15em;
+      transition: all .5s ease;
     }
     li:before {
       content: "> ";
@@ -85,7 +90,7 @@
   .points-enter.points-enter-active {
     opacity: 1;
     color: $primary;
-    transition: all 500ms ease-in;
+    transition: all 500ms ease;
   }
 
   .points-leave {
@@ -95,7 +100,7 @@
   .points-leave.points-leave-active {
     opacity: 0.01;
     color: lighten($primary, 30%);
-    transition: all 300ms ease-in;
+    transition: all 500ms ease;
     text-decoration: line-through;
   }
 
@@ -105,7 +110,7 @@
 
   .points-appear.points-appear-active {
     opacity: 1;
-    transition: all .5s ease-in;
+    transition: all .5s ease;
   }
 
 }

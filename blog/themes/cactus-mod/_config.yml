@@ -11,6 +11,7 @@ direction: ltr
 nav:
   home: /
   articles: /archives/
+  Activity Log: /activity-log/
   search: /search/
 
 # Links to your social media accounts.
@@ -21,6 +22,7 @@ social_links:
   github: http://github.com/kipply
   facebook: https://www.facebook.com/kipply.carol
   linkedin: https://www.linkedin.com/in/carol-chen/
+  instagram: https://www.instagram.com/ckipply/
   mail: mailto:hello@carolchen.me
 
 # Customize the overview with displaying a tagcloud on the index page.
@@ -113,8 +115,8 @@ disqus:
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.
 google_analytics:
-  enabled: false
-  id: UA-86660611-1
+  enabled: true
+  id: UA-96105732-1
 
 # Fill in your Baidu Analytics tracking ID to enable Baidu Analytics.
 baidu_analytics:

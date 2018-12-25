@@ -40,7 +40,7 @@ const Landing = () => (
           <p>
             I started programming in grade nine, and I've been to a lot of Hackathons, contributed to One Laptop per Child software,
             and completed internships at Shopify and Hatch Canada.
-            Check out <a href="https://carolchen.me/CarolChenResume.pdf" style={{ textDecoration: 'underline' }}>my resume</a>!
+            Check out <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }}>my resume</a>!
           </p>
           <p>
             I like solving little contest problems, and I'm working on become less-bad at doing so. In the future, I also intend
@@ -64,11 +64,11 @@ const Landing = () => (
 const Quote = () => {
   const quotes = [
     {
-      quote: 'Cogito ergo sum',
-      author: 'René Descartes from the *Renéssance*',
+      quote: 'This is important. Someone is WRONG on the internet.',
+      author: 'Randall Munroe',
     },
     {
-      quote: 'I would like to die on Mars. Just not on impact.',
+      quote: '💕🍜 ramen is sooo good🍜 💕',
       author: 'Elon Musk',
     },
     {
@@ -88,16 +88,8 @@ const Quote = () => {
       author: 'Shakepeare in "As You Like It" Act 3',
     },
     {
-      quote: 'Sunny Ways.',
-      author: 'Sir Wilfred Laurier',
-    },
-    {
-      quote: 'If you\'re going through hell, keep going.',
-      author: 'Winston Churchill',
-    },
-    {
-      quote: 'We are what we repeatedly do. Excellence, then, is not an act, but a habit.',
-      author: 'Aristotle',
+      quote: 'Non-conformity is the only real passion worth being ruled by.',
+      author: 'Julian Assange',
     },
     {
       quote: 'I have no regrets.',
