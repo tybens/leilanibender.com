@@ -47,7 +47,7 @@ const Landing = () => (
             on learning cybersecurity, computer graphics and machine learning / statistics.
           </p>
           <p>
-            For non-recruiters (or <b>really</b> awesome recruiters), I keep a <a href="https://carolchen.me/blog" style={{ textDecoration: 'underline' }}>blog</a> about life, travel, and shit I do.
+            For non-recruiters (or <b>really</b> awesome recruiters), I keep a <a href="https://carolchen.me/blog" style={{ textDecoration: 'underline' }}>blog</a> about life, travel, and stuff I do. Not much yet as I'm currently suffering the wrath of college applications.
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>

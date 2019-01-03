@@ -40,16 +40,16 @@
     ],
     "rewrites": [
       {
-        "source": "/banana",
+        "source": "/resume",
+        "destination": "/CarolChenResume.pdf"
+      },
+      {
+        "source": "**",
         "destination": "/index.html"
       },
       {
         "source": "/blog",
         "destination": "/blog/index.html"
-      },
-      {
-        "source": "/resume",
-        "destination": "/CarolChenResume.pdf"
       }
     ]
   },
