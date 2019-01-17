@@ -35,7 +35,7 @@ const Landing = () => (
           <h2 className="section-heading">ABOUT ME</h2>
           <hr />
           <p>
-            Hey, it&apos;s Carol! I&apos;m a high school student in Richmond Hill, Ontario.
+            Hey, it&apos;s Carol!
           </p>
           <p>
             I started programming in grade nine, and I've been to a lot of Hackathons, contributed to One Laptop per Child software,
@@ -65,7 +65,7 @@ const Quote = () => {
   const quotes = [
     {
       quote: 'This is important. Someone is WRONG on the internet.',
-      author: 'Randall Munroe',
+      author: 'Cueball',
     },
     {
       quote: '💕🍜 ramen is sooo good🍜 💕',
@@ -85,7 +85,7 @@ const Quote = () => {
     },
     {
       quote: 'Do you not know I am a woman? When I think, I must speak.',
-      author: 'Shakepeare in "As You Like It" Act 3',
+      author: 'Rosalind in Shakespeare's "As You Like It" ',
     },
     {
       quote: 'Non-conformity is the only real passion worth being ruled by.',

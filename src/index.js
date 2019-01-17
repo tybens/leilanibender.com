@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import App from './App';
 import Lyra from './pages/Lyra';
+import AnonMessages from './apps/AnonMessages';
 
 
 ReactDOM.render(

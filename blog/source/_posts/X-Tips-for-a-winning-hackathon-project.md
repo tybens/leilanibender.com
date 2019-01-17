@@ -18,7 +18,7 @@ Most hackathons work out to judge with 25% from technical difficulty. Some hacka
 Working in a team is hard. Trying to design a full featured project and build it in 36 hours is hard. Sleep deprivation makes it worse. Trying to figure out what needs to get done and how will be insanely hard. Planning includes making sure that all team members know what they're doing, and how all the parts will fit together. If a certain feature depends on another one, it would be a good time for someone to sleep. When considering "optional" features, set a time so that you know at which point you should give up and move onto something more essential. When planning, consider that some features may be a pain to implement but will never show up in the demo, or will only partially show up in the demo. For those, just have a UI or a single type of case that can be demoed and let the judges know.
 
 ## 3. Pair.
-Code written at hackathons is bad, as gets exponentially worse as time progresses. It's almost always more efficient to have someone around for a sanity check, especially if they wrote some of the surrounding code.
+Code written at hackathons is bad, and gets exponentially worse as time progresses. It's almost always more efficient to have someone around for a sanity check, especially if they wrote some of the surrounding code.
 
 ## 4. Start by programming the "new" things.
 Coding when tired is hard. Reading documentation when you're so tired that everything is blurry is hard. If you're working with a new kind of database, write yourself a query/push/update/delete first, and let your team know where it is. Same goes for SDKs, sending requests from React for the first time, etc. People often don't do that, since it yields working "parts" more slowly, but trust me this is #worth. This also means being A G I L E and spreading out your work rather than fully finishing one "part" then moving onto the next. Additionally, this will let you know early on if something isn't technically feasible.
@@ -45,6 +45,7 @@ If a teammate answers a question, you don't need to add-on (unless it was _serio
 
 Other silly things that aren't quite worth another point or related to winning;
  - Stressed programming is also bad. Go play games; go cup stacking or do yoga. PET THE THERAPY DOGS. Plus if you win cup stacking, you're still a H A C K A T H O N W I N N E R 🤔
+ - Sometimes when you're REALLY tired, you start forgetting what you're trying to do. Try making a list of comments to frame out what things do, and what things you still have to do. 
  - Be awake for closings. Having your team showing up to the stage and being like "Where is John? Oh I see he's passed out on the table back there." is awks.
  - Don't try to build a project that covers every single category and API prize.
  - Feed yourself. But not just chips. Have a salad.
