@@ -365,14 +365,14 @@
       ]
     },
     {
-      "thing": "Dance",
-      "description": "Brass Vixens",
+      "thing": "Circus Arts and Pole Dance",
+      "description": "Brass Vixens and Toronto Circus Collective",
       "date": "May 2018 - Now",
       "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "Practices pole and  <a target=\"_blank\" href='/pages/lyra'>aerial hoop</a> to look pretty and get strong!"
+          "content": "Practices pole, silks and <a target=\"_blank\" href='/pages/lyra'>aerial hoop</a> to be awesome, strong and have fun <3"
         }
       ]
     },

@@ -65,7 +65,7 @@ const Quote = () => {
   const quotes = [
     {
       quote: 'This is important. Someone is WRONG on the internet.',
-      author: 'Cueball',
+      author: 'Cueball. Or Man 1. Or Rob. You know. That guy.',
     },
     {
       quote: '💕🍜 ramen is sooo good🍜 💕',
@@ -85,7 +85,7 @@ const Quote = () => {
     },
     {
       quote: 'Do you not know I am a woman? When I think, I must speak.',
-      author: 'Rosalind in Shakespeare's "As You Like It" ',
+      author: 'Rosalind in Shakespeare\'s "As You Like It" ',
     },
     {
       quote: 'Non-conformity is the only real passion worth being ruled by.',
