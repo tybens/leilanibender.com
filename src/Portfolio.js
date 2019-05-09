@@ -128,6 +128,52 @@ class Portfolio extends Component {
                     })
                   }
                 </ReactCSSTransitionGroup>
+                {this.state.slider > 2 > 0 &&
+                  <ReactCSSTransitionGroup
+                    transitionName="points"
+                    transitionEnterTimeout={2000}
+                    transitionLeaveTimeout={200}
+                  >
+                  <h1>Misc</h1>
+
+                    {
+                      this.state.data.stuff.map((item) => {
+                        if (item.toggle.indexOf(this.state.slider) === -1) {
+                          return '';
+                        }
+                        const points = item.points.map((p) => {
+                          if (p.toggle.indexOf(this.state.slider) === -1) {
+                            return '';
+                          }
+                          return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
+                        });
+                        return (
+                          <div className="portfolio-item">
+                            <div className="header">
+                              <span className="title">{item.thing}</span>
+                              <span className="divider-strong"> // </span>
+                              <span className="desc">{item.description}</span>
+                              <span className="divider-weak"> // </span>
+                              <span className="date"> {item.date}</span>
+                            </div>
+                            <ul>
+                              <ReactCSSTransitionGroup
+                                transitionName="points"
+                                transitionAppear
+                                transitionAppearTimeout={400}
+                                transitionEnterTimeout={2000}
+                                transitionLeaveTimeout={200}
+                              >
+
+                                {points}
+                              </ReactCSSTransitionGroup>
+                            </ul>
+                          </div>
+                        );
+                      })
+                    }
+                  </ReactCSSTransitionGroup>
+                }
               </Col>
               <Col xs={12} md={6} className="item">
                 <h1>Hobbies</h1>

@@ -115,18 +115,6 @@
       ]
     },
     {
-      "thing": "Code Jam to I/O for Women",
-      "description": "Was 155th but got bumped up five places so managed to get a prize",
-      "date": "Oct 2017",
-      "toggle": [5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Won $500 USD and tickets to Google I/O worth 1300USD. Top 150 got the prize."
-        }
-      ]
-    },
-    {
       "thing": "Speaker",
       "description": "Wolfram Technology Conference",
       "date": "Oct 2017",
@@ -254,12 +242,20 @@
       "toggle": [2, 3, 4, 5],
       "points": [
         {
-          "toggle": [4, 5],
-          "content": "Yikes this hackathon is literally the weekend in the middle of my exams."
+          "toggle": [5],
+          "content": "Yikes this hackathon was literally the weekend in the middle of my exams."
         },
         {
           "toggle": [3, 4, 5],
           "content": "Coordinates events and logistics during the hackathon. Works on scheduling, programming and application review."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Hackathon supported 550 amazing participants for 36 hours <3."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Personally brought in highly body positive fitness sessions and FREE MASSAGES for participants "
         }
       ]
     },
@@ -352,7 +348,7 @@
       "thing": "Carnivorous Plant Collector",
       "description": "My Basement",
       "date": "May 2016 - Sept 2018",
-      "toggle": [2, 3, 4, 5],
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [2, 3, 4, 5],
@@ -365,14 +361,18 @@
       ]
     },
     {
-      "thing": "Circus Arts and Pole Dance",
-      "description": "Brass Vixens and Toronto Circus Collective",
-      "date": "May 2018 - Now",
-      "toggle": [2, 3, 4, 5],
+      "thing": "Aerial Arts",
+      "description": "Toronto Circus Collective",
+      "date": "August 2018 - Now",
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "Practices pole, silks and <a target=\"_blank\" href='/pages/lyra'>aerial hoop</a> to be awesome, strong and have fun <3"
+          "content": "Primarily practices <a target=\"_blank\" href='https://drive.google.com/file/d/1L705zdV4zWG4XDoSxX8ZuebGrPjiv36K/view?usp=sharing'>aerial hoop</a>. I train for hours every week!"
+        },
+        {
+          "toggle": [5],
+          "content": "I get really sad when I don't go to the circus space for too long <3."
         }
       ]
     },
@@ -384,7 +384,7 @@
       "points": [
         {
           "toggle": [4],
-          "content": "Month-long entrepreneurship focused program, did a research project with the synchrotron."
+          "content": "Month-long entrepreneurship focused program, did a <a target='_blank' href='https://carolchen.me/blog/2017/09/09/Chemical-Composition-of-Apple-Screens/'>research project</a> with the synchrotron particle accelerator."
         },
         {
           "toggle": [5],
@@ -401,6 +401,34 @@
         {
           "toggle": [5],
           "content": "Conducted a research project at the CLS with the synchrotron particle accelerator. Found evidence of Apple's work into strengthening the glass on their device, disproving the common conception of Apple attempting to lower build quality."
+        }
+      ]
+    }
+  ],
+  "stuff": [
+    {
+      "thing": "Google I/O Attendee",
+      "description": "Google Code Jam to I/O Scholarship",
+      "date": "May 2018",
+      "toggle": [2, 3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "F8 Attendee",
+      "description": "F8 Scholarship",
+      "date": "May 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "3D Printing",
+      "description": "Home printer, Monoprice Select Plus",
+      "date": "May 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Uses printer to print small items for home use and printing flow toys!"
         }
       ]
     }
