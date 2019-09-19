@@ -4,8 +4,8 @@
 
 #portfolio {
   z-index: 10;
-  position: relative; 
-  background-color: white; 
+  position: relative;
+  background-color: white;
   h2 {
     color: lighten($dark, 20%);
     margin-bottom: 50px
@@ -93,13 +93,13 @@
     transition: all 500ms ease;
   }
 
-  .points-leave {
+  .points-exit {
     opacity: 1;
   }
 
-  .points-leave.points-leave-active {
+  .points-exit-active {
     opacity: 0.01;
-    color: lighten($primary, 30%);
+    color: lighten($primary, 20%);
     transition: all 500ms ease;
     text-decoration: line-through;
   }

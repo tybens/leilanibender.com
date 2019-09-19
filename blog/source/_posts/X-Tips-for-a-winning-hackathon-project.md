@@ -1,8 +1,6 @@
 ---
 title: 10 Tips for a Winning Hackathon Project
 date: 2018-09-14 11:39:30
-tags:
-- personal
 ---
 
 It's been almost been about three years since my first hackathon and I've now won prizes at nine hackathons (more if you count meme/small hackathons), organized judging at a hackathon and was a judge myself twice. Crafting the perfect project is certainly isn't a science, but I've found some things that usually work™.

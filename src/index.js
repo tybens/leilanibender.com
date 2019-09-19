@@ -9,12 +9,10 @@ import Projects from './pages/Projects';
 
 ReactDOM.render(
   (
-    <Router> 
+    <Router>
       <div>
         <Route exact path="/" component={App} />
-        <Route path="/pages/lyra" component={Lyra} />
-        <Route path="/projects" component={Projects} />
       </div>
-    </Router> 
+    </Router>
   ), document.getElementById('root'),
 );

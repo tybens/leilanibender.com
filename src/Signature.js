@@ -25,12 +25,12 @@ done = () => {
               <Typist.Backspace count={11} delay={200} />
               <span>Pole Dancer and Aerialist</span>
               <Typist.Backspace count={25} delay={200} />
-              <span>Wizard™</span>
-              <Typist.Backspace count={7} delay={200} />
+              <span>Software Developer</span>
+              <Typist.Backspace count={18} delay={200} />
               <span>Hackathon Organizer</span>
               <Typist.Backspace count={19} delay={200} />
-              <span>Ski Instructor</span>
-              <Typist.Backspace count={14} delay={200} />
+              <span>Hug and ❤️ Enthusiast</span>
+              <Typist.Backspace count={21} delay={200} />
               <span>Carol Chen</span>
               <Typist.Backspace count={12} delay={200} />
               </Typist>

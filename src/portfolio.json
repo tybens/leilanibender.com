@@ -1,14 +1,14 @@
 {
   "experience": [
     {
-      "company": "Shopify",
-      "position" : "Software Developer Intern, Merchant Marketing",
-      "date": "Jul - Aug 2018",
-      "toggle": [1, 2, 3, 4, 5],
+      "thing": "Shopify",
+      "description" : "Software Developer Intern, Merchant Marketing",
+      "date": "Jul - Aug 2018, Jul 2019, Present",
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Developed feature for reporting Facebook ad analytics to Shopify. "
+          "content": "Developed features for working with Facebook through a Shopify app. Works in Rails"
         },
         {
           "toggle": [5],
@@ -19,12 +19,8 @@
           "content": "Documented and built components for moving to a new authentication system for internal tools. "
         },
         {
-          "toggle": [2, 3, 4, 5],
+          "toggle": [3, 4, 5],
           "content": "Made multiple apps GDPR compliant, many in prerelease and including one with over 30 000 users. "
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Built GraphQL endpoints in Shopify core."
         },
         {
           "toggle": [5],
@@ -37,10 +33,10 @@
       ]
     },
     {
-      "company": "Hatch Canada",
-      "position" : "Software Developer",
+      "thing": "Hatch Canada",
+      "description" : "Software Developer",
       "date": "Aug 2017 - Jul 2018",
-      "toggle": [1, 2, 3, 4, 5],
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [2, 3, 4],
@@ -48,7 +44,7 @@
         },
         {
           "toggle": [5],
-          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students. Curriculum was designed with educators and was recently released into beta."
+          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students. Curriculum was designed with educators and was released into beta."
         },
         {
           "toggle": [2, 3, 4, 5],
@@ -65,8 +61,15 @@
       ]
     },
     {
-      "company": "Lakeridge Ski Resort",
-      "position" : "Ski Instructor",
+      "thing": "Shipping Codes",
+      "description" : "Companies",
+      "date": "Aug 2017 - Present",
+      "toggle": [1],
+      "points": []
+    },
+    {
+      "thing": "Lakeridge Ski Resort",
+      "description" : "Ski Instructor",
       "date": "Jan - Mar 2017",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
@@ -93,7 +96,7 @@
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
+          "toggle": [4, 5],
           "content": "Among fifty winners of over 3500 contestants for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
         },
         {
@@ -111,18 +114,6 @@
         {
           "toggle": [5],
           "content": "Went on a fun trip to Mountain View where I got to meet some cute GCI winners. Proudly skipped a week of school."
-        }
-      ]
-    },
-    {
-      "thing": "Speaker",
-      "description": "Wolfram Technology Conference",
-      "date": "Oct 2017",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
         }
       ]
     },
@@ -234,95 +225,6 @@
       ]
     }
   ],
-  "community": [
-    {
-      "thing": "Organizer",
-      "description": "U of T Hacks",
-      "date": "Aug 2018 - Feb 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Yikes this hackathon was literally the weekend in the middle of my exams."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Coordinates events and logistics during the hackathon. Works on scheduling, programming and application review."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Hackathon supported 550 amazing participants for 36 hours <3."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Personally brought in highly body positive fitness sessions and FREE MASSAGES for participants "
-        }
-      ]
-    },
-    {
-      "thing": "Event Coordinator",
-      "description": "Toronto Hacker Club",
-      "date": "Dec 2016 - Oct 2017",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Organized workshops with Google and Mozilla, as well computing contests and children's events."
-        }
-      ]
-    },
-    {
-      "thing": "Student Council",
-      "description": "Richmond Hill High School",
-      "date": "May 2017 - Jun 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Organizes school dances, carnivals, and spirit days."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Builds software solutions, such as matchmaking apps or websites."
-        }
-      ]
-    },
-    {
-      "thing": "Organizing Events",
-      "description": "With Organizations",
-      "date": "All the time",
-      "toggle": [1],
-      "points": []
-    },
-    {
-      "thing": "Hackathoner",
-      "description": "Various of Universities and Venues",
-      "date": "November 2015 - Now",
-      "toggle": [4, 5],
-      "points": [
-        {
-          "toggle": [4],
-          "content": "Mentored at several hackathons, gave workshops and judged at others. You can find me probably at most hackathons I'm near!"
-        },
-        {
-          "toggle": [5],
-          "content": "Stellar win rate of 70%™™™™™!!!!"
-        },
-        {
-          "toggle": [5],
-          "content": "Judged at Hack the Hammer and JAM Hacks 2. Gave a workshop at Hack the Hammer"
-        },
-        {
-          "toggle": [5],
-          "content": "Mentored at a lot of hackathons. For hackathons that have a system where the mentor is assigned to a team, all my teams have won something <3. They're smart cookies."
-        }
-      ]
-    }
-  ],
   "hobbies": [
     {
       "thing": "Competitive Programming",
@@ -341,6 +243,18 @@
         {
           "toggle": [4, 5],
           "content": "Helped organize logistics DMPG, an onsite contest with 200 attendees from the region."
+        }
+      ]
+    },
+    {
+      "thing": "3D Printing",
+      "description": "Home printer, Monoprice Select Plus",
+      "date": "May 2019",
+      "toggle": [4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Uses printer to print small items for home use and printing flow toys!"
         }
       ]
     },
@@ -368,44 +282,107 @@
       "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "Primarily practices <a target=\"_blank\" href='https://drive.google.com/file/d/1L705zdV4zWG4XDoSxX8ZuebGrPjiv36K/view?usp=sharing'>aerial hoop</a>. I train for hours every week!"
+          "content": "Primarily practices <a target=\"_blank\" href='https://drive.google.com/file/d/1L705zdV4zWG4XDoSxX8ZuebGrPjiv36K/view?usp=sharing'>aerial hoop</a>. I train for hours every week! I also do poi, silks, rope, trapeze and pole. I hope to get something to better document my training in the near future™"
         },
         {
           "toggle": [5],
           "content": "I get really sad when I don't go to the circus space for too long <3."
         }
       ]
-    },
-    {
-      "thing": "SHAD Valley Fellow",
-      "description": "University of Saskatchewan",
-      "date": "July 2017",
-      "toggle": [4, 5],
-      "points": [
-        {
-          "toggle": [4],
-          "content": "Month-long entrepreneurship focused program, did a <a target='_blank' href='https://carolchen.me/blog/2017/09/09/Chemical-Composition-of-Apple-Screens/'>research project</a> with the synchrotron particle accelerator."
-        },
-        {
-          "toggle": [5],
-          "content": "Month-long entrepreneurship and engineering program."
-        },
-        {
-          "toggle": [5],
-          "content": "Was one of eight hundred students internaionally to be accepted into the program."
-        },
-        {
-          "toggle": [5],
-          "content": "Attended daily lectures and workshops."
-        },
-        {
-          "toggle": [5],
-          "content": "Conducted a research project at the CLS with the synchrotron particle accelerator. Found evidence of Apple's work into strengthening the glass on their device, disproving the common conception of Apple attempting to lower build quality."
-        }
-      ]
     }
   ],
   "stuff": [
+        {
+      "thing": "Organizer",
+      "description": "U of T Hacks",
+      "date": "Aug 2018 - Feb 2019",
+      "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Yikes this hackathon was literally the weekend in the middle of my exams."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Worked on scheduling, programming of mini-events and application review along with other tasks."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "Worked on logistics for a hackathon that supported 550 amazing participants for 36 hours <3."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Personally brought in highly body positive fitness sessions and FREE MASSAGES for participants "
+        }
+      ]
+    },
+    {
+      "thing": "Event Coordinator",
+      "description": "Toronto Hacker Club",
+      "date": "Dec 2016 - Oct 2017",
+      "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Organized workshops with Google and Mozilla, as well computing contests and children's events."
+        }
+      ]
+    },
+    {
+      "thing": "Student Council",
+      "description": "Richmond Hill High School",
+      "date": "May 2017 - Jun 2019",
+      "toggle": [4, 5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Organizes school dances, carnivals, and spirit days."
+        },
+        {
+          "toggle": [5],
+          "content": "Builds software solutions, such as matchmaking apps, ticketing systems or websites."
+        }
+      ]
+    },
+    {
+      "thing": "Organizing Events",
+      "description": "With Organizations",
+      "date": "All the time",
+      "toggle": [1],
+      "points": []
+    },
+    {
+      "thing": "Hackathoner",
+      "description": "Various of Universities and Venues",
+      "date": "November 2015 - August 2018",
+      "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [3],
+          "content": "Stopped hacking around 2018 because I like sleep. I still enjoy mentoring / giving workshops at hackathons!"
+        },
+        {
+          "toggle": [4],
+          "content": "Mentored at several hackathons, gave workshops and judged at others. You can find me probably at most hackathons I'm near!"
+        },
+        {
+          "toggle": [4, 5],
+          "content": "16 wins and maybe counting?"
+        },
+        {
+          "toggle": [5],
+          "content": "Judged at Hack the Hammer and JAM Hacks 2. Gave a workshop at Hack the Hammer"
+        },
+        {
+          "toggle": [5],
+          "content": "Mentored at a lot of hackathons. For hackathons that have a system where the mentor is assigned to a team, all my teams have won something <3. They're smart cookies."
+        }
+      ]
+    },
     {
       "thing": "Google I/O Attendee",
       "description": "Google Code Jam to I/O Scholarship",
@@ -418,17 +395,34 @@
       "description": "F8 Scholarship",
       "date": "May 2019",
       "toggle": [2, 3, 4, 5],
-      "points": []
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Saw the Zucc irl."
+        }
+      ]
     },
     {
-      "thing": "3D Printing",
-      "description": "Home printer, Monoprice Select Plus",
-      "date": "May 2019",
-      "toggle": [2, 3, 4, 5],
+      "thing": "Speaker and Conference Attendee",
+      "description": "Wolfram Technology Conference",
+      "date": "Oct 2017",
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
-          "content": "Uses printer to print small items for home use and printing flow toys!"
+          "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
+        }
+      ]
+    },
+    {
+      "thing": "SPARC",
+      "description": "Student",
+      "date": "July 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "'Applied Rationality' camp, 10 days with ~30 people, free boarding/sustinance. See <a href='https://sparc-camp.org/' target=\"_blank\">their website</a> for more info "
         }
       ]
     }

@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React, { Component, useState } from 'react';
 
 import Slider from 'rc-slider';
 import { Row, Col } from 'react-bootstrap';
-import ReactCSSTransitionGroup from 'react-addons-css-transition-group'; // ES6
+import { CSSTransition } from 'react-transition-group';
 
 import 'rc-slider/assets/index.css';
 
@@ -28,8 +28,8 @@ class Portfolio extends Component {
               min={1}
               max={5}
               marks={{
-                1: 'Very Little Things',
-                2: 'Less Things',
+                1: 'Very Few Things',
+                2: 'Fewer Things',
                 3: 'Default',
                 4: 'More Things',
                 5: 'Excruciating Number of Things with Excruciating Detail',
@@ -41,235 +41,108 @@ class Portfolio extends Component {
           <div className="portfolio-box">
             <Row>
               <Col xs={12} md={6} className="item">
-                <h1>Work</h1>
-                <ReactCSSTransitionGroup
-                  transitionName="points"
-                  transitionEnterTimeout={2000}
-                  transitionLeaveTimeout={200}
-                >
-                  {
-                    this.state.data.experience.map((item) => {
-                      if (item.toggle.indexOf(this.state.slider) === -1) {
-                        return '';
-                      }
-                      const points = item.points.map((p) => {
-                        if (p.toggle.indexOf(this.state.slider) === -1) {
-                          return '';
-                        }
-                        return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
-                      });
-                      return (
-                        <div className="portfolio-item">
-                          <div className="header">
-                            <span className="title">{item.company}</span>
-                            <span className="divider-strong"> // </span>
-                            <span className="desc">{item.position}</span>
-                            <span className="divider-weak"> // </span>
-                            <span className="date"> {item.date}</span>
-                          </div>
-                          <ul>
-                            <ReactCSSTransitionGroup
-                              transitionName="points"
-                              transitionAppear
-                              transitionAppearTimeout={400}
-                              transitionEnterTimeout={2000}
-                              transitionLeaveTimeout={200}
-                            >
-                              {points}
-                            </ReactCSSTransitionGroup>
-                          </ul>
-                        </div>
-                      );
-                    })
-                  }
-                </ReactCSSTransitionGroup>
-
-                <h1>Community</h1>
-                <ReactCSSTransitionGroup
-                  transitionName="points"
-                  transitionEnterTimeout={2000}
-                  transitionLeaveTimeout={200}
-                >
-
-                  {
-                    this.state.data.community.map((item) => {
-                      if (item.toggle.indexOf(this.state.slider) === -1) {
-                        return '';
-                      }
-                      const points = item.points.map((p) => {
-                        if (p.toggle.indexOf(this.state.slider) === -1) {
-                          return '';
-                        }
-                        return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
-                      });
-                      return (
-                        <div className="portfolio-item">
-                          <div className="header">
-                            <span className="title">{item.thing}</span>
-                            <span className="divider-strong"> // </span>
-                            <span className="desc">{item.description}</span>
-                            <span className="divider-weak"> // </span>
-                            <span className="date"> {item.date}</span>
-                          </div>
-                          <ul>
-                            <ReactCSSTransitionGroup
-                              transitionName="points"
-                              transitionAppear
-                              transitionAppearTimeout={400}
-                              transitionEnterTimeout={2000}
-                              transitionLeaveTimeout={200}
-                            >
-
-                              {points}
-                            </ReactCSSTransitionGroup>
-                          </ul>
-                        </div>
-                      );
-                    })
-                  }
-                </ReactCSSTransitionGroup>
-                {this.state.slider > 2 > 0 &&
-                  <ReactCSSTransitionGroup
-                    transitionName="points"
-                    transitionEnterTimeout={2000}
-                    transitionLeaveTimeout={200}
-                  >
-                  <h1>Misc</h1>
-
-                    {
-                      this.state.data.stuff.map((item) => {
-                        if (item.toggle.indexOf(this.state.slider) === -1) {
-                          return '';
-                        }
-                        const points = item.points.map((p) => {
-                          if (p.toggle.indexOf(this.state.slider) === -1) {
-                            return '';
-                          }
-                          return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
-                        });
-                        return (
-                          <div className="portfolio-item">
-                            <div className="header">
-                              <span className="title">{item.thing}</span>
-                              <span className="divider-strong"> // </span>
-                              <span className="desc">{item.description}</span>
-                              <span className="divider-weak"> // </span>
-                              <span className="date"> {item.date}</span>
-                            </div>
-                            <ul>
-                              <ReactCSSTransitionGroup
-                                transitionName="points"
-                                transitionAppear
-                                transitionAppearTimeout={400}
-                                transitionEnterTimeout={2000}
-                                transitionLeaveTimeout={200}
-                              >
-
-                                {points}
-                              </ReactCSSTransitionGroup>
-                            </ul>
-                          </div>
-                        );
-                      })
-                    }
-                  </ReactCSSTransitionGroup>
+                <PortfolioSection
+                  data={this.state.data.experience}
+                  title="Work"
+                  slider={this.state.slider}
+                />
+                {this.state.slider > 1 > 0 &&
+                  <PortfolioSection
+                    data={this.state.data.stuff}
+                    title="Misc"
+                    slider={this.state.slider}
+                  />
                 }
               </Col>
               <Col xs={12} md={6} className="item">
-                <h1>Hobbies</h1>
-                <ReactCSSTransitionGroup
-                  transitionName="points"
-                  transitionEnterTimeout={2000}
-                  transitionLeaveTimeout={200}
-                >
-
-                  {
-                    this.state.data.hobbies.map((item) => {
-                      if (item.toggle.indexOf(this.state.slider) === -1) {
-                        return '';
-                      }
-                      const points = item.points.map((p) => {
-                        if (p.toggle.indexOf(this.state.slider) === -1) {
-                          return '';
-                        }
-                        return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
-                      });
-                      return (
-                        <div className="portfolio-item">
-                          <div className="header">
-                            <span className="title">{item.thing}</span>
-                            <span className="divider-strong"> // </span>
-                            <span className="desc">{item.description}</span>
-                            <span className="divider-weak"> // </span>
-                            <span className="date"> {item.date}</span>
-                          </div>
-                          <ul>
-                            <ReactCSSTransitionGroup
-                              transitionName="points"
-                              transitionAppear
-                              transitionAppearTimeout={400}
-                              transitionEnterTimeout={2000}
-                              transitionLeaveTimeout={200}
-                            >
-
-                              {points}
-                            </ReactCSSTransitionGroup>
-                          </ul>
-                        </div>
-                      );
-                    })
-                  }
-                </ReactCSSTransitionGroup>
-                                <h1>Awards and Honours</h1>
-                <ReactCSSTransitionGroup
-                  transitionName="points"
-                  transitionEnterTimeout={2000}
-                  transitionLeaveTimeout={200}
-                >
-
-                  {
-                  this.state.data.awards.map((item) => {
-                    if (item.toggle.indexOf(this.state.slider) === -1) {
-                      return '';
-                    }
-                    const points = item.points.map((p) => {
-                      if (p.toggle.indexOf(this.state.slider) === -1) {
-                        return '';
-                      }
-                      return <li dangerouslySetInnerHTML={{ __html: p.content }} />;
-                    });
-                    return (
-                      <div className="portfolio-item">
-                        <div className="header">
-                          <span className="title">{item.thing}</span>
-                          <span className="divider-strong"> // </span>
-                          <span className="desc">{item.description}</span>
-                          <span className="divider-weak"> // </span>
-                          <span className="date"> {item.date}</span>
-                        </div>
-                        <ul>
-                          <ReactCSSTransitionGroup
-                            transitionName="points"
-                            transitionAppear
-                            transitionAppearTimeout={400}
-                            transitionEnterTimeout={2000}
-                            transitionLeaveTimeout={200}
-                          >
-
-                            {points}
-                          </ReactCSSTransitionGroup>
-                        </ul>
-                      </div>
-                    );
-                  })
-                }
-                </ReactCSSTransitionGroup>
+                <PortfolioSection
+                  data={this.state.data.hobbies}
+                  title="Hobbies"
+                  slider={this.state.slider}
+                />
+                <PortfolioSection
+                  data={this.state.data.awards}
+                  title="Awards"
+                  slider={this.state.slider}
+                />
               </Col>
             </Row>
           </div>
         </section>
       </main>
     );
+  }
+}
+
+class PortfolioSection extends Component {
+
+  constructor(props) {
+    super(props);
+    this.state = {
+      data: props.data,
+      title: props.title,
+      slider: props.slider
+    }
+  }
+
+  componentDidUpdate(prevProps) {
+    // Typical usage (don't forget to compare props):
+    if (this.props.slider !== prevProps.slider) {
+      this.setState({
+        slider: this.props.slider
+      })
+    }
+  }
+
+  render() {
+    return (
+      <div className="portfolio-section">
+        <h1>{this.state.title}</h1>
+        {
+          this.state.data.map((item) => {
+            let showItem = item.toggle.indexOf(this.state.slider) !== -1;
+            const points = item.points.map((p) => {
+              let showPoint = p.toggle.indexOf(this.state.slider) !== -1;
+              return (
+                <CSSTransition
+                  classNames="points"
+                  appear
+                  in={showPoint}
+                  unmountOnExit
+                  mountOnEnter
+                  timeout={{enter: 1500, exit: 300}}
+                >
+                  <li dangerouslySetInnerHTML={{ __html: p.content }} />
+                </CSSTransition>
+              );
+            });
+            return (
+              <CSSTransition
+                classNames="points"
+                appear
+                in={showItem}
+                unmountOnExit
+                mountOnEnter
+                timeout={{enter: 1500, exit: 300}}
+              >
+                <div className="portfolio-item">
+                  <div className="header">
+                    <span className="title">{item.thing}</span>
+                    <span className="divider-strong"> // </span>
+                    <span className="desc">{item.description}</span>
+                    <span className="divider-weak"> // </span>
+                    <span className="date"> {item.date}</span>
+                  </div>
+                  <ul>
+                      {points}
+                  </ul>
+                </div>
+              </CSSTransition>
+            );
+          })
+        }
+      </div>
+    )
   }
 }
 

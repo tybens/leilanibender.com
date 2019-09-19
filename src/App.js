@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// Pages
 import Landing from './Landing';
 import Portfolio from './Portfolio';
 

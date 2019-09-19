@@ -3,9 +3,9 @@ import { Row, Col } from 'react-bootstrap';
 
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 import Github from 'react-icons/lib/fa/github';
+import Instagram from 'react-icons/lib/fa/instagram';
 import Envelope from 'react-icons/lib/fa/envelope';
 
-import personSvg from './img/person.svg';
 import meImg from './img/me.jpg';
 import meImg2 from './img/me2.jpg';
 import meImg3 from './img/me3.jpg';
@@ -24,7 +24,6 @@ const Landing = () => (
         <hr className="light" />
         <Quote />
       </div>
-      <img className="person-graphic" src={personSvg} alt="graphic" />
     </section>
     <section id="about">
       <Row>
@@ -34,28 +33,27 @@ const Landing = () => (
         <Col xs={12} md={6} style={{ paddingLeft: 50, paddingRight: 50 }}>
           <h2 className="section-heading">ABOUT ME</h2>
           <hr />
-          <p>
-            Hey, it&apos;s Carol!
+          <p style={{ fontSize: 14}}>
+            My site randomizes many elements per load! I did this because choosing things is hard.
           </p>
           <p>
-            I started coding when I was fourteen and have since then worked at Hatch Canada and Shopify. I also won Google Code-in '17 
-            for contribution to Sugar Labs and spoke at the Wolfram Technology Conference in '17. I'm likely not going to university, and 
-              with that, I'm seeking full-time employment in Canada. 
+            I'm an aspiring Software Developer from suburban Toronto. My experience currently consists of frontend and backend web engineering at Hatch Canada and Shopify along with personal projects and open source contribution.
             Check out <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }} target="_blank">my resume</a>!
           </p>
           <p>
-            Other than programming, I also practice aerial arts. I currently working on an <a href="https://drive.google.com/file/d/1L705zdV4zWG4XDoSxX8ZuebGrPjiv36K/view?usp=sharing" style={{ textDecoration: 'underline' }} target="_blank">aerial hoop piece titled "I'm in Spaaaace"</a>.
-            I used to collect carnivorous plants (I had over 200!) and I still love talking about them. I've also worked as a Ski Instructor. I also consume a lot of media; mostly anime and TV shows.  
+            I currently spend my time working at Shopify, coding, training in aerial arts and figuring out education for myself. I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old.
           </p>
           <p>
-            I like solving contest problems, and I'm working on become less-bad at doing so (Codeforces blue soon I hope). In the future, I also intend
-            on learning cybersecurity, computer graphics and machine learning / statistics. I put this here to hold myself 
-            to these commitments. I also need to blog at some point. 
+            Highlights from my past include a collection of 200+ carnivorous plants and going to a lot of hackathons. I've also organized two hackathons and hope to do more in the future.
+          </p>
+          <p>
+            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>.
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>
           <a href="https://www.linkedin.com/in/carol-chen" target="_blank" rel="noredirect no referrer"><LinkedIn /></a>
           <a href="https://github.com/kipply" target="_blank" rel="noredirect no referrer"><Github /></a>
+          <a href="https://instagram.com/kipperrii/" target="_blank" rel="noredirect no referrer"><Instagram /></a>
           <a href="mailto:hello@carolchen.me" target="_blank" rel="noredirect no referrer"><Envelope /></a>
         </Col>
       </Row>
@@ -66,10 +64,6 @@ const Landing = () => (
 
 const Quote = () => {
   const quotes = [
-    {
-      quote: 'This is important. Someone is WRONG on the internet.',
-      author: 'Cueball. Or Man 1. Or Rob. You know. That guy.',
-    },
     {
       quote: '💕🍜 ramen is sooo good🍜 💕',
       author: 'Elon Musk',
@@ -85,10 +79,6 @@ const Quote = () => {
     {
       quote: 'A no is a maybe and a maybe is a yes.',
       author: 'Vinod Khosla',
-    },
-    {
-      quote: 'Do you not know I am a woman? When I think, I must speak.',
-      author: 'Rosalind in Shakespeare\'s "As You Like It" ',
     },
     {
       quote: 'Non-conformity is the only real passion worth being ruled by.',
