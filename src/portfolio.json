@@ -2,33 +2,53 @@
   "experience": [
     {
       "thing": "Shopify",
-      "description" : "Software Developer Intern, Merchant Marketing",
-      "date": "Jul - Aug 2018, Jul 2019, Present",
-      "toggle": [2, 3, 4, 5],
+      "description" : "Production Engineering Intern",
+      "date": "Sep - Dec 2019",
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "Developed features for working with Facebook through a Shopify app. Works in Rails"
-        },
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Working on TruffleRuby and other Ruby implementation related things"
+        }
+      ]
+    },      
+    {
+      "thing": "Lighthouse Labs",
+      "description" : "Web Programming Instructor",
+      "date": "Sep - Dec 2019",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
         {
-          "toggle": [5],
-          "content": "Worked in a super hipster framework known as Ruby on Rails."
-        },
+          "toggle": [3, 4, 5],
+          "content": "Taught full-stack development courses to adult part-time bootcamp students."
+        }
+      ]
+    },    
+    {
+      "thing": "Shopify",
+      "description" : "Software Developer Intern, Channels",
+      "date": "Jul - Aug 2018, Jul - Dec 2019",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
         {
-          "toggle": [4, 5],
+          "toggle": [3, 4, 5],
           "content": "Documented and built components for moving to a new authentication system for internal tools. "
         },
         {
           "toggle": [3, 4, 5],
-          "content": "Made multiple apps GDPR compliant, many in prerelease and including one with over 30 000 users. "
+          "content": "Made multiple apps GDPR compliant, impacting over 50,000 stores. "
         },
         {
-          "toggle": [5],
-          "content": "Worked on small bugs and features for the Facebook Ads app."
+          "toggle": [2, 3, 4, 5],
+          "content": "Shipped features for reporting Facebook Ad analytics to Shopify."
         },
         {
-          "toggle": [5],
-          "content": "Played a lot of foosball, in fact, played foosball daily. Earned a foosperson on the last day of work."
+          "toggle": [2, 3, 4, 5],
+          "content": "Worked on building onboarding for the Instagram Checkout app, reduced API errors."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Shipped code generators for partners to build marketing activity extensions in NodeJS and Rails."
         }
       ]
     },
@@ -39,16 +59,12 @@
       "toggle": [2, 3, 4, 5],
       "points": [
         {
-          "toggle": [2, 3, 4],
-          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students."
-        },
-        {
-          "toggle": [5],
-          "content": "Designed a new CS curriculum with a focus on self-learning called Alpha, targeted at high school students. Curriculum was designed with educators and was released into beta."
+          "toggle": [2, 3, 4, 5],
+          "content": "Designed a new CS curriculum currently in-use with a focus on self-learning, targeted towards high school students."
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Used React, Django and MySQL to build a platform for coaches and students to track progress for the new curriculum. Implemented React into Django to migrate off Angular."
+          "content": "Built a platform for coaches and students to track progress for the new curriculum."
         },
         {
           "toggle": [4, 5],
@@ -56,16 +72,9 @@
         },
         {
           "toggle": [5],
-          "content": "Learned that end-to-end tests are very often flakey and a huge pain to update."
+          "content": "Learned to hate writing end-to-end tests."
         }
       ]
-    },
-    {
-      "thing": "Shipping Codes",
-      "description" : "Companies",
-      "date": "Aug 2017 - Present",
-      "toggle": [1],
-      "points": []
     },
     {
       "thing": "Lakeridge Ski Resort",
@@ -74,11 +83,11 @@
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [4, 5],
-          "content": "Taught skiing to a variety of ages and skill levels as a licensed instructor."
+          "toggle": [3, 4, 5],
+          "content": "CSIA Level 1 License."
         },
         {
-          "toggle": [5],
+          "toggle": [3, 4, 5],
           "content": "Started teaching after two years of volunteering as an apprentice."
         },
         {
@@ -93,23 +102,15 @@
       "thing": "Google Code-in Grand Prize Winner",
       "description": "Sugar Labs",
       "date": "Jan 2018",
-      "toggle": [1, 2, 3, 4, 5],
+      "toggle": [3, 4, 5],
       "points": [
         {
-          "toggle": [4, 5],
+          "toggle": [3, 4, 5],
           "content": "Among fifty winners of over 3500 contestants for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
         },
         {
-          "toggle": [2],
-          "content": "Won for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
+          "toggle": [4, 5],
           "content": "Merged 27 pull requests and committed 2636 lines of code, worked on translations and documentation."
-        },
-        {
-          "toggle": [5],
-          "content": "Designed a new tshirt for the organization! No one wanted to put it in print because it was ugly. Oof."
         },
         {
           "toggle": [5],
@@ -118,10 +119,17 @@
       ]
     },
     {
+      "thing": "Top 21% of Contributors",
+      "description": "Stack Overflow",
+      "date": "2018",
+      "toggle": [3, 4, 5],
+      "points": []
+    },
+    {
       "thing": "Finalist and Google Prize",
       "description": "Hack the North (1000 Participants)",
       "date": "Sept 2017",
-      "toggle": [2, 3, 4, 5],
+      "toggle": [3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
@@ -130,10 +138,6 @@
         {
           "toggle": [5],
           "content": "End product was a $20 webcam taped to a can of redbull with a beer bottle opener as a 'nib'."
-        },
-        {
-          "toggle": [],
-          "content": "Won a set of Nintendo Switches, and the finalist prize which was basically just 'spend a couple hundred dollars however you want'. I chose to get new speakers, airpods and a brand new standing desk. I don't actually use the standing desk because I'm lazy."
         }
       ]
     },
@@ -141,15 +145,11 @@
       "thing": "Best Use of Stdlib",
       "description": "Hack the 6ix (300 Participants)",
       "date": "Aug 2018",
-      "toggle": [2, 3, 4, 5],
+      "toggle": [3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
           "content": "Built a <a href='https://devpost.com/software/polycode'>command line tool and Atom plugin</a> that translates JS and Python between spoken languages."
-        },
-        {
-          "toggle": [5],
-          "content": "Took home a third Nintendo Switch in less than a year. Kijiji history getting real sketchy."
         }
       ]
     },
@@ -157,15 +157,11 @@
       "thing": "Finalist and Best Use of Stdlib",
       "description": "U of T Hacks (500 Participants)",
       "date": "Jan 2018",
-      "toggle": [2, 3, 4, 5],
+      "toggle": [3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
           "content": "Built a native Android app to play a <a href='https://devpost.com/software/sms-treasure'>location-based game</a> based on a peer-to-peer SMS network."
-        },
-        {
-          "toggle": [5],
-          "content": "Won a Nintendo switch. Also the project is what I claim to be the second most useless hack ever to make finalist at a hackathon. The first is a game where you guess if Trump's tweet is 'bullshit'."
         }
       ]
     },
@@ -177,7 +173,7 @@
       "points": [
         {
           "toggle": [5],
-          "content": "Built a smart notetaker designed to integrate with drawing diagrams and doing math. Also recorded audio intelligently, though some would argue it to be unethical."
+          "content": "Built a smart notetaker designed to integrate with drawing diagrams and doing math."
         }
       ]
     },
@@ -185,7 +181,7 @@
       "thing": "2nd Place and Best Game",
       "description": "Massey Hacks 3",
       "date": "March 2017",
-      "toggle": [3, 4, 5],
+      "toggle": [4, 5],
       "points": [
         {
           "toggle": [5],
@@ -214,52 +210,76 @@
     },
     {
       "thing": "Avogadro Contest",
-      "description": "Top 200 in Canada",
-      "date": "May 2017",
+      "description": "Top 5% in Canada",
+      "date": "May 2016",
       "toggle": [5],
       "points": [
         {
           "toggle": [5],
-          "content": "It's a chemistry contest. Wow look a non-software thing."
+          "content": "It's a chemistry contest. Wow look a non-software thing. Did this to impress a boy, who was not impressed."
         }
       ]
     }
   ],
   "hobbies": [
     {
-      "thing": "Competitive Programming",
-      "description": "Online Judges",
-      "date": "Occasionally",
-      "toggle": [4, 5],
+      "thing": "Aerial Arts",
+      "description": "Mostly hoop, some silks, rope and pole",
+      "date": "August 2018 - Now",
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [4, 5],
-          "content": "Writes <a href='https://github.com/kipply/competitive-programming'>solutions</a> to contest problems. Has authored <a href='https://dmoj.ca/user/kipply/solved#pp-load-link-wrapper'>some problems</a> too."
+          "toggle": [2, 3, 4, 5],
+          "content": "I get really sad when I don't go to the circus space for too long <3."
         },
         {
-          "toggle": [5],
-          "content": "Wrote and published some problems."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Helped organize logistics DMPG, an onsite contest with 200 attendees from the region."
+          "toggle": [2, 3, 4, 5],
+          "content": "I've also started playing around with poi and juggling!"
         }
       ]
     },
     {
-      "thing": "3D Printing",
-      "description": "Home printer, Monoprice Select Plus",
-      "date": "May 2019",
-      "toggle": [4, 5],
+      "thing": "Reading",
+      "description": "Money Stuff, Wait but Why, some others",
+      "date": "",
+      "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "Uses printer to print small items for home use and printing flow toys!"
+          "toggle": [2, 3, 4, 5],
+          "content": "I don't read a lot of full books, but I never miss an article of Money Stuff (about finance)"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "I'm working through Wait but Why, and sometimes read Slate Star Codex. A lot of my reading time goes towards Reddit / Twitter etc"
         }
       ]
     },
     {
-      "thing": "Carnivorous Plant Collector",
+      "thing": "Consuming Media",
+      "description": "Anime, TV, Film, etc",
+      "date": "All the damn time",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Anime is always great, and I watch some of the big movies. I watch a lot of TV shows (drama, sitcom, reality, whatever) though the one that still stands out to me in Hannibal."
+        }
+      ]
+    },
+    {
+      "thing": "Beat Saber",
+      "description": "The VR game where you hit stuff to music",
+      "date": "August 2019 - Now",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [4, 5],
+          "content": "I have an Oculus Quest, plays Expert+"
+        }
+      ]
+    },
+    {
+      "thing": "Carnivorous Plant Collecting",
       "description": "My Basement",
       "date": "May 2016 - Sept 2018",
       "toggle": [1, 2, 3, 4, 5],
@@ -270,33 +290,40 @@
         },
         {
           "toggle": [3, 4, 5],
-          "content": "Grew plants from seed, leaf cuttings and had a custom built lighting and watering setup."
+          "content": "Grew plants from seed, leaf cuttings and had a custom built lighting and watering setup. Washed and mixed my own soils."
         }
       ]
     },
     {
-      "thing": "Aerial Arts",
-      "description": "Toronto Circus Collective",
-      "date": "August 2018 - Now",
-      "toggle": [1, 2, 3, 4, 5],
+      "thing": "Competitive Programming",
+      "description": "Online Judges",
+      "date": "Did it for a bit and not anymore",
+      "toggle": [4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "Primarily practices <a target=\"_blank\" href='https://drive.google.com/file/d/1L705zdV4zWG4XDoSxX8ZuebGrPjiv36K/view?usp=sharing'>aerial hoop</a>. I train for hours every week! I also do poi, silks, rope, trapeze and pole. I hope to get something to better document my training in the near future™"
+          "toggle": [4, 5],
+          "content": "Writes <a href='https://github.com/kipply/competitive-programming'>solutions</a> to contest problems. Has authored <a href='https://dmoj.ca/user/kipply/solved#pp-load-link-wrapper'>some problems</a> too."
         },
         {
           "toggle": [5],
-          "content": "I get really sad when I don't go to the circus space for too long <3."
+          "content": "Helped organize logistics DMPG twice, an onsite contest with 200 attendees from the region."
         }
       ]
+    },
+    {
+      "thing": "3D Printing",
+      "description": "Home printer, Monoprice Select Plus",
+      "date": "Past",
+      "toggle": [4, 5],
+      "points": []
     }
   ],
   "stuff": [
-        {
+    {
       "thing": "Organizer",
       "description": "U of T Hacks",
       "date": "Aug 2018 - Feb 2019",
-      "toggle": [3, 4, 5],
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [5],
@@ -311,24 +338,63 @@
           "content": "Worked on logistics for a hackathon that supported 550 amazing participants for 36 hours <3."
         },
         {
-          "toggle": [4, 5],
+          "toggle": [5],
           "content": "Personally brought in highly body positive fitness sessions and FREE MASSAGES for participants "
         }
       ]
     },
     {
-      "thing": "Event Coordinator",
+      "thing": "Event & Hackathon Coordinator",
       "description": "Toronto Hacker Club",
       "date": "Dec 2016 - Oct 2017",
-      "toggle": [3, 4, 5],
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [3, 4, 5],
           "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
+        },        
+        {
+          "toggle": [3, 4, 5],
+          "content": "Where's my money? <a href='https://www.cbc.ca/news/canada/toronto/this-toronto-tech-ceo-is-accused-of-taking-advantage-of-high-school-kids-owes-them-16k-1.4476029/'>News Article</a>"
         },
         {
           "toggle": [4, 5],
           "content": "Organized workshops with Google and Mozilla, as well computing contests and children's events."
+        }
+      ]
+    },
+    {
+      "thing": "Lead Organizer",
+      "description": "Terrible Hack Waterloo",
+      "date": "Nov 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "YCombinator Quitter",
+      "description": "Hyperdoc",
+      "date": "Dec 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Got into YC W2020 with <a href='https://www.gethyperdoc.com/'>Hyperdoc</a> (check them out!) and am now only semi-involved."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "I don't have much to say about running a startup, but I do have a lot to say about managing fomo and interviewing with YC."
+        }
+      ]
+    },
+    {
+      "thing": "Raytracer",
+      "description": "Side Project",
+      "date": "Summer 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Built a raytracer that could make a Cornell Box as well as things such as metallics, dielectrics and could do image mapping."
         }
       ]
     },
@@ -347,70 +413,64 @@
           "content": "Builds software solutions, such as matchmaking apps, ticketing systems or websites."
         }
       ]
-    },
+    }
+  ],
+  "events": [
     {
-      "thing": "Organizing Events",
-      "description": "With Organizations",
-      "date": "All the time",
-      "toggle": [1],
+      "thing": "Recurse Center",
+      "description": "3-month programming retreat in NYC",
+      "date": "Incoming May 2020",
+      "toggle": [2, 3, 4, 5],
+      "points": []
+    },    
+    {
+      "thing": "CFAR Workshop",
+      "description": "5-day rationality workshop",
+      "date": "Incoming March 2020",
+      "toggle": [2, 3, 4, 5],
       "points": []
     },
     {
-      "thing": "Hackathoner",
+      "thing": "Hackathons",
       "description": "Various of Universities and Venues",
       "date": "November 2015 - August 2018",
-      "toggle": [3, 4, 5],
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [3],
-          "content": "Stopped hacking around 2018 because I like sleep. I still enjoy mentoring / giving workshops at hackathons!"
+          "content": "I grew up with hackathons but now I'm too tired and they're not as beneficial as they used to be."
         },
         {
-          "toggle": [4],
-          "content": "Mentored at several hackathons, gave workshops and judged at others. You can find me probably at most hackathons I'm near!"
+          "toggle": [3],
+          "content": "Mentored at several hackathons, gave workshops and judged at others."
         },
         {
           "toggle": [4, 5],
-          "content": "16 wins and maybe counting?"
-        },
-        {
-          "toggle": [5],
-          "content": "Judged at Hack the Hammer and JAM Hacks 2. Gave a workshop at Hack the Hammer"
-        },
-        {
-          "toggle": [5],
-          "content": "Mentored at a lot of hackathons. For hackathons that have a system where the mentor is assigned to a team, all my teams have won something <3. They're smart cookies."
+          "content": "16 wins and no longer counting"
         }
       ]
     },
     {
-      "thing": "Google I/O Attendee",
-      "description": "Google Code Jam to I/O Scholarship",
-      "date": "May 2018",
-      "toggle": [2, 3, 4, 5],
-      "points": []
-    },
-    {
-      "thing": "F8 Attendee",
-      "description": "F8 Scholarship",
-      "date": "May 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Saw the Zucc irl."
-        }
-      ]
-    },
-    {
-      "thing": "Speaker and Conference Attendee",
+      "thing": "Speaker",
       "description": "Wolfram Technology Conference",
       "date": "Oct 2017",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
+          "toggle": [2, 3, 4, 5],
           "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
+        }
+      ]
+    },    
+    {
+      "thing": "Speaker",
+      "description": "PyCon Canada",
+      "date": "Nov 2019",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Spoke about Python design history and some weird highlights."
         }
       ]
     },
@@ -422,7 +482,42 @@
       "points": [
         {
           "toggle": [2, 3, 4, 5],
-          "content": "'Applied Rationality' camp, 10 days with ~30 people, free boarding/sustinance. See <a href='https://sparc-camp.org/' target=\"_blank\">their website</a> for more info "
+          "content": "'Applied Rationality' camp, 10 days with ~30 people. See <a href='https://sparc-camp.org/' target=\"_blank\">their website</a> for more info."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "I can't quite put it into words, but it was a very impactful experience."
+        }
+      ]
+    },
+    {
+      "thing": "Hack Lodge NY",
+      "description": "Attendee",
+      "date": "Sept 2019",
+      "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [4, 5],
+          "content": "Learned to gamble and build HTML5 games. Built the classic touhou bullet hell game with a rhythm element for the ultimate weeb game."
+        }
+      ]
+    },
+    {
+      "thing": "Google I/O",
+      "description": "Google Code Jam to I/O Scholarship",
+      "date": "May 2018",
+      "toggle": [2, 3, 4, 5],
+      "points": []
+    },
+    {
+      "thing": "F8",
+      "description": "F8 Conference Scholarship",
+      "date": "May 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [5],
+          "content": "Saw the Zucc irl."
         }
       ]
     }

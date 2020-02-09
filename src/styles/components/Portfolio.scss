@@ -26,6 +26,9 @@
         box-shadow: 0 0 5px lighten($primary, 25%);
       }
     }
+    .rc-slider-mark-text {
+      width: 100px;
+    }
   }
 
   .portfolio-box {

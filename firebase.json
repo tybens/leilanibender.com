@@ -1,7 +1,4 @@
 {
-  "database": {
-    "rules": "database.rules.json"
-  },
   "hosting": {
     "public": "build",
     "headers": [
@@ -48,14 +45,13 @@
         "destination": "/index.html"
       },
       {
+        "source": "/hacklodge",
+        "destination": "/hecclodge/index.html"
+      },
+      {
         "source": "/blog",
         "destination": "/blog/index.html"
       }
-    ]
-  },
-  "functions": {
-    "predeploy": [
-      "npm --prefix \"$RESOURCE_DIR\" run lint"
     ]
   }
 }

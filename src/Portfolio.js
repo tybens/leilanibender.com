@@ -13,7 +13,7 @@ class Portfolio extends Component {
     super(props);
     this.state = {
       data,
-      slider: 3,
+      slider: 2,
     };
   }
   render() {
@@ -24,15 +24,15 @@ class Portfolio extends Component {
           <center>
             <span style={{color: '#808080'}}>Last Updated August 2018</span>
             <Slider
-              defaultValue={3}
+              defaultValue={2}
               min={1}
               max={5}
               marks={{
-                1: 'Very Few Things',
-                2: 'Fewer Things',
-                3: 'Default',
-                4: 'More Things',
-                5: 'Excruciating Number of Things with Excruciating Detail',
+                1: 'Less things',
+                2: 'Default',
+                3: 'More things',
+                4: 'Lots of things',
+                5: 'Shit List',
               }}
               dots
               onChange={v => this.setState({ slider: v })}
@@ -43,16 +43,14 @@ class Portfolio extends Component {
               <Col xs={12} md={6} className="item">
                 <PortfolioSection
                   data={this.state.data.experience}
-                  title="Work"
+                  title="Employment"
                   slider={this.state.slider}
                 />
-                {this.state.slider > 1 > 0 &&
-                  <PortfolioSection
-                    data={this.state.data.stuff}
-                    title="Misc"
-                    slider={this.state.slider}
-                  />
-                }
+                <PortfolioSection
+                  data={this.state.data.events}
+                  title="Things I've Been To"
+                  slider={this.state.slider}
+                />
               </Col>
               <Col xs={12} md={6} className="item">
                 <PortfolioSection
@@ -61,10 +59,17 @@ class Portfolio extends Component {
                   slider={this.state.slider}
                 />
                 <PortfolioSection
-                  data={this.state.data.awards}
-                  title="Awards"
+                  data={this.state.data.stuff}
+                  title="Misc"
                   slider={this.state.slider}
                 />
+                {this.state.slider > 2 &&
+                  <PortfolioSection
+                    data={this.state.data.awards}
+                    title="Awards"
+                    slider={this.state.slider}
+                  />
+                }
               </Col>
             </Row>
           </div>
@@ -86,7 +91,6 @@ class PortfolioSection extends Component {
   }
 
   componentDidUpdate(prevProps) {
-    // Typical usage (don't forget to compare props):
     if (this.props.slider !== prevProps.slider) {
       this.setState({
         slider: this.props.slider

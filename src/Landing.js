@@ -4,6 +4,7 @@ import { Row, Col } from 'react-bootstrap';
 import LinkedIn from 'react-icons/lib/fa/linkedin';
 import Github from 'react-icons/lib/fa/github';
 import Instagram from 'react-icons/lib/fa/instagram';
+import Twitter from 'react-icons/lib/fa/twitter';
 import Envelope from 'react-icons/lib/fa/envelope';
 
 import meImg from './img/me.jpg';
@@ -37,22 +38,18 @@ const Landing = () => (
             My site randomizes many elements per load! I did this because choosing things is hard.
           </p>
           <p>
-            I'm an aspiring Software Developer from suburban Toronto. My experience currently consists of frontend and backend web engineering at Hatch Canada and Shopify along with personal projects and open source contribution.
-            Check out <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }} target="_blank">my resume</a>!
+            Recruiters! Here is <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }} target="_blank">my resume</a>.
           </p>
           <p>
-            I currently spend my time working at Shopify, coding, training in aerial arts and figuring out education for myself. I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old.
+            I currently write code at Shopify, focusing on TruffleRuby and making Ruby implementations better. Apart from code, I consume a lot of anime and train in circus arts (aerials, a bit of flow and pole). I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old. 
           </p>
           <p>
-            Highlights from my past include a collection of 200+ carnivorous plants and going to a lot of hackathons. I've also organized two hackathons and hope to do more in the future.
-          </p>
-          <p>
-            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>.
+            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>. I'm always happy to grab coffee and have good conversations! 
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>
-          <a href="https://www.linkedin.com/in/carol-chen" target="_blank" rel="noredirect no referrer"><LinkedIn /></a>
           <a href="https://github.com/kipply" target="_blank" rel="noredirect no referrer"><Github /></a>
+          <a href="https://twitter.com/kipperrii" target="_blank" rel="noredirect no referrer"><Twitter /></a>
           <a href="https://instagram.com/kipperrii/" target="_blank" rel="noredirect no referrer"><Instagram /></a>
           <a href="mailto:hello@carolchen.me" target="_blank" rel="noredirect no referrer"><Envelope /></a>
         </Col>
