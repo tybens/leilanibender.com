@@ -3,7 +3,7 @@
     {
       "thing": "Shopify",
       "description" : "Production Engineering Intern",
-      "date": "Sep - Dec 2019",
+      "date": "Jan - May 2020",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
@@ -11,7 +11,7 @@
           "content": "Working on TruffleRuby and other Ruby implementation related things"
         }
       ]
-    },      
+    },
     {
       "thing": "Lighthouse Labs",
       "description" : "Web Programming Instructor",
@@ -23,7 +23,7 @@
           "content": "Taught full-stack development courses to adult part-time bootcamp students."
         }
       ]
-    },    
+    },
     {
       "thing": "Shopify",
       "description" : "Software Developer Intern, Channels",
@@ -352,7 +352,7 @@
         {
           "toggle": [3, 4, 5],
           "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
-        },        
+        },
         {
           "toggle": [3, 4, 5],
           "content": "Where's my money? <a href='https://www.cbc.ca/news/canada/toronto/this-toronto-tech-ceo-is-accused-of-taking-advantage-of-high-school-kids-owes-them-16k-1.4476029/'>News Article</a>"
@@ -372,17 +372,17 @@
     },
     {
       "thing": "YCombinator Quitter",
-      "description": "Hyperdoc",
+      "description": "",
       "date": "Dec 2019",
       "toggle": [2, 3, 4, 5],
       "points": [
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Got into YC W2020 with <a href='https://www.gethyperdoc.com/'>Hyperdoc</a> (check them out!) and am now only semi-involved."
+          "content": "I don't have much to say about running a startup, but I do have a lot to say about managing fomo and interviewing with YC."
         },
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "I don't have much to say about running a startup, but I do have a lot to say about managing fomo and interviewing with YC."
+          "toggle": [4, 5],
+          "content": "Y-Combinator when you can Not-Combinator lmao"
         }
       ]
     },
@@ -395,6 +395,10 @@
         {
           "toggle": [2, 3, 4, 5],
           "content": "Built a raytracer that could make a Cornell Box as well as things such as metallics, dielectrics and could do image mapping."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +10%-ed my programming abilities."
         }
       ]
     },
@@ -419,15 +423,8 @@
     {
       "thing": "Recurse Center",
       "description": "3-month programming retreat in NYC",
-      "date": "Incoming May 2020",
-      "toggle": [2, 3, 4, 5],
-      "points": []
-    },    
-    {
-      "thing": "CFAR Workshop",
-      "description": "5-day rationality workshop",
-      "date": "Incoming March 2020",
-      "toggle": [2, 3, 4, 5],
+      "date": "Sometime soon, when I have time and when COVID-19 is through",
+      "toggle": [4, 5],
       "points": []
     },
     {
@@ -461,7 +458,7 @@
           "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
         }
       ]
-    },    
+    },
     {
       "thing": "Speaker",
       "description": "PyCon Canada",
@@ -471,7 +468,11 @@
         {
           "toggle": [2, 3, 4, 5],
           "content": "Spoke about Python design history and some weird highlights."
-        }
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "It's very all-over-the-place, but I wrote a loosely related <a href='https://carolchen.me/blog/2020/02/24/Python-History-Since-the-Fifteenth-Century/'>blog post</a>."
+        },
       ]
     },
     {

@@ -41,10 +41,10 @@ const Landing = () => (
             Recruiters! Here is <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }} target="_blank">my resume</a>.
           </p>
           <p>
-            I currently write code at Shopify, focusing on TruffleRuby and making Ruby implementations better. Apart from code, I consume a lot of anime and train in circus arts (aerials, a bit of flow and pole). I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old. 
+            I currently write code at Shopify, focusing on TruffleRuby and making Ruby implementations better. Apart from code, I consume a lot of media and train in circus arts (aerials, a bit of flow and pole). I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old. 
           </p>
           <p>
-            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>. I'm always happy to grab coffee and have good conversations! 
+            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>. Also, I enjoy conversations about tech and other stuff, never hesitate to reach out to me (preferably via email). 
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>

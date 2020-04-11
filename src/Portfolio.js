@@ -22,7 +22,7 @@ class Portfolio extends Component {
         <section id="portfolio">
           <h2 className="section-heading">THINGS I'VE DONE</h2>
           <center>
-            <span style={{color: '#808080'}}>Last Updated August 2018</span>
+            <span style={{color: '#808080'}}>Last Updated Jan 2020</span>
             <Slider
               defaultValue={2}
               min={1}
