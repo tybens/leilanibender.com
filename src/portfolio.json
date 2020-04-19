@@ -398,7 +398,7 @@
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +10%-ed my programming abilities."
+          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +5%-ed my programming abilities."
         }
       ]
     },
@@ -472,7 +472,7 @@
         {
           "toggle": [2, 3, 4, 5],
           "content": "It's very all-over-the-place, but I wrote a loosely related <a href='https://carolchen.me/blog/2020/02/24/Python-History-Since-the-Fifteenth-Century/'>blog post</a>."
-        },
+        }
       ]
     },
     {
