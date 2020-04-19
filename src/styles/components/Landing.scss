@@ -3,6 +3,7 @@
 
 .jumbotron {
   background-color: transparent !important;
+  padding-top: 20%!important;
   animation: fadein 2s;
   padding-top: 10%;
 }
@@ -10,21 +11,24 @@
 #home {
   background:
     linear-gradient(
-      rgba($primary, 0.45),
-      rgba($primary, 0.45)
+      rgba(darken($primary, 20%), 0.45),
+      rgba(darken($primary, 20%), 0.45)
     ),
-    url("https://firebasestorage.googleapis.com/v0/b/personal-site-c03f4.appspot.com/o/static%2Fmt.svg?alt=media");
+    url("../../backgrounds/scene0.png");
   background-position: center;
   background-size: cover;
   opacity: 1;
   @include transition(background 1.5s linear);
-  text-align: center;
+  // text-align: center;
   height: 100vh;
   .section-heading {
     font-size: 4em;
   }
   @media screen and (orientation:portrait) {
     padding-top: 25%;
+  }
+  .section-heading {
+    text-align: left;
   }
 }
 

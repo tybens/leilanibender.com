@@ -27,8 +27,6 @@ done = () => {
               <Typist.Backspace count={25} delay={200} />
               <span>Software Developer</span>
               <Typist.Backspace count={18} delay={200} />
-              <span>Hackathon Organizer</span>
-              <Typist.Backspace count={19} delay={200} />
               <span>Hug and ❤️ Enthusiast</span>
               <Typist.Backspace count={21} delay={200} />
               <span>Carol Chen</span>
