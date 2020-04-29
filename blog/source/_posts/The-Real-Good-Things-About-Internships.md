@@ -23,7 +23,7 @@ Learning is good. Especially in internships, your focus should be investing in y
 
 ## impact
 
-A lot of companies end up giving interns a special project of sorts. While the project may be substantial, interesting and potentially impactful, they often get iced as soon as the intern leaves. This may not be valuable to _everyone_, but at Shopify I was apart of the weekly sprints and worked on producing features and fixes that other engineers were actually relying on. Not having intern projects would also help you better understand how much you'd enjoy working at a company full-time. The downside of course, is that you might not actually have anything to call "your own". But then... the next section.
+A lot of companies end up giving interns a special project of sorts. While the project may be substantial, interesting and potentially impactful, they often get iced as soon as the intern leaves. This may not be valuable to _everyone_, but at Shopify I was apart of the weekly sprints and worked on producing features and fixes that other engineers were actually relying on. Not having intern projects would also help you better understand how much you'd enjoy working at a company full-time. The downside of course, is that you might not actually have anything to call "your own" and you will lose engineering time to things like planning meetings (which are important and fun too!). But then... the next section.
 
 ## being a champion
 
@@ -45,7 +45,7 @@ This is the aspect I think Shopify is likely most special for, and the reason I 
 
 So keep an eye out for Shopify internships postings, and go do internships in general! Internships at Shopify run three times a year (January, May, September) for 4 to 8 months. Applications open 4 months before start dates~
 
-Feel free to  me (`hello@carolchen.me`) with any questions about choosing internships, or questions about working at Shopify or anything! Courage to talk to strangers on the internet will earn you my respect <3. However, please try to avoid questions along the lines of "how do I get an internship?" as quite frankly I don't have insight beyond knowing exactly what I did. Requests for resume reviews, for example, is something I could actually help out with.
+Feel free to email me (`hello@carolchen.me`) with any questions about choosing internships, or questions about working at Shopify or anything! Courage to talk to strangers on the internet will earn you my respect <3. However, please try to avoid questions along the lines of "how do I get an internship?" as quite frankly I don't have insight beyond knowing exactly what I did. Requests for resume reviews, for example, is something I could actually help out with.
 
 <3,
-Carol
+Carol, [find me on twitter](https://twitter.com/kipperrii)

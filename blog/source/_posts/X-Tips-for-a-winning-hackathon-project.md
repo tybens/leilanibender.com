@@ -49,4 +49,6 @@ Other silly things that aren't quite worth another point or related to winning;
  - Feed yourself. But not just chips. Have a salad.
  - Write decent commit messages; especially for the last couple hours. Finding a bug during demos and having no idea when it happened is very yikes.
  - Other people will hate you if you use blockchain wrong. Or if you just plug a random model into AR. Or if you use an API and advertise your "machine learning" hack.  ¯\\\_(ツ)\_/¯. It will sometimes push you towards a win but do you really want to win that way? DO YOU?
- - <3
+
+ <3,
+ Carol, [find me on twitter](https://twitter.com/kipperrii)

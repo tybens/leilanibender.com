@@ -31,3 +31,6 @@ Why is the CT Hug optimal for group hugs?
 2. Hugs are even better quality than one-on-one hugs. With average human sizes, each person can hug two people in front of them.
 3. Extra contact point with less than 12 people, as the circle closes in a way where your sides touch people on the inside of the circle
 4. Not line-like, making it a good position for communication.
+
+<3,
+Carol, [find me on twitter](https://twitter.com/kipperrii)
