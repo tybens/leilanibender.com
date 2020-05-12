@@ -5,7 +5,7 @@ date: 2020-04-20 19:04:30
 
 I mainly wrote this blog post to help advertise Shopify as a great place to intern at, but I'm sure all of these aspects can be found at other great companies, though maybe not all at one company/team. I recommend this blog post not only for those looking to apply to Shopify, but to know how great internships get and what qualities you would want from an internship. I also believe all these good things can be found at companies regardless of "prestige". Sure you might miss out on some more romanticized internship-perks like free lunches, but I think this list has some pretty important items.
 
-Because I am an artist, here is a timeline of my career for context (and mostly because my internship schedule at Shopify was weird). I'm currently writing this in my last week at Shopify as I have decided to go elsewhere full-time. This timeline starts in November 2015 in my grade nine year.
+Because I am an artist, here is a timeline of my career for context (and mostly because my internship schedule at Shopify was weird). I'm currently writing this in my last week at Shopify as I have decided to go elsewhere full-time, though I still love Shopify enough that I chose to intern there over joining a YCombinator cohort! This timeline starts in November 2015 in my grade nine year.
 
 [<img src="timeline.png">](timeline.png)
 
