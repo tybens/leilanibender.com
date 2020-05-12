@@ -3,7 +3,7 @@ title: JIT Compilers are Cute: A Tour of Different JIT Implementations
 date: 2018-09-14 11:39:30
 ---
 
-JIT is a super cute way to compile programs! They're typically much faster, as well as much more nuanced. A paragraph is probably enough to explain the basic purposes of a JIT, though this post goes more into how different JITs are implemented as there is a huge variety. 
+JIT is a super cute way to compile programs! They're typically much faster, as well as much more nuanced. This post goes into how a variety of JITs work to better model how they serve the needs of different languages and make fast programs!
 
 ## Background (skip if you have an idea how languages are implemented)
 When we run a program, they're either interpreted or compiled in some way. The compiler/intepreter is sometimes referred to as the "implementation" of a lanugage, since one language can have many implementations. 
@@ -13,7 +13,7 @@ An interpreter is a program that directly executes your code. The interpreter is
 function interpret(string code) {
 	if (code == "a + b") {
 		return get_var_from_mem("a") + get_var_from_mem("b")
-	} elif (code == "a = 5") {
+	} else if (code == "a = 5") {
 		store_var_to_mem("a", 5)
 	} else {
 		return "unknown operation"
