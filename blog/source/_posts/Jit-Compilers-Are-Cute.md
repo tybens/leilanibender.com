@@ -40,7 +40,7 @@ Another important note is that interpreted languages are typically slower for va
 
 ## So what is a JIT? 
 
-A JIT compiler doesn't compile code Ahead-Of-Time (AOT). Instead, it starts running the program and compiles things at the runtime. This gives the JITs flexibility for dynamic language features, while maintaining some speed from optimized machine code output. This means that JIT-compiling C would make it slower as we'd just be adding the compilation time to the execution time.  JIT-compiling Python would be fast, as executing machine code + compilation is still faster than interpreting, especially since the JIT has no need to write to a file. JITs also improve in speed by being able to optimize on information that is only available at runtime. 
+A JIT compiler doesn't compile code Ahead-Of-Time (AOT). Instead, it starts running the program and compiles things at the runtime. This gives the JITs flexibility for dynamic language features, while maintaining some speed from optimized machine code output. JIT-compiling C would make it slower as we'd just be adding the compilation time to the execution time. JIT-compiling Python would be fast, as executing machine code + compilation is still faster than interpreting, especially since the JIT has no need to write to a file. JITs also improve in speed by being able to optimize on information that is only available at runtime. 
 
 ## Julia, an elegant lazy JIT
 
