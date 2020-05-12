@@ -29,7 +29,7 @@ function compile(string code) {
 }
 ```
 
-The difference between a compiled and interpreted language is actually much more nuanced. C, Go and Rust are clearly compilers, as they output a machine code file - which can be understood natively by the computer. PHP is a fully interpreted language. 
+The difference between a compiled and interpreted language is actually much more nuanced. C, Go and Rust are clearly compiled, as they output a machine code file - which can be understood natively by the computer. PHP is a fully interpreted language. 
 
 However, compilers can translate to any target language. Java for example, has a two-step implementation. The first is compiling Java source to bytecode, which is an Intermediate Representation (you may see this term abbrieviated to IR elsewhere). The bytecode is then JIT compiled. Java is known to be a compiled language. 
 
