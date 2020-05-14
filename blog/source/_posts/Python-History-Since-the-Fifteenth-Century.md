@@ -212,9 +212,7 @@ This is a very high level abstraction and somewhat misleading. But tl;dr the GIL
 
 ### Julia
 
-When I think of "things that are like Python", Julia is the first thing that pops up. This is really awesome, because Julia is really awesome (opinions, oops) and that reflects well on Python. Julia's primary connection to Python is that it lets you use Python functions. Additionally, Julia is also well known for mathematical / data science computations which explains the similarities. 
-
-In particular, Julia quotes "We want something as usable for general programming as Python" on their [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/) post. Though Julia is fundamentally different by being compiled and JITted, , no language comes syntactically closer to Python. 
+Julia quotes "We want something as usable for general programming as Python" on their [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/) post. Though Julia is fundamentally different by being JITed-ish and more static, no language comes syntactically closer to Python. 
 
 
 ### Ruby
