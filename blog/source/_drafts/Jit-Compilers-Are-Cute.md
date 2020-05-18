@@ -42,7 +42,7 @@ A JIT compiler doesn't compile code Ahead-Of-Time (AOT). Instead, it starts runn
 ## Julia, an elegant lazy JIT
 A common theme between compiled languages is that they're statically typed. That means when you create a value, you tell the computer what type it is and it can be guaranteed at compile time. 
 
-Julia is dynamically typed, not conventionally compiled (I'd describe it as jit-ish compiled), so it does fit that theme. However, at the compiler level, Julia is much closer to being statically typed. 
+Julia is dynamically typed and not conventionally compiled, so it does fit that theme. However, at the compiler level, Julia is much closer to being statically typed. 
 
 ```julia
 function multiply(x, y)
@@ -91,7 +91,7 @@ The simplicity of this kind of jitting makes it easy for Julia to also supply AO
 ## Tracing with Lua and Pypy
 Julia's JIT is very jitty in the sense that it compiles right before the code needs to be used. Most JITs however, are not actually all about compiling code just-in-time, but compiling optimal code at an optimal time. 
 
-LuaJIT employs a method called tracing. Pypy does meta-tracing, which involves using a system to generate tracing interpreters and JITs. This allows the generated JIT to also be adapted to the execution of the program. Unfortunately, the implementation of the meta-tracing system is not within the scope of this post, and any references I make to the Pypy JIT will mostly be about the generated JITs.
+LuaJIT employs a method called tracing. Pypy does meta-tracing, which involves using a system to generate tracing interpreters and JITs. This allows the generated JIT to also be adapted to the execution of the program. Unfortunately, the implementation of the meta-tracing system is not within the scope of this post, and any references I make to the Pypy JIT will mostly be about the generated JITs. SpiderMonkey, the JS runtime for Firefox is also based on tracing.  
 
 LuaJIT is not the reference or default implementation of Lua, but a project on it's own. I would describe LuaJIT as shockingly fast, and it describes itself as one of the fastest dynamic language implementations -- which I buy fully. The same goes for Pypy, for which the reference implementation is CPython. Tracing brings JITs more distinction from AOT, by using an interpreter along with a JIT compiler. This means, that sometimes code is interpreted at runtime instead of compiled and is thus not very jitty! It's not just-in-time compiled, it's late and maybe even never! This is a valid strategy, because compile time and storing+retrieving compiled code takes up some amount of time and it may never be valuable to leave the interpreter.
 
@@ -108,7 +108,7 @@ Another aspect to consider, is that optimizations cannot be guaranteed. For exam
 if False: 
   print("FALSE")
 ```
-For any sane program, the conditional will always be true. But for Python 2, the value of `False` could be reassigned and thus if the statement were in a loop, it could be redefined somewhere else. Pypy is this case will build a "guard". When a guard fails, the JIT will fall back to the interpreting loop. Pypy uses another constant (200), called _trace eagerness_ to decide whether to compile the rest of the path till the end of the loop. That sub-path is called a _bridge_. 
+For any sane program, the conditional will always be true. But in Python 2, the value of `False` could be reassigned and thus if the statement were in a loop, it could be redefined somewhere else. Pypy is this case will build a "guard". When a guard fails, the JIT will fall back to the interpreting loop. Pypy uses another constant (200), called _trace eagerness_ to decide whether to compile the rest of the path till the end of the loop. That sub-path is called a _bridge_. 
 
 Pypy also exposes all of these as arguments that can be tweaked at execution, along with configuration for unrolling (expanding loops) and inlining. It also exposes some hooks so we can see when things are compiled! 
 
@@ -183,7 +183,7 @@ Warmup adds complexity to measuring efficiency of a programming language! It's f
 
 There's a bunch more things to discuss in regards to warmup times, as it has a bunch of tricky aspects. They aren't great for summaries so there will be links at the end. 
 
-## JVMs, from Hotspot to Graal
+## JVMs: Hotspot to Graal
 
 ### Partial Evaluation, and Throwback to Meta-tracing
 
