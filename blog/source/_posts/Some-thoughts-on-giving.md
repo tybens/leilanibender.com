@@ -8,9 +8,9 @@ So my recent thoughts about giving have been about how much I give (time, object
 
 Ideally, what I give should be very helpful by some measure, and I should not do have to it out of guilt or responsibility. I got the second one down early, as my giving throughout high school was mostly in organizing educational events or writing open source software. Late in high school, I became familiar with a movement called [Effective Altruism](https://www.effectivealtruism.org/) which really got me thinking about how relatively useless spending tens of thousands of dollars and more man hours than I can count organizing a three-day programming contest for college kids is. 
 
-And so began a guilt trip! All those charity ads about starving African children, abused women, abandoned puppies etc made me feel shitty about myself and the world, not that there's any wrong with that kind of advertising. When I turned 18, I was pretty committed to donating, though I didn't want to do so out of guilt.
+And so began a guilt trip! All those charity ads about starving African children, abused women, abandoned puppies etc made me feel shitty about myself and the world, not that there's any wrong with that kind of advertising. It did make me want to give, not out of generosity or care but because I felt like I didn't deserve things I had, and that I shouldn't be happy. So I pulled a pretty selfish move and didn't donate until I could be happy and confident doing so. 
 
-So here are the things I did / went through to get myself feeling good, and "guilt-free" about donating. This ended with me donating 10,000 to the Future of Humanity Institute!
+So here are the things I did / went through to get myself feeling good, and "guilt-free" about donating. This ended with me donating 10,000 to the Future of Humanity Institute, about 20% of my untaxed income over the past two years.
 
  - Research what it costs to do X for another person. Think about how much you'd spend to get that for yourself, a friend or a stranger on the street.
  - Think about what your "worst case" is. This sounds depressing, but was helpful for me since I was taking money away from potential family illness, unemployment or need to pay tuition. These cases are highly unlikely, and more importantly, my worst case situations did not seem significantly more frightening with some missing money. 

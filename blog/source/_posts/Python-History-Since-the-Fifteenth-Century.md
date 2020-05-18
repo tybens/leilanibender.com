@@ -5,7 +5,7 @@ date: 2020-02-24 11:39:30
 
 When we study history in high school, we read about the history of machine guns, cars, printing press, etc. I imagine that some time in the future, students may sit down and read about the early programming languages and their development.
 
-This post just goes through some of the fun things that have happened with Python. These are not the most fun things as I tried to avoid writing about things that were already nicely summarized, but they will at least be tastefully boring!
+This post just goes through some of the fun things that have happened with Python, most of which are fairly non-technical. These are not the most fun things as I tried to avoid writing about things that were already nicely summarized, but they will at least be tastefully boring!
 
 # Inspiration
 In the mid 1980s, Guido van Rossum was working on ABC, a generally unpopular high-level language intended for teaching and prototyping. Based on his frustrations with ABC, Guido wanted Python to have a large and powerful standard library. Python (first released in 1991) would soon be joined by Java (released in 1995) in having such a standard library.
@@ -173,7 +173,7 @@ def geohash(latitude, longitude, datedow):
     p, q = [('%f' % float.fromhex('0.' + x)) for x in (h[:16], h[16:32])]
     print('%d%s %d%s' % (latitude, p[1:], longitude, q[1:]))
 ```
-We have Skip Montanaro to thank for this!
+We have Skip Montanaro (recently retired, congrats!) to thank for this!
 
 # Some Actual History: 2010 to Present
 
@@ -192,7 +192,7 @@ We have Skip Montanaro to thank for this!
 
 The GIL is silly! Well, no not really it's pretty important and hard to remove. The Global Interpreter Lock makes it so that Python code cannot actually be executed in parallel, so threads are executed concurrently in a way where they're "running at the same time", but never both running at a given time. 
 
-It's not really a "Python was implemented this way so we're stuck with it" thing going on here. Pypy came along and it kept the GIL. Ruby has a GIL. OCaml has a GIL. JS just...doesn't have threads. Yeah yeah, IronPython and Jython got rid of the GIL, but I'd like to hammer it in that there is a great argument for the GIL to be great. 
+It's not just a "Python was implemented this way so we're stuck with it" thing going on here. Pypy came along and it kept the GIL. Ruby has a GIL. OCaml has a GIL. JS just...doesn't have threads. Yeah yeah, IronPython and Jython got rid of the GIL, but I'd like to hammer it in that there is a great argument for the GIL to be great. 
 
 So the silly part is what it was like before Python 3.2. 
 
@@ -212,12 +212,12 @@ This is a very high level abstraction and somewhat misleading. But tl;dr the GIL
 
 ### Julia
 
-Julia quotes "We want something as usable for general programming as Python" on their [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/) post. Though Julia is fundamentally different by being JITed-ish and more static, no language comes syntactically closer to Python. 
+Julia quotes "We want something as usable for general programming as Python" on their [Why We Created Julia](https://julialang.org/blog/2012/02/why-we-created-julia/) post. Though Julia is fundamentally different by being JITed-ish and more static, their common use in data science showcases some fundamental similarities.
 
 
 ### Ruby
 
-The creator of Ruby, Matz said "I wanted a scripting language that was more powerful than Perl, and more object-oriented than Python". It took on a similar engineering path by having a VM (YARV) and creating bytecode for it! Ruby also has a lot of similar syntax such as not having brackets and built itself a very large standard library. A huge difference however, is that Ruby has a lot more complicated grammer (probably inherited through Perl) through the use of an LALR parser instead of Python's home-grown LL parser. 
+The creator of Ruby, Matz said "I wanted a scripting language that was more powerful than Perl, and more object-oriented than Python". It took on a similar engineering path by having a VM (YARV) and creating bytecode for it! Ruby also has a lot of similar syntax such as not having brackets and built itself a very large standard library. A huge difference however, is that Ruby has a lot more complicated grammer (probably inherited through Perl, along with some other crap) through the use of an LALR parser instead of Python's home-grown LL parser. 
 
 ### Go 
 
@@ -233,7 +233,7 @@ Python's usage in machine learning is the one thing that will keep Python in the
 
 Python has also footed pieces of internet history, including Wikipedia, Facebook, Amazon and Google. Though it may not be in the history books, Doki Doki Literature Club is a popular video game built in Python and maybe it'll be games like that to make a retro comeback the same way we have emulators for old consoles today! 
 
-I tried to come up with a tl;dr to this post, but I don't really have one. I started writing with the intention of showing people how important Python will be to history, but I got carried away with more interesting things about random Python shit in my head but I guess that's fine. 
+I tried to come up with a tl;dr to this post, but I don't really have one. I started writing with the intention of showing people how important Python will be to history, but I got carried away with random Python stuffs in my head but I guess that's fine. 
 
 I cited sources / provided additional content where I deemed it would be helpful (ie hard to find with a quick Google). If anyone has questions about anything, please email me at `hello@carolchen.me` since I did quite a bit of research on everything I wrote here. 
 
