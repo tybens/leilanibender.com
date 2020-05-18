@@ -174,7 +174,7 @@ Most examples are much more complex and bring in more problems to deal with. Lua
 3. Pass through IR and sink the unmarked allocations. 
 4. The IR is compiled to machine code!
 
-Mike Pall wrote up more insight into the implementation of this, which is pretty great! Other JITs try to do this as well including Pypy, V8 and JavascriptCore. Pypy and JSCore seem to have it implemented it fairly well, though it's missing from Hotspot and Graal. V8 sort of does this? It doesn't allocation sink by "moving code", rather it sinks it away into a deoptimization, which I'll talk about later!
+Mike Pall wrote up more insight into the implementation of this, which is pretty great! Other JITs try to do this as well including Pypy, V8 and JavascriptCore. Pypy and JSCore seem to have it implemented it fairly well, though it's missing from Hotspot. V8 sort of does this? It doesn't allocation sink by "moving code", rather it sinks it away into a deoptimization, which I'll talk about later!
 
 ## Intermission for Warmup 
 A theme that I haven't explicitly addressed is that JITs need to warmup. Because compile time and profiling time is expensive, JITs will start by executing a program slowly and then work towards "peak performance". For JITs with interpreted counterparts like Pypy, the JIT without warmup performs much worse at the beginning of execution. 
