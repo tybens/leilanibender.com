@@ -3,7 +3,7 @@ title: A Scenic Tour of JIT Compilers
 date: 2018-09-14 11:39:30
 ---
 
-Hi! Welcome to the longest blog post I've ever written. I wanted to write this to demystify compilers as scary low-level things, and give some examples to show how JITs work rather than provide two paragraph descriptions. I recommend skimming the sections about Julia, Tracing and the Intermission if you're already familiar with JITs. 
+Hi! Welcome to the longest blog post I've ever written. I wanted to write this to demystify compilers as scary low-level things, and give some examples to show how JITs work rather than provide two paragraph descriptions. I recommend skimming the sections about Julia, Tracing and the Intermission if you're already familiar with JITs. I originally planned to also write about Javascript compilers (there are three siginificant ones, all JITs) but instead I'll just reference them throughout the article as their major implementation details are also used in other JITs.  
 
 ## Background (skip if you have an idea how languages are implemented)
 When we run a program, they're either interpreted or compiled in some way. The compiler/intepreter is sometimes referred to as the "implementation" of a lanugage, since one language can have many implementations. If I were to say "Python is interpreted", I really mean that the reference implementation of Python is an interpreter. 
@@ -191,18 +191,5 @@ There's a bunch more things to discuss in regards to warmup times, as it has a b
 
 ### The Sea of Nodes as an IR
 
-### Hotspot's C1 and C2
+### Hotspot's C1 and C2, Tiering
 
-### Dynamic Type Inferencing with Graal
-
-## There are a lot of JS Engines: JSCore, V8 and SpiderMonkey 
-
-### V8 lazy deopts
-
-### V8 Function context specialisation 
-
-### JSCore Tiers a lot!
-
-### SpiderMonkey Dead Code Elimination
-
-## Additional Reading
