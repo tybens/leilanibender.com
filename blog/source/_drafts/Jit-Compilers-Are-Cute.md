@@ -157,7 +157,7 @@ There are two cases of virtualisation here. The first is `y`, which will be virt
 
 Other allocation optimizations include avoiding boxing (which LuaJIT does for floating points), and allocations for constants. LuaJIT's really impressive optimization is called _Allocation Sinking Optimization_. It's quite brilliant, and made a 3000+ word post on it's own. Mike Pall of LuaJIT (reasonably) believed that techniques like escape analysis do not work well for dynamic languages, simply because there are so many uncommon escape paths to follow. 
 
-Above, we saw a code path where an escape path is taken and as you could imagine, it's a very common pattern. LuaJIT only has to do a store operation for temporary allocations (compared to the conventional `load` operation typically required, trying ). Often, an allocation will be done inside a loop but may not be used. 
+Above, we saw a code path where an escape path is taken and as you could imagine, it's a very common pattern. LuaJIT only has to do a store operation for temporary allocations (compared to the conventional `load` operation typically required, how allocations work is out of scope). Often, an allocation will be done inside a loop but may not be used. 
 
 ```python
 for i in range(1000):
@@ -165,7 +165,7 @@ for i in range(1000):
     a = i + x
 ```
 
-This is not the most conventional code, but it's likely to come up especially in abstractions of similar patterns. What we want is for `x` to be declared outside of the loop, as it saves us that variable declaration. Say `x` was used in a conditional in the loop, then it should be moved to be inside the conditional. The former is commonly known as "loop-invariant code motion" or "code motion", though the latter is called sinking (less common term). LuaJIT also works with store to load forwarding, which allows LuaJIT to defer the write and _forward_ the data to the read. As a result, the allocation and read is very much removed, with the values live in say, the registers. 
+This is not the most conventional code, but it's likely to come up especially in abstractions of similar patterns. What we want is for `x` to be declared outside of the loop, as it saves us that variable declaration. Say `x` was used in a conditional in the loop, then it should be moved to be inside the conditional. The former is commonly known as "loop-invariant code motion" or "code motion", though the latter is called sinking (less common term). LuaJIT also works with store to load forwarding, which allows LuaJIT to defer the write and _forward_ the data to the read. As a result, the allocation and read is very much removed with the values living in registers*. 
 
 Most examples are much more complex and bring in more problems to deal with. LuaJIT implements them all! Re-sinking occurs when multiple layers of sinking is possible. For Lua to decide when a sink is a valid optimization: 
 
