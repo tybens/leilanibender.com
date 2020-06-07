@@ -10,8 +10,8 @@ direction: ltr
 # languages/*.yml
 nav:
   home: /
-  articles: /archives/
   search: /search/
+  personal site: https://carolchen.me
 
 # Links to your social media accounts.
 # The keys should correspond to Fontawesome icon names
@@ -109,7 +109,7 @@ open_graph:
 
 # Fill in your Disqus Comments Shortname to enable Disqus comments.
 disqus:
-  enabled: true
+  enabled: false
   shortname: carol-chen
 
 # Fill in your Google Analytics tracking ID to enable Google Analytics.

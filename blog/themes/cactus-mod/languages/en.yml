@@ -24,9 +24,7 @@ post:
     share: Share post
   mobile:
     menu: Menu
-    toc: TOC
     back_to_top: Top
-    share: Share
 
 search:
   search: Search...

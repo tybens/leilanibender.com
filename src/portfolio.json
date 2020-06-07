@@ -1,6 +1,18 @@
 {
   "experience": [
     {
+      "thing": "Generic Stealth AI Startup",
+      "description" : "Software Engineer",
+      "date": "May 2020 - Present",
+      "toggle": [1, 2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Working on ML and infrastructure engineering. Go, Python C."
+        }
+      ]
+    },
+    {
       "thing": "Shopify",
       "description" : "Production Engineering Intern",
       "date": "Jan - May 2020",
@@ -8,7 +20,15 @@
       "points": [
         {
           "toggle": [1, 2, 3, 4, 5],
-          "content": "Working on TruffleRuby and other Ruby implementation related things"
+          "content": "Worked on TruffleRuby, a high-performance implementation of Ruby."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Fixed bugs and worked on infra to get the storefront renderer application mirroring traffic in TruffleRuby."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Worked on profiling, optimizations and wrote a <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>blog post</a> that became the top post on HN for a few hours."
         }
       ]
     },
@@ -250,7 +270,7 @@
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "I'm working through Wait but Why, and sometimes read Slate Star Codex. A lot of my reading time goes towards Reddit / Twitter etc"
+          "content": "I'm working through Wait but Why, and a bunch of miscellaneous blogs. A lot of my reading time goes towards Reddit / Twitter etc"
         }
       ]
     },

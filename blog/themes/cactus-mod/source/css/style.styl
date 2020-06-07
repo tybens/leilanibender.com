@@ -22,7 +22,7 @@ body
   color: $color-text
   font-display: swap // @stylint ignore
   font-weight: 400
-  font-size: 1.1em
+  font-size: 1.2em
   font-family: $font-family-body
   line-height: $line-height
   text-rendering: geometricPrecision
@@ -63,10 +63,10 @@ body
   h1 a:hover, .h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover
     underline(6px, $color-link)
 
-  h3 
+  h3
     font-size: 1.3em
     text-decoration: none
-    
+
   h6
     a
       background: none
@@ -119,9 +119,10 @@ pre
   overflow-x: auto
   padding: 10px 15px
   padding-bottom: 0
+  margin-top: 0!important
   border: 1px dotted $color-border
   border-radius: 4px
-  font-size: 13px
+  font-size: 1.2em
   font-family: $font-family-mono
   line-height: 22px
   -webkit-border-radius: 4px
@@ -143,25 +144,25 @@ code
 .highlight
   overflow-x: auto
   margin: 1rem 0
-  padding: 10px 15px
-  padding-top: 0;
+  padding: 4px 8px
   border-radius: 4px
   background: $color-background-code
   font-family: $font-family-mono
   // color: $color-accent-3
   -webkit-border-radius: 4px
+  font-size: 1.2em
 
   figcaption
     margin: -5px 0 5px
     color: $color-meta-code
-    font-size: .9em
+    font-size: 1.1em
     zoom: 1
 
     a
       float: right
       color: $color-meta-code
       font-style: italic
-      font-size: 1em
+      font-size: 1.1em
 
       underline(10px, $color-link)
 
@@ -184,6 +185,11 @@ code
 
   td.gutter
     text-align: right
+    color: #5a5a5a
+
+  .content td
+    padding-left: 5px
+    padding-top: 0
 
   .line
     height: 22px
