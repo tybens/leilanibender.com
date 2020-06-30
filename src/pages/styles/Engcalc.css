@@ -1,0 +1,29 @@
+.Engcalc {
+  text-align: center;
+}
+
+.Engcalc img {
+  width: 13%;
+}
+
+.Engcalc .row {
+  width:auto;
+  margin: 0;
+  padding: 0;
+}
+
+.toprow {
+  background-color: red;
+  padding: 50px;
+}
+.toprow div{
+  display: inline;
+  margin: 10px;
+  background-color: yellow;
+  padding: 5px;
+  font-size: 40px;
+}
+
+.Engcalc > img {
+  width: 14vw;
+}

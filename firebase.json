@@ -41,12 +41,20 @@
         "destination": "/CarolChenResume.pdf"
       },
       {
+        "source": "/blog/**",
+        "destination": "/blog/404.html"
+      },
+      {
         "source": "**",
+        "destination": "/404.html"
+      },
+      {
+        "source": "/",
         "destination": "/index.html"
       },
       {
-        "source": "/hacklodge",
-        "destination": "/hecclodge/index.html"
+        "source": "/eng-calc",
+        "destination": "/index.html"
       },
       {
         "source": "/blog",

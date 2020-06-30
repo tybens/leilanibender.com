@@ -1,16 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom";
 
 import App from './App';
-// import Modelling from './pages/Modelling';
-
+import EngCalc from './pages/Engcalc';
+import NotFound from './pages/Notfound';
 
 ReactDOM.render(
   (
     <Router>
       <div>
         <Route exact path="/" component={App} />
+        <Route exact path="/eng-calc" component={EngCalc} />
       </div>
     </Router>
   ), document.getElementById('root'),
