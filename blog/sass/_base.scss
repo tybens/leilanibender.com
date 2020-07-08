@@ -154,7 +154,8 @@ del {
 blockquote {
   margin: 0;
   padding: 8px 12px;
-  border-left: 3px solid #ccc;
+  border-left: 3px solid $primary;
+  background-color: rgba($primary, 0.1);
   & * {
     margin: 0;
   }
@@ -222,6 +223,7 @@ hr {
   a {
     text-transform: uppercase;
     color: $primary;
+    font-style: normal !important;
     &:hover {
       transition: all 0.25s;
       color: white;

@@ -45,16 +45,17 @@
         "destination": "/blog/404.html"
       },
       {
-        "source": "**",
-        "destination": "/404.html"
-      },
-      {
         "source": "/",
         "destination": "/index.html"
       },
       {
         "source": "/eng-calc",
         "destination": "/index.html"
+      },
+
+      {
+        "source": "**",
+        "destination": "/404.html"
       },
       {
         "source": "/blog",
