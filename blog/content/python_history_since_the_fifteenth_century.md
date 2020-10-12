@@ -1,6 +1,7 @@
 +++
 title = "Python History Since the Fifteenth Century"
 date = 2020-02-24
+weight = 5
 +++
 
 When we study history in high school, we read about the history of machine guns, cars, printing press, etc. I imagine that some time in the future, students may sit down and read about the early programming languages and their development.

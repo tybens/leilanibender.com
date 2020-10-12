@@ -1,6 +1,7 @@
 +++
 title = "How JIT Compilers are Implemented and Fast: Pypy, LuaJIT, Graal and More"
 date = 2020-07-04
+weight = 1
 +++
 
 This post goes into details of 5+ JITs and various optimization strategies and discuss how they work with different JITs. Information in this blog post is more *depth-first*, thus there are many important concepts that may be skipped. That also means that this blogpost is *not enough information* to draw meaningful conclusions on any comparisons of implementations/languages. 
@@ -120,7 +121,7 @@ for line in code:
     continue
   elif traces.is_optimized(line):
     compile(traces.optimized(line))
-      continue
+    continue
   elif line == "a = 0"
   # ....
 ```
@@ -129,7 +130,7 @@ for line in code:
 
 Disclaimer: I worked on/with a Graal-based language, [TruffleRuby](https://github.com/oracle/truffleruby) for four months and loved it.
 
-Hotspot (named after looking for _hot_ spots) is the VM that ships with standard installations of Java, and there are actually multiple compilers in it for a tiered strategy. Hotspot is open source, with 250,000 lines of code which contains the compilers, and three garbage collectors. It does an _awesome_ job at being a good JIT, there are some benchmarks that have Hotspot on par with C++ impls (oh my gosh so many asterisks on this, you can Google to find all the debate). Though Hotspot is not a tracing JIT, it employs a similar approach of having an interpreter, profiling and then compiling. There is not a specific name for what Hotspot does, though the closest categorization would probably be a Tiering JIT. 
+Hotspot (named after looking for _hot_ spots) is the VM that ships with standard installations of Java, and there are actually multiple compilers in it for a tiered strategy. Hotspot is open source, with 250,000 lines of code which contains the compilers, and three garbage collectors. It does an _awesome_ job at being a good JIT, there are some benchmarks that have Hotspot on par with C++ impls (oh my gosh so many asterisks on this, you can Google to find all the debate). Though Hotspot is not a tracing JIT, it employs a similar approach of having an interpreter, profiling and then compiling. There is not a specific name for what Hotspot does, though the closest categorization would probably be a method-based JIT (they optimized by method) or a Tiering JIT. 
 
 Strategies used in Hotspot inspired many of the subsequent JITs, the structure of language VMs and especially the development of Javascript engines. It also created a wave of JVM languages such as Scala, Kotlin, JRuby or Jython. JRuby and Jython are fun implementations of Ruby and Python that compile the source code down to the JVM bytecode and then have Hotspot execute it. These projects have been relatively successful at speeding up languages like Python and Ruby (Ruby more so than Python) without having to implement an entire toolchain like Pypy did. Hotspot is also unique in that it's a JIT for a less dynamic language (though it's technically it's a JIT for JVM bytecode and not Java). 
 
@@ -302,6 +303,8 @@ FUNC at 19
 . . VAR PROXY local[0] (0x7ff535815840) (mode = VAR, assigned = true) "x"
 ``` 
 This is pretty hard to parse, but it actually maps somewhat closely to a parser-level AST (though this won’t be the case for all programs) which will help. The AST below was generated with Acorn.js
+
+![](../img/jits/acorn.png)
 
 A distinct difference is the variable declarations. In the parser-AST, no actual declaration is explicit for the parameters, and the declaration for the loop is tucked away under the `ForStatement` node. In the compiler-level AST, all declarations are grouped, along with addresses and metadata. 
 

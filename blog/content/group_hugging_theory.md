@@ -1,6 +1,7 @@
 +++
 title = "Group Hugging Theory"
 date = 2019-08-09
+weight = 2
 +++
 
 While one-on-one hugging is complicated enough as it is, the complications increase exponentially as number of people involved in the hug increase.
@@ -25,13 +26,13 @@ What is this garbage??? Why does it look like a huddle? Are we playing football?
 
 There has to be a better way! Luckily, I've been able to engineer a new formation that works perfectly for 5+ person group hugs.
 
-I call it the Cyclic Train Hug.
+This is a Donut Hug!
 
 1. Stand in a circle with your group, with each person facing another person's back
 1. Each person should place their hand on the waist of the person in front of them.
 1. On a loose (not totally necessary) count down, have all participants move into hug formation, hugging the person in front of them from behind.
 
-Why is the CT Hug optimal for group hugs?
+Why is the Donut Hug optimal for group hugs?
 1. Equal hugs for everyone by virtue of the cyclic formation. No one feeling awkward or left out.
 2. Hugs are even better quality than one-on-one hugs. With average human sizes, each person can hug two people in front of them.
 3. Extra contact point with less than 12 people, as the circle closes in a way where your sides touch people on the inside of the circle

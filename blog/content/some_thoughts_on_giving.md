@@ -1,6 +1,7 @@
 +++
 title = "Some Thoughts on Giving"
 date = 2020-05-12
+weight = 1
 +++
 
 So my recent thoughts about giving have been about how much I give (time, objects, money) out of guilt, and how much good actually comes out of what I give. 

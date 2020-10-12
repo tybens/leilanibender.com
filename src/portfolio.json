@@ -28,7 +28,7 @@
         },
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Worked on profiling, optimizations and wrote a <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>blog post</a> that became the top post on HN for a few hours."
+          "content": "Worked on profiling, optimizations and wrote a <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>blog post</a>."
         }
       ]
     },
@@ -340,6 +340,26 @@
   ],
   "stuff": [
     {
+      "thing": "Rejections",
+      "description": "Thiel Fellowship, Many Undergrad Programs, Lots of Crushes",
+      "date": "All the time",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Too lazy to maintain a full failure resume, so there's a brief recap of my top failures!"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "I have been rejected by 24 schools (closer to 30 if you count schools that admit programs separately)."
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "I applied for two years with similar test scores (35 ACT, good subject tests) and higher grades the second time around. Reason of rejection is grades and being international with need."
+        }
+      ]
+    },
+    {
       "thing": "Organizer",
       "description": "U of T Hacks",
       "date": "Aug 2018 - Feb 2019",
@@ -403,22 +423,6 @@
         {
           "toggle": [4, 5],
           "content": "Y-Combinator when you can Not-Combinator lmao"
-        }
-      ]
-    },
-    {
-      "thing": "Raytracer",
-      "description": "Side Project",
-      "date": "Summer 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Built a raytracer that could make a Cornell Box as well as things such as metallics, dielectrics and could do image mapping."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +5%-ed my programming abilities."
         }
       ]
     },
@@ -539,6 +543,84 @@
         {
           "toggle": [5],
           "content": "Saw the Zucc irl."
+        }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "thing": "Technical Writing",
+      "description": "Side Project",
+      "date": "Winter 2020 - Present",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "I've written a few posts I'm proud of, so far about JIT compilers. You can <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>find</a>. <a href='https://carolchen.me/blog/jits-intro/'>them</a>. <a href='https://carolchen.me/blog/jits-impls/'>here</a>. And here are the <a href='https://news.ycombinator.com/item?id=22841847'>corresponding</a>. <a href='https://news.ycombinator.com/item?id=23740655'>HN</a>. <a href='https://lobste.rs/s/b6hpz9/how_jit_compilers_are_implemented_fast'>Discussions</a>. (Last one is lobste.rs)"
+        },
+        {
+          "toggle": [4, 5],
+          "content": "Sometimes I write about my life/thinking, and my <a href='https://carolchen.me/blog/founding-bad/'>fairly benign post</a> about why I didn't go to YC <a href='https://news.ycombinator.com/item?id=23894387'>blew up</a> a bit and <a href='https://twitter.com/eastdakota/status/1285093735512956929'>irked the CEO of Cloudflare</a>. Said \"what they’re missing isn’t confidence or skill, but access\" which is funny since I thought coming from a middle class family with no long-term committments and an offer from YCombinator was about as much access as one could get but uhh"
+        },
+        {
+          "toggle": [3, 4, 5],
+          "content": "I don't buy into writing about career advice, partially because I'm not qualified and because it's hard to give general advice, but I have tried a few times. <a href='https://carolchen.me/blog/real-good-things-about-internships/'>Why Internships are Super Great</a>. <a href='https://carolchen.me/blog/past-webdev/'>Ideas for Programmers Looking Past Web Development</a>. <a href='https://carolchen.me/blog/founding-bad/'>Why I decided running a startup was a bad idea</a>."
+        }
+      ]
+    },
+    {
+      "thing": "Raytracer",
+      "description": "Side Project",
+      "date": "Summer 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Built a raytracer that could make a Cornell Box as well as things such as metallics, dielectrics and could do image mapping."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +5%-ed my programming abilities."
+        }
+      ]
+    },
+    {
+      "thing": "Flying Cursors",
+      "description": "Hackathon Project",
+      "date": "November 2015",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "The first thing I *ever* built, a <a href='https://chrome.google.com/webstore/detail/flying-cursors/onnkoiclhlimgcgcfnidckkkcgladclh'>Chrome Extension</a> that causes cursors to fly around your screen. Peaked at 300+ users."
+        },
+        {
+          "toggle": [4, 5],
+          "content": "The most robust software I've ever built? This website requires maintenance every half year or so because of all the NPM packages but Flying Cursors has worked out of the box since 2016..."
+        }
+      ]
+    },
+    {
+      "thing": "Engineering Calculator",
+      "description": "Hackathon Project",
+      "date": "January 2019",
+      "toggle": [2, 3, 4, 5],
+      "points": [
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "A calculator that represents all values as a function of constants. <a href='https://carolchen.me/eng-calc'>See demo</a>. Built with two frens, written in C++ and run with WASM."
+        }
+      ]
+    },
+    {
+      "thing": "Sounds of Sorting",
+      "description": "WWDC Scholar Application",
+      "date": "March 2019",
+      "toggle": [3, 4, 5],
+      "points": [
+        {
+          "toggle": [3, 4, 5],
+          "content": "A quick recreation of the classic Sounds of Sorting with some more snazz, see <a href='https://www.youtube.com/watch?v=-fTBJMBzVng'>demo video</a>."
         }
       ]
     }

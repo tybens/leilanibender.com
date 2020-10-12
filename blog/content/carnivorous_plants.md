@@ -1,6 +1,7 @@
 +++
 title = "Carnivorous Plant Collection (Image Heavy)"
 date = 2019-09-09
+weight = 5
 +++
 
 From late grade nine to early grade twelve, I collected hundreds of individual plants and over a dozen different species. Below a crapton of photos I could find, though right here I'll include a list of plants I have owned.

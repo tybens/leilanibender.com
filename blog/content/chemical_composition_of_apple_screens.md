@@ -1,6 +1,7 @@
 +++
 title = "Chemical Composition of Apple Screens"
 date = 2017-09-09
+weight = 5
 +++
 In July of 2017, nine SHAD Fellows participated in a fast-paced version of the Students on the Beamline program at the University of Saskatchewan. Other than flat ground(and more flat ground), Saskatchewan is home to a synchrotron light source, the only one in Canada and one of eight in North America.
 

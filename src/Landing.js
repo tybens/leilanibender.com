@@ -37,13 +37,10 @@ const Landing = () => (
             My site randomizes many elements per load! I did this because choosing things is hard.
           </p>
           <p>
-            Recruiters! Here is <a href="https://carolchen.me/resume" style={{ textDecoration: 'underline' }} target="_blank">my resume</a>, though I am not currently looking for a job.
-          </p>
-          <p>
             I currently write code at Generic Stealth AI Startup. Apart from code, I consume a lot of media and train in circus arts (aerials, a bit of flow and pole). I'm currently {new Date(Date.now() - new Date(2001, 11, 28).getTime()).getUTCFullYear() - 1970} years old.
           </p>
           <p>
-            Visit my low-content <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>. Also, I enjoy conversations about tech and other stuff, never hesitate to reach out to me (preferably via email).
+            Visit my <a href="/blog" style={{ textDecoration: 'underline' }} target="_blank">blog</a>, which I'd attempt to describe but it's quite all-over-the-place. Also, I enjoy conversations about tech and other stuff, never hesitate to reach out to me (preferably via email).
           </p>
         </Col>
         <Col xs={12} md={1} style={{ paddingTop: 50, fontSize: 40 }}>
@@ -67,10 +64,6 @@ const Quote = () => {
     {
       quote: 'Just watch me.',
       author: 'Pierre Elliot Trudeau',
-    },
-    {
-      quote: 'A no is a maybe and a maybe is a yes.',
-      author: 'Vinod Khosla',
     },
     {
       quote: 'Non-conformity is the only real passion worth being ruled by.',

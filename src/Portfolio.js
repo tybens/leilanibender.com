@@ -51,6 +51,11 @@ class Portfolio extends Component {
                   title="Things I've Been To"
                   slider={this.state.slider}
                 />
+                <PortfolioSection
+                  data={this.state.data.stuff}
+                  title="Misc"
+                  slider={this.state.slider}
+                />
               </Col>
               <Col xs={12} md={6} className="item">
                 <PortfolioSection
@@ -59,8 +64,8 @@ class Portfolio extends Component {
                   slider={this.state.slider}
                 />
                 <PortfolioSection
-                  data={this.state.data.stuff}
-                  title="Misc"
+                  data={this.state.data.projects}
+                  title="Projects"
                   slider={this.state.slider}
                 />
                 {this.state.slider > 2 &&
