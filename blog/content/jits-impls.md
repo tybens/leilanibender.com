@@ -15,7 +15,7 @@ For background on JIT compilers see [A Deep Introduction to JIT Compilers: JITs 
 
 ## Table of Contents / Highlights
 
- - [Meta-tracing in Pypy works](#wait-but-you-said-meta-tracing)
+ - [How meta-tracing in Pypy works](#wait-but-you-said-meta-tracing)
  - [How GraalVM languages support C extensions](#interpreting-c)
  - [Deoptimisation](#go-back-to-the-interpreted-code-it-ll-be-faster)
  - [Inlining and OSR](#wet-code-is-fast-code-inlining-and-osr)

@@ -14,13 +14,24 @@ Escape Analysis is a technique that determines the behaviour of how a variable (
 >
 > Also thanks to [Chris Seaton](https://chrisseaton.com) who was my intern mentor back when I actually worked on compilers and taught me sooo much, and [JF Bastien](https://jfbastien.com/) who showed me how to look into `clang` and has just been generally helpful. Props to [Alberto](https://alberto.donizetti.eu/) who fixed a bug  in Go I ran into while investigating escape analysis in Go in a matter of hours after I opened an issue, and thanks to [Leo White](https://blog.janestreet.com/author/lwhite/) who answered my question about the lack of escape analysis in OCaml.   
 
+For a little background on how programming languages work, skim through my post [A Deep Introduction to JIT Compilers: JITs are not very Just-in-time](https://carolchen.me/blog/jits-intro). 
+
+## Highlights
+
+ - [Escaping Boxing](#pypy-escapes-boxing)
+ - [Allocation Sinking](#luajit-allocation-sinking)
+ - [Chrome had a Security Incident because of Escape Analysis](#some-security-escaped-v8)
+ - [Escape Analysis with LLVM backed languages](#escape-analysis-with-llvm-backed-languages)
+ - [Escape Analysis in Go](#go)
+ - [Other Compilers that do Escape Analysis](#other-compilers-that-do-escape-analysis)
+
 ### Pypy Escapes Boxing 
 
 Pypy puts a lot of work into minimizing *boxing*, which is done through escape analysis. Boxing is when a primitive is boxed into an object wrapper type, such as an `int` to `Integer` in Java. Object oriented language implementations often utilize boxing (sometimes called auto-boxing), including JavaScript, C#, Haskell and others! Computers natively understands types like booleans and integers, but not objects, and unfortunately many languages need to store most of their data as an object and not the primitive. For example, `314` as a constant can be stored as a primitive on the stack, but when `314.toString()` is executed, `314` has to be boxed so that the method can be run on the object. Unboxing is performed to extract the value. 
 
 Boxing and unboxing is an expensive operation, with .NET citing 20x the time for boxed assignment and 4x the time for unboxing assignment (when you explicitly cast back). Pypy also has expensive boxing operations, as it's not just assigning/computing more values but organizing them into a heap structure. 
 
-Pypy considers this to be its second most important problem, and uses "virtual objects", also called virtualisation. It's a fancy term that means they avoid creating the entire heap structure, store the primitive value (ideally not on the heap) and mock any object-operations that need to happen. While the virtual object is used in some applicable scope, read and writes are done to the virtual object without the expense of boxing/unboxing. Even more computation is saved as since the virtual object exists and no guards need to exist to verify information about the value in the object, whereas guards are usually in place to check the class after loading a value. 
+Pypy considers this to be its second most important problem, and uses "virtual objects", also called virtualisation. It's a fancy term that means they avoid creating the entire heap structure, store the primitive value (not on the heap) and mock any object-operations that need to happen. While the virtual object is used in some applicable scope, read and writes are done to the virtual object without the expense of boxing/unboxing. Even more computation is saved as since the virtual object exists and no guards need to exist to verify information about the value in the object, whereas guards are usually in place to check the class after loading a value. 
 
 Pypy will virtualise onto the stack optimistically and then allocate later should it become necssary. Escape analysis is really powerful in JITs mostly because jitted langauges tend to be more dynamic, but also because they can very aggressively stack allocate.  Languages that compile once have to be completely confident that the escape analysis is valid (or also compile code in case of failure) *and* make decisions about how far it should look to determine a scope. JITs can kind of just hope it'll work and then actually do the allocation if it doesn't -- and remember what happened for next time (though that makes it sound a lot easier than it actually is). 
 
@@ -135,7 +146,7 @@ This blog post doesn't cover interpreted languages! The obvious answer is that b
 
 Javascript's V8 engine does escape analysis similarly to the way described in Pypy and LuaJIT. In 2017 though, a bug with overly aggressive escape analysis became a significant vulnerability for Chrome browsers and escape analysis was disabled for about a week before they reimplemented it. This is an Extremely Cool exploit and I'm surprised there wasn't a write-up on it. 
 
-![image-20200830214520251](/Users/kipply/Library/Application Support/typora-user-images/image-20200830214520251.png)
+![](../img/allocs/js.png)
 
 The Chrome team marked this as "high" with a $7500 reward, and the bug is fairly intuitive -- something isn't allocated when it should be and errors will occur due to something not existing when it should be. The reason it's a security vulnerability is unrelated to escape analysis and requires too much background to fully explore in this post.  
 
@@ -169,9 +180,9 @@ I rebuilt V8 (I could've also tested with Chrome builds, but those seemed harder
 ---------------------------------------------------+----------+--------+
 ```
 
-From this we can observe that disabling escape analysis was not that bad for Chrome, with a 3.4% reported slowdown (though it is a significant optimization for a compiler). But what about the new escape analysis? `RayTrace` is quite an outlier there, and I find it amusing since the Raytracer probably deals with a lot of objects to represent points and shapes in space, which is exactly what the example in the previous Javascript section was doing. 
+From this we can observe that disabling escape analysis could not have been that bad for Chrome, with a 3.4% reported slowdown (though it is a significant optimization for a compiler). But what about the new escape analysis? `RayTrace` is quite an outlier there, and I find it amusing since the Raytracer probably deals with a lot of objects to represent points and shapes in space, which is exactly what the example in the previous Javascript section was doing. 
 
-With the new escape analysis, disabling it cost 6.3% instead of 3.4%, which indicates that the new escape analysis is better. These benchmarks are good enough to make note of the importance of escape analysis, what kind of operations it works well on but not good enough to say that "escape analysis makes Javascript 6.3% better". 
+With the new escape analysis, disabling it cost 6.3% instead of 3.4%, which indicates that the new escape analysis is better. These benchmarks are good enough to make note of the importance of escape analysis, what kind of operations it works well on but not good enough to say that "escape analysis makes Javascript 6.3% faster". 
 
 ### Escape Analysis with LLVM-backed languages
 
@@ -197,9 +208,12 @@ It's easy to tell that escape analysis happens here with the emmitted assembly -
 
 I would not call this escape analysis outside of a blog post though it describes a similar process of allocation elimination. This is better described as constant propogation, as the escape analysis is not really checking escape out of a loop or funciton, but that the only escape (which is reading for this case) of the values. LLVM does explicitly run escape analysis for more conventional examples shown previously though this is easier to work with as an example.
 
-```cpp
+```c
+// this is C and not C++ code but it's all `clang` anyway
+#include <stdlib.h>
+
 void indirect(int *x) {
-    x[0] = 123;
+    x[0] = 14;
 }
 
 int foo() {
@@ -230,7 +244,7 @@ function foo(a, b, c)
 end
 ```
 
-This time I'm looking for `store`instruction which is used to write to memory, specifically the group of three `store` functions used to initialize the array `t`.  Julia does not optimize away the creation of the array `t`, probably partially due a specific Julia feature or the increased complexity of LLVM code due to Julia's dynamic-ness relative to C++ (it is generally unclear to me what blocks this). Julia would probably do a better job at less convoluted constant propagation and it does do fine on escape analysis, as seen on the below example. 
+This time I'm looking for `store` instruction which is used to write to memory. Julia does not optimize away the creation of the array `t`, probably partially due a specific Julia feature or the increased complexity of LLVM code due to Julia's dynamic-ness relative to C++ (it is generally unclear to me what blocks this). Julia would probably do a better job at less convoluted constant propagation and it does do fine on escape analysis, as seen on the below example. 
 
 ```julia
 function foo() # same example from earlier with Pypy!
@@ -245,7 +259,7 @@ end
 
 For this, I didn't even have to look for `store` or anything GC related, the code is the same if I replace `y * 4` with `rand(1, 5) * 4`. 
 
-Other LLVM-backed languages include Swift, Crystal and Rust. If you've heard anything about Rust, it's probably something along the lines of "yeah manual memory management is hard but Rust makes it easier". If I worded it as "Rust makes it very easy/automatic to statically check memory" then I'd be closer to saying "Rust's memory is automatically managed, just not at runtime". If you've heard another thing about Rust it's probably "borroooowww cheeeeckkkeeeerrr". Look into [Rust's Ownership Structure](https://doc.rust-lang.org/1.8.0/book/references-and-borrowing.html) and you might find that the borrow checker basically prevents you from accidentally letting something get stuck in the heap when it escapes. I definitely would not call the borrow checker "escape analysis" but it's a relevant concept in Rust that is rather parallel to escape analysis. 
+Other LLVM-backed languages include Swift, Crystal and Rust. If you've heard anything about Rust, it's probably something along the lines of "yeah manual memory management is hard but Rust makes it easier". If I worded it as "Rust makes it very easy/automatic to statically check memory" then I'd be closer to saying "Rust's memory is automatically managed, just not at runtime". If you've heard another thing about Rust it's probably "borroooowww cheeeeckkkeeeerrr". Look into [Rust's Ownership Structure](https://doc.rust-lang.org/1.8.0/book/references-and-borrowing.html) and you might find that the borrow checker basically prevents you from accidentally letting something get stuck in the heap when it escapes. I certainly would not call the borrow checker "escape analysis" but it's a relevant concept in Rust that is rather parallel to escape analysis. 
 
 ### Go 
 
