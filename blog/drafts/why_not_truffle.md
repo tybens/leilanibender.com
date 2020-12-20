@@ -1,22 +1,16 @@
-# If TruffleRuby is so Fast, Why Don't We Run Everything on TruffleRuby?
-
-So here's a question I get often in some shape or form (often with "Crystal" instead of "TruffleRuby"). It's also valid as a general question -- if Python is one or two orders of magnitude slower than C then how in the world is it worth the developer happiness not to write all our applications in C? Another key to this, is that it's often in the context of web applications. 
-
-hThe big tl;dr is that a lot of operations happen in C extensions or are constant-cost, where Ruby will be able to integrate with C code for performance critical operations. Cache, database operations and network requests cost the same amount of time no matter what language we use and they often take up a lot of time, minimizing the effects of any performance improvements. 
+# TruffleRuby on Webapps
 
 > Disclaimer box
 >
 > I interned at Shopify for four months working on TruffleRuby.
 >
-> I apologize ahead of time for excluding all the other cute Ruby implementations <3. This vaguely applies to them, though I focused on TruffleRuby as it most reliably runs C extensions, which is needed for most web applications.
->
-> I did a lot of benchmarking / profiling in here but did not put effort into ensuring correct conditions or describing exactly how numbers are collected. I have code available here, but this post is not about benchmarks, and none of the numbers I compare are at all close. 
+> This is not a post for comparing speed. I do some benchmarking / profiling in here but it is not scientific, and is meant to illustrate how qualities of TruffleRuby affect different types of performances, and not meant to compare TruffleRuby to other implementations. 
 
-### Implementation Details
+Perhaps the biggest criticism on TruffleRuby is "but it can't run webapps". To start, that's not strictly true -- TruffleRuby runs Rails. You can in fact build a Rails project with TruffleRuby by using the packages that run properly with TruffleRuby (it's a lot of them!). 
 
-TruffleRuby can run Rails and has been passing the full Ruby language specs for a while now, yet chances are if you have a large production application, TruffleRuby will not be able to run it. "Not able" in this case can mean a variety of things, such as a slightly different behaviour in the C API or the fact that `fork` is not implemented and thus things like puma workers can't be used. 
+It remains true that if you pick the average production Rails project and try to run it in Truffleruby, it will fail. This is often due to small differences in language specs -- particularly C extensions, and not the official Ruby Language Spec. The C Extensions are pain as they are not documented features with guaranteed behaviours, but people still rely on this. The C API is also hard to replicate fully since it's modelled off internal design of CRuby. Another common blocker is that `fork` is not implemented and so essentials such as puma workers can't be used. 
 
-The other reason, is that there are weird things about Ruby that are not documented features of Ruby that people still rely on. This is often related to the C API which is hard to replicate fully since it's modelled off internal design of CRuby, but can be anything. There's a reason C++ has a Standards Committee to describe what they do and don't promise in their behaviours!
+The other reason, is that there are weird things about Ruby that There's a reason C++ has a Standards Committee to describe what they do and don't promise in their behaviours!
 
 ![](https://imgs.xkcd.com/comics/workflow_2x.png)
 

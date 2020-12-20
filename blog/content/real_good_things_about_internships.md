@@ -1,5 +1,5 @@
 +++
-title = "Working At Shopify Is Fucking Great"
+title = "Working At Shopify Is Great"
 date = 2020-04-20
 weight = 2
 +++

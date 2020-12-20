@@ -12,6 +12,7 @@ class App extends Component {
     return (
       <div className="App">
         <Landing />
+        <div className="fader"/>
         <Portfolio />
       </div>
     );

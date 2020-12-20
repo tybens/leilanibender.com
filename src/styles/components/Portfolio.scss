@@ -3,9 +3,10 @@
 
 
 #portfolio {
-  z-index: 10;
   position: relative;
   background-color: white;
+  top: -100px;
+
   h2 {
     color: lighten($dark, 20%);
     margin-bottom: 50px
@@ -41,7 +42,6 @@
       font-weight: bold;
       font-size: 2em;
       color: $primary;
-      margin-top: 25px;
     }
 
     ul {
@@ -59,7 +59,6 @@
 
     .header {
       font-size: 1.2em;
-      margin-top: 10px;
       .title {
         color: darken($primary, 30%);
         text-transform: uppercase;

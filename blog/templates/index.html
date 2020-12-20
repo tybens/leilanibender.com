@@ -87,13 +87,6 @@
     {% for page in paginator.pages %}
       <article class="c-article p-list-article">
         {{ macros::title(page=page) }}
-        <div class="article-summary">
-          {% if page.summary -%}
-          {{ macros::polish(content=page.summary) }}
-          {% else %}
-          {{ macros::polish(content=page.content) | truncate(length=280) }}
-          {%- endif %}
-        </div>
       </article>
     {% endfor %}
 
