@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link, Redirect } from "react-router-dom
 
 import App from './App';
 import EngCalc from './pages/Engcalc';
-import NotFound from './pages/Notfound';
 
 ReactDOM.render(
   (

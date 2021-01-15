@@ -3,30 +3,23 @@
 
 @import '../styles/components/Landing.scss';
 @import '../styles/components/Portfolio.scss';
-@import '../styles/components/Modelling.scss';
 
 html{
     overflow-x: hidden;
 }
 
+.App {
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+}
 body{
     margin: 0;
     height: 100%;
     overflow-x: hidden;
   float: none;
   margin: auto;
-
 }
-
-hr {
-    border-color: $primary;
-    border-width: 3px;
-    max-width: 50px;
-}
-
-hr.light{
-    border-color: white;
-    }
 
 a {
     @include transition-all;
@@ -34,6 +27,9 @@ a {
     &:hover,
     &:focus {
         color: darken($primary, 10%);
+    }
+    @media (prefers-color-scheme: dark) {
+      color: lighten($primary, 10%);
     }
 }
 
@@ -91,4 +87,10 @@ p {
   );
   padding: 0;
   margin: 0;
+  @media (prefers-color-scheme: dark) {
+    background: -webkit-linear-gradient(
+      rgba(255, 255, 255, 0) 0%,
+      $dark 100%
+    );
+  }
 }

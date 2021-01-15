@@ -16,14 +16,23 @@
     rgba($primary, 0.09) 50px,
     rgba($primary, 0.09) 100px
   );
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
 
   .section-heading {
     text-align: left;
     padding-top: 0;
     color: $dark;
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
   }
   p {
     color: $dark;
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
     font-size: 1.25em;
   }
 
@@ -52,14 +61,25 @@
       0 0 0 600px mix($primary, white, 9%),
       ;
     position: relative;
+    @media (prefers-color-scheme: dark) {
+      border: 15px solid $primary;
+      box-shadow:
+        0 0 0 50px mix($primary, $dark, 4%),
+        0 0 0 100px mix($primary, $dark, 9%),
+        0 0 0 150px mix($primary, $dark, 4),
+        0 0 0 200px mix($primary, $dark, 9%),
+        0 0 0 250px mix($primary, $dark, 4%),
+        0 0 0 300px mix($primary, $dark, 9%),
+        0 0 0 350px mix($primary, $dark, 4%),
+        0 0 0 400px mix($primary, $dark, 9%),
+        0 0 0 450px mix($primary, $dark, 4%),
+        0 0 0 500px mix($primary, $dark, 9%),
+        0 0 0 550px mix($primary, $dark, 4%),
+        0 0 0 600px mix($primary, $dark, 9%),
+        ;
+    }
   }
 
-  #intro-text::before {
-    background-color: white;
-    border-left: 50px solid white;
-    margin-left: -50px;
-    z-index: 1;
-  }
 }
 
 #links{
@@ -68,6 +88,10 @@
   }
   a {
     font-size: 1.15em;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: darken(white, 20%);
   }
   font-size: 1.25em;
 }

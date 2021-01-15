@@ -6,9 +6,21 @@
   position: relative;
   background-color: white;
   top: -100px;
-
+  @media (prefers-color-scheme: dark) {
+    background-color: $dark;
+  }
+  span {
+    color: lighten($dark, 20%);
+    @media (prefers-color-scheme: dark) {
+      color: darken(white, 20%);
+    }
+  }
   h2 {
     color: lighten($dark, 20%);
+    @media (prefers-color-scheme: dark) {
+      color: white;
+    }
+    margin: 0;
     margin-bottom: 50px
   }
 
@@ -19,29 +31,47 @@
     }
     .rc-slider-track {
       background-color: lighten($primary, 25%);
+      @media (prefers-color-scheme: dark) {
+        background-color: $primary;
+      }
     }
     .rc-slider-handle, .rc-slider-dot-active {
       border-color: lighten($primary, 25%);
-
+      @media (prefers-color-scheme: dark) {
+        border-color: $primary;
+      }
       &:active {
         box-shadow: 0 0 5px lighten($primary, 25%);
+        @media (prefers-color-scheme: dark) {
+          box-shadow: 0 0 5px $primary;
+        }
       }
     }
     .rc-slider-mark-text {
       width: 100px;
+    }
+    .rc-slider-rail {
+      @media (prefers-color-scheme: dark) {
+        background-color: lighten($dark, 30%);
+      }
     }
   }
 
   .portfolio-box {
     padding: 5% 10%;
     color: lighten($dark, 25%);
-
+    @media (prefers-color-scheme: dark) {
+      color: darken(white, 10%);
+    }
     h1 {
       font-family: 'Montserrat', sans-serif;
       text-transform: uppercase;
       font-weight: bold;
       font-size: 2em;
       color: $primary;
+      @media (prefers-color-scheme: dark) {
+        color: lighten(saturate($primary, 10%), 10%);
+      }
     }
 
     ul {
@@ -61,17 +91,26 @@
       font-size: 1.2em;
       .title {
         color: darken($primary, 30%);
+        @media (prefers-color-scheme: dark) {
+          color: lighten($primary, 30%);
+        }
         text-transform: uppercase;
         font-weight: bold;
       }
 
       .desc {
         color: darken($primary, 30%);
+        @media (prefers-color-scheme: dark) {
+          color: lighten($primary, 40%);
+        }
       }
       .date {
         text-transform: uppercase;
         font-weight: bold;
         color: lighten($primary, 20%);
+        @media (prefers-color-scheme: dark) {
+          color: fade($primary, 10%);
+        }
       }
     }
 

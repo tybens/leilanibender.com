@@ -25,7 +25,7 @@ const Landing = () => (
         <Col sm={8} md={8} style={{paddingLeft: '50px'}} id="intro-text">
           <h2 className="section-heading">hi i'm carol (kipply)</h2>
           <p>
-            I'm currently a Software Engineer at Generic Stealth AI Startup. I love compilersApart from code, I consume a lot of media and train in circus arts (aerials, a bit of flow and pole).
+            I'm currently a Software Engineer at Generic Stealth AI Startup and I like compilers {"<3"}. Apart from code, I consume a lot of media and train in circus arts (aerials, a bit of flow and pole).
           </p>
           <p>
             I enjoy conversations about tech and other stuff, never hesitate to reach out to me (preferably via email).
