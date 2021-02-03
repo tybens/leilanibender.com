@@ -347,15 +347,23 @@
       "points": [
         {
           "toggle": [2, 3, 4, 5],
-          "content": "Too lazy to maintain a full failure resume, so there's a brief recap of my top failures!"
+          "content": "Too lazy (prideful?) to maintain a full failure resume, so there's a brief recap of my top failures!"
         },
         {
           "toggle": [2, 3, 4, 5],
           "content": "I have been rejected by 24 schools (closer to 30 if you count schools that admit programs separately)."
         },
         {
-          "toggle": [3, 4, 5],
+          "toggle": [4, 5],
           "content": "I applied for two years with similar test scores (35 ACT, good subject tests) and higher grades the second time around. Reason of rejection is grades and being international with need."
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Thiel Fellowship Rejected x2, Neo (Fellowship|Program|Club) x1, Miss World Canada x1 (they were unwilling to waive my entrance fee on merit)"
+        },
+        {
+          "toggle": [2, 3, 4, 5],
+          "content": "Internship Rejections: Mozilla, Citadel, Docker, Pagerduty, Square, etc. Full-time Job Rejections: Square, Amazon."
         }
       ]
     },
@@ -560,7 +568,7 @@
         },
         {
           "toggle": [4, 5],
-          "content": "Sometimes I write about my life/thinking, and my <a href='https://carolchen.me/blog/founding-bad/'>fairly benign post</a> about why I didn't go to YC <a href='https://news.ycombinator.com/item?id=23894387'>blew up</a> a bit and <a href='https://twitter.com/eastdakota/status/1285093735512956929'>irked the CEO of Cloudflare</a>. Said \"what they’re missing isn’t confidence or skill, but access\" which is funny since I thought coming from a middle class family with no long-term committments and an offer from YCombinator was about as much access as one could get but uhh"
+          "content": "My <a href='https://carolchen.me/blog/founding-bad/'>fairly benign post</a> about why I didn't go to YC <a href='https://news.ycombinator.com/item?id=23894387'>blew up</a> a bit and <a href='https://twitter.com/eastdakota/status/1285093735512956929'>irked the CEO of Cloudflare</a>. (Hi Matthew if you're reading this I know it was the day after Cloudflare had a big outage I forgive you <3)"
         },
         {
           "toggle": [3, 4, 5],

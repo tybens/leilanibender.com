@@ -16,9 +16,7 @@ const themes = [
   ["#ebd4cb","#da9f93","#b6465f","#890620","#2c0703"],
   ["#e6c229","#f17105","#d11149","#6610f2","#1a8fe3"],
   ["#fbc2b5","#ffa8a9","#f786aa","#a14a76","#cdb2ab"],
-  ["#251101","#470024","#5b1865","#2c5784","#5688c7"],
   ["#dccde8","#14bdeb", "#6610f2"],
-  ["#f786aa","#5b1865", "#d11149"],
   ["#540610","#f0e548", "#fe4a49"],
   ["#2c0703","#d796ff", "#6610f2"],
   ["#000","#00f5d4"],
@@ -31,14 +29,13 @@ const themes = [
   ["#413287", "#a8e3d8", "#bb2c9a", "#d3d0cb", "#e3a897"]
 ]
 
-
 function bestaplaid(time) {
   let hexagonEdge = Math.min(windowWidth, windowHeight)/5
   let hexagonHeight = Math.sqrt(Math.pow(hexagonEdge, 2) - Math.pow(hexagonEdge/2, 2))
   let extra = 100 // distance for line to extend out of screen
   const leftPoint = makePoint(-hexagonEdge, 0)
   const rightPoint = makePoint(hexagonEdge, 0)
-  const maxDistance = Math.max(windowWidth, windowHeight) / 2
+  const maxDistance = Math.max(windowWidth, windowHeight) / 2.2
   const numLinesScale = Math.max(windowWidth, windowHeight) / 900 // to finish to approximately fill the screen
   let msPerLine = 500
   let msOffset = 0

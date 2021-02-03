@@ -41,8 +41,8 @@
         "destination": "/CarolChenResume.pdf"
       },
       {
-        "source": "/hexaplaid",
-        "destination": "/hexaplaid.html"
+        "source": "/bestaplaid",
+        "destination": "/projects/bestaplaid.html"
       },
       {
         "source": "/blog/**",

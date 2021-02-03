@@ -46,7 +46,7 @@ for i in range(10000):
 print(x)
 ```
 
-There are two cases of virtualisation here. The first is `y`, which will be virtualised as it does not escape. Thus in the second line of the loop, Pypy would no longer need a guard for the value of `y`. This saves us a lot more than just constructing and traversing the heap structure. When boxed, Pypy has to check the class types of `y` and `x` due to the dynamic-ness of Python -- can these values be added? If they can, where is the method to describe how they are added (Python allows operator overloading). It also has to recreate a boxed object to reassign to `y` and in more complex cases could leave behind additional garbage for the GC. 
+There are two cases of virtualisation here. The first is `y`, which will be virtualised as it does not escape. Thus in the second line of the loop, Pypy would no longer need a guard for the value of `y`. This saves us a lot more than just constructing and traversing the heap structure. When boxed, Pypy has to check the class types of `y` and `x` due to the dynamic-ness of Python -- can these values be added? If they can, where is the method to describe how they are added (Python allows operator overloading)? It also has to recreate a boxed object to reassign to `y` and in more complex cases could leave behind additional garbage for the GC. 
 
 `x` on the other hand, does escape, but it's still valuable to virtualise it, for that allocation is in a loop and the escape is outside the loop. When a jump instruction comes in (loop ends), it’ll come with code that actually allocates `x` for the garbage collector and future use. Another case of escape analysis can be found in methods;
 
@@ -60,7 +60,7 @@ In this case, `x` will likely never escape and the allocation isn't even needed 
 
 ### How Javascript Uses Escape Analysis in Language Internals
 
-The most complex question about escape analysis (other than maybe "how do I implement it") is probably "is this only beneficial to very shortlived variables, and if so how does it help much?". As mentioned in the Pypy example, it is sometimes to protect allocations that are made by the language implementation rather than the programmer. Here's a quick example in Javascript (example token from [this PDF](https://www.jfokus.se/jfokus18/preso/Escape-Analysis-in-V8.pdf), which has a [corresponding talk](https://www.youtube.com/watch?v=KiWEWLwQ3oI) that might be elementary at this point in the blog post). 
+The most complex question about escape analysis (other than maybe "how do I implement it") is probably "is this only beneficial to very shortlived variables, and if so how does it help much?". As mentioned in the Pypy example, it is sometimes to protect your program from allocations that are made by the language implementation rather than the programmer. Here's a quick example in Javascript (example taken from [this PDF](https://www.jfokus.se/jfokus18/preso/Escape-Analysis-in-V8.pdf), which has a [corresponding talk](https://www.youtube.com/watch?v=KiWEWLwQ3oI) that might be elementary at this point in the blog post). 
 
 ```javascript
 function bar(o) {
@@ -80,7 +80,7 @@ In most languages that box, essentially everything gets a box (except `null` and
 
 LuaJIT's does something called [*Allocation Sinking*](http://wiki.luajit.org/Allocation-Sinking-Optimization), which is based on escape analysis and the result is very powerful allocation removals, doing things that even the age-old Hotspot can't do. Pypy implemented a vast majority of the things that LuaJIT did (see this [2012 paper](http://www1.maths.lth.se/matematiklth/vision/publdb/reports/pdf/ardo-bolz-etal-dls-12.pdf)) though I'd want to describe some of these optimizations in the context of LuaJIT rather than Pypy because LuaJIT gave me free examples. 
 
-When data is allocated, there's typically a "store" and then a "load" later on. Store-to-load forwarding is essentially what it sounds like, getting the subsequent "load" function to receive data directly from the location of storing. This is used to have powerful allocation sinking, more commonly called "code motion" (or specifically, loop-invariant code motion as JITs tend to be concerned with loop optimizations). This examples do not use executable Lua code
+When data is allocated, there's typically a "store" and then a "load" later on. Store-to-load forwarding is what it sounds like, getting the subsequent "load" function to receive data directly from the location of storing. This is used to have powerful allocation sinking, more commonly called "code motion" (or specifically, loop-invariant code motion as JITs tend to be concerned with loop optimizations). These examples do not use executable Lua code. 
 
 ```lua
 local x = 0
@@ -117,7 +117,7 @@ for i=1,1000 do
 end
 ```
 
-Here, LuaJIT defers the write and *forwards* the data to the read. As a result, the allocation and read is very much removed. The forwarding destination is the point of escape, which is where the escape analysis comes in. 
+Here, LuaJIT defers the write and *forwards* the data to the read. As a result, the allocation and read are very much removed. The forwarding destination is the point of escape, which is where the escape analysis comes in. 
 
 LuaJIT has an explicit mark-and-sweep pass to do sinks. For an example that highlights the allocation sinking, LuaJIT performed on par with C++ and 700x faster than Lua. Specifically (taken from the [LuaJIT Blog](http://wiki.luajit.org/Allocation-Sinking-Optimization#implementation[)): 
 
@@ -140,7 +140,7 @@ Important note that LuaJIT does not describe this as escape analysis, and partic
 
 ### Where have all the interpreted languages gone
 
-This blog post doesn't cover interpreted languages! The obvious answer is that because they're interpreted, there's no point in time for them to do escape analysis, and unlike JITs they can't recompile or move from interpretation to compilation. However, most interpreted languages (Python, Ruby, PHP) do have a compile step where bytecode is emitted, so there's no technical reason why escape analysis couldn't be performed at that step. These languages need to maintain fast compile times, which is the broad reason why it isn't done. Additionally, as mentioned by Mike Pall of LuaJIT, dynamic languages have too many points of escape, which is handle-able by JITs but would be harder to do as a part of static compilation.  
+This blog post doesn't cover interpreted languages! The obvious answer is that because they're interpreted, there's no room for them to do escape analysis, and unlike JITs they can't recompile or move from interpretation to compilation. However, most interpreted languages (Python, Ruby, PHP) do have a compile step where bytecode is emitted, so there's no technical reason why escape analysis couldn't be performed at that step. These languages need to maintain fast compile times, which is the broad reason why it isn't done. Additionally, as mentioned by Mike Pall of LuaJIT, dynamic languages have too many points of escape, which is handle-able by JITs but would be harder to implement as a part of static compilation.  
 
 ### Some Security Escaped V8
 
@@ -150,9 +150,9 @@ Javascript's V8 engine does escape analysis similarly to the way described in Py
 
 The Chrome team marked this as "high" with a $7500 reward, and the bug is fairly intuitive -- something isn't allocated when it should be and errors will occur due to something not existing when it should be. The reason it's a security vulnerability is unrelated to escape analysis and requires too much background to fully explore in this post.  
 
-But for an entire Chrome Version, this key optimization was just... gone? I assume compiler speed in the scope of web-browsing speed is not noticable, but other than that I don't actually know what to expect with escape analysis gone. 
+But for an entire Chrome Version, this key optimization was just... gone? I assume compiler speed in the scope of web-browsing speed is but a minor factor due to all the caching and network times, but other than that I don't actually know what to expect with escape analysis gone. It probably would've been very impactful for NodeJS, but the vulnerability had to do with the browser API so Node was not at risk. 
 
-So... benchmark time! I'll be running Octane, which is not a recommended benchmark suite (retired in 2017) but is pretty big and as good as I could find. I didn't bother too much with scientific process, and ran it on my laptop for three runs (V8 recommends 10). I ran without CPU frequency scaling or limiting the number of cores though I could make an argument that I should've. It's important to note that because of caching, network and whatnot, whatever speed difference is not representative of what users experience (and the same regression of turning off escape analysis was not applicable to Node).
+So... benchmark time! I'll be running Octane, which is not a recommended benchmark suite (retired in 2017) but is pretty big and came with my build of V8. I didn't bother too much with scientific process, and ran it on my laptop for three runs (V8 recommends 10). I ran without CPU frequency scaling or limiting the number of cores though I could make an argument that I should've. 
 
 I rebuilt V8 (I could've also tested with Chrome builds, but those seemed harder to find/built and maybe there were other performance affecting charges), based on commit history [here](https://chromium.googlesource.com/v8/v8/+log/f29d55e61904333f3ccc792021885dfa8dc980e2). This compares the impact of this security patch, and not the impact we would get by disabling EA now (it got a big overhaul!). 
 
@@ -180,7 +180,7 @@ I rebuilt V8 (I could've also tested with Chrome builds, but those seemed harder
 ---------------------------------------------------+----------+--------+
 ```
 
-From this we can observe that disabling escape analysis could not have been that bad for Chrome, with a 3.4% reported slowdown (though it is a significant optimization for a compiler). But what about the new escape analysis? `RayTrace` is quite an outlier there, and I find it amusing since the Raytracer probably deals with a lot of objects to represent points and shapes in space, which is exactly what the example in the previous Javascript section was doing. 
+From this we can observe that disabling escape analysis could not have been that bad for Chrome, with a 3.4% reported slowdown (though it is a significant optimization for a compiler). `RayTrace` is quite an outlier there, and I find it amusing since the Raytracer probably deals with a lot of objects to represent points and shapes in space, which is exactly what the example in the previous Javascript and Lua sections were doing. 
 
 With the new escape analysis, disabling it cost 6.3% instead of 3.4%, which indicates that the new escape analysis is better. These benchmarks are good enough to make note of the importance of escape analysis, what kind of operations it works well on but not good enough to say that "escape analysis makes Javascript 6.3% faster". 
 
@@ -310,9 +310,9 @@ Lisp (and dialects) do escape analysis, and a lot of the papers about escape ana
 
 GraalVM will of course run Escape Analysis for any Truffle language. They call it "partial escape analysis", which is what was described in Pypy where the allocation is delayed, or only run at the point of escape. See [the paper on this](http://www.ssw.uni-linz.ac.at/Research/Papers/Stadler14/Stadler2014-CGO-PEA.pdf ). 
 
-Hotspot (Java compiler) of course also does escape analysis, though I get the impression that it's not as "partial" as newer JITs (this may be biased since I can find papers about newer JITs going "haha i am better than hotspot" but not Hotspot going "excuse me my escape analysis is actually great"). One could probably run some tests with JVM backed languages like Java or Scala! Hotspot introduced a concept of flow sensitive vs flow insensitive escape analysis
+Hotspot (Java compiler) of course also does escape analysis, though I get the impression that it's not as "partial" as newer JITs (this may be biased since I can find papers about newer JITs going "haha i am better than hotspot" but not Hotspot going "excuse me my escape analysis is actually great"). One could probably run some tests with JVM backed languages like Java or Scala. 
 
-OCaml does not do escape analysis, but will do things that are more like the constant propagation I talked about with LLVM. OCaml is garbage collected, but it is very well garbage collected and Escape Analysis did not help much ([see thread](https://inbox.ocaml.org/caml-list/1254277202.4888153.1523892717467.JavaMail.zimbra@inria.fr/))
+OCaml does not do escape analysis, but will do things that are more like the constant propagation I talked about with LLVM. OCaml is garbage collected, but it is very well garbage collected (omg goals) and Escape Analysis did not help much ([see thread](https://inbox.ocaml.org/caml-list/1254277202.4888153.1523892717467.JavaMail.zimbra@inria.fr/))
 
 ```ocaml
 let foo p x =
