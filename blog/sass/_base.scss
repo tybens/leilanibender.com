@@ -43,10 +43,10 @@ h1 {
 
 h2 {
   color: adjust-hue($primary, 10deg);
-  font-size: 2.8rem;
   @media (prefers-color-scheme: dark) {
     color: saturate(lighten(adjust-hue($primary, 10deg), 10%), 10%);
   }
+  font-size: 2.4rem;
 }
 
 h3 {
@@ -172,7 +172,7 @@ hr {
 
 .main {
   width: 96%;
-  max-width: 900px;
+  max-width: 80%;
   margin: 0 auto 0;
   margin-bottom: 10%;
 }
@@ -185,7 +185,7 @@ hr {
   font-size: 4.4rem;
   a {
     padding: 3px;
-    text-transform: uppercase;
+    text-transform: lowercase;
     &:hover {
       color: white;
       transition: all 0.25s;
@@ -203,7 +203,7 @@ hr {
   a {
     color: adjust-hue($primary, 10deg);
     @media (prefers-color-scheme: dark) {
-      color: saturate(lighten(adjust-hue($primary, 10deg), 10%), 10%);
+      color: saturate(lighten(adjust-hue($primary, 10deg), 10%), 20%);
     }
   }
 }
@@ -211,19 +211,25 @@ hr {
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
-  line-height: 1.1;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
   position: relative;
   background-color: #fff;
   overflow:hidden;
   padding: 0;
+  margin-top: 5px;
   @media (prefers-color-scheme: dark) {
     background-color: $color-title;
   }
 
   a {
-    text-transform: uppercase;
+    text-transform: lowercase;
     color: $primary;
     font-style: normal !important;
+    @media (prefers-color-scheme: dark) {
+      color: saturate(lighten(adjust-hue($primary, 10deg), 10%), 20%);
+    }
+
     &:hover {
       transition: all 0.25s;
       color: white;
@@ -266,11 +272,11 @@ hr {
   }
 }
 .article-meta {
-  font-size: 1.4rem;
+  font-size: 1rem;
   line-height: 1;
   font-style: italic;
   color: $color-meta;
-  margin-top: 0;
+  margin: 0;
 }
 
 .other-articles {
@@ -317,5 +323,19 @@ hr {
     background: linear-gradient(-60deg, adjust-hue($primary, 25deg), adjust-hue($primary, -25deg));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+
+.row {
+  display: flex;
+  @media only screen and (max-width: 600px) {
+    display: inline-block;
+  }
+}
+.col {
+  padding: 10px;
+  width: 50%;
+  @media only screen and (max-width: 600px) {
+    width: 100%;
   }
 }

@@ -83,42 +83,30 @@
   {%- endblock header %}
 
   <main id="main" class="main">
+    <h1>technical</h1>
     {% block content -%}
-    <div class="row">
-      <div class="col">
-        <h1>technical</h1>
-        {% set section = get_section(path="technical/_index.md") %}
-        {% for page in section.pages %}
-          <article class="c-article p-list-article">
-            {{ macros::title(page=page) }}
-          </article>
-        {% endfor %}
+    {% set section = get_section(path="technical/_index.md") %}
+    {% for page in section.pages %}
+      <article class="c-article p-list-article">
+        {{ macros::title(page=page) }}
+      </article>
+    {% endfor %}
 
-        <h1>tech related</h1>
-        {% set section = get_section(path="techadjacent/_index.md") %}
-        {% for page in section.pages %}
-          <article class="c-article p-list-article">
-            {{ macros::title(page=page) }}
-          </article>
-        {% endfor %}
-      </div>
-      <div class="col">
-        <h1>other stuff i like</h1>
-        {% set section = get_section(path="misc/_index.md") %}
-        {% for page in section.pages %}
-          <article class="c-article p-list-article">
-            {{ macros::title(page=page) }}
-          </article>
-        {% endfor %}
-        <h1>reading logs</h1>
-        {% set section = get_section(path="readinglogs/_index.md") %}
-        {% for page in section.pages %}
-          <article class="c-article p-list-article">
-            {{ macros::title(page=page) }}
-          </article>
-        {% endfor %}
-      </div>
-    </div>
+    <h1>tech related</h1>
+    {% set section = get_section(path="techadjacent/_index.md") %}
+    {% for page in section.pages %}
+      <article class="c-article p-list-article">
+        {{ macros::title(page=page) }}
+      </article>
+    {% endfor %}
+
+    <h1>other stuff i like</h1>
+    {% set section = get_section(path="misc/_index.md") %}
+    {% for page in section.pages %}
+      <article class="c-article p-list-article">
+        {{ macros::title(page=page) }}
+      </article>
+    {% endfor %}
     {%- endblock content %}
   </main>
 
