@@ -46,23 +46,6 @@
         <i class="fas fa-envelope"></i>
       </a>
     </div>
-
-    <div class="other-articles">
-      <h1>See Also</h1>
-      {% set recent_changes = get_section(path="_index.md") %}
-      {% for p in recent_changes.pages | slice(end=5) %}
-        <a href="{{ p.permalink }}">{{ p.title }}</a>
-        </br>
-      {% endfor %}
-
-<!--       {% if page.later -%}
-      <a href="{{ page.later.permalink }}">{{ page.later.title }}</a>
-      {%- endif %}
-      </br>
-      {% if page.earlier -%}
-      <a href="{{ page.earlier.permalink }}">{{ page.earlier.title }}</a>
-      {%- endif %}
- -->    </div>
   </footer>
 </article>
 {%- endblock content %}
