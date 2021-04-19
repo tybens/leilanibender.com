@@ -77,23 +77,38 @@
         "type": 301
       },
       {
+        "source": "/blog/readinglogs/feb-2021/",
+        "destination": "/blog/logs/feb-2021/",
+        "type": 301
+      },
+      {
+        "source": "/blog/techadjacent/*",
+        "destination": "/blog/tech/*",
+        "type": 301
+      },
+      {
+        "source": "/blog/jits-impls/",
+        "destination": "/blog/technical/jits-impls/",
+        "type": 301
+      },
+      {
         "source": "/blog/jits-intro/",
         "destination": "/blog/technical/jits-intro/",
         "type": 301
       },
       {
         "source": "/blog/founding-bad",
-        "destination": "/blog/techadjacent/founding-bad/",
+        "destination": "/blog/tech/founding-bad/",
         "type": 301
       },
       {
         "source": "/blog/real-good-things-about-internships/",
-        "destination": "/blog/techadjacent/real-good-things-about-internships/",
+        "destination": "/blog/tech/real-good-things-about-internships/",
         "type": 301
       },
       {
         "source": "/blog/no-not-good-enough/",
-        "destination": "/blog/techadjacent/no-not-good-enough/",
+        "destination": "/blog/tech/no-not-good-enough/",
         "type": 301
       },
       {

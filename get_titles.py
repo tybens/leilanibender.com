@@ -2,7 +2,7 @@ import re
 import requests
 from bs4 import BeautifulSoup
 
-file_lines = open("blog/content/readinglogs/feb_2021.md", "r").readlines()
+file_lines = open("blog/content/logs/march_reading_2021.md", "r").readlines()
 output = []
 
 for line in file_lines:

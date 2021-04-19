@@ -140,11 +140,15 @@ th,
 td {
   padding: 8px;
   border: 1px solid #eee;
+  text-align: left;
 }
 
 th {
-  background-color: #fafafa;
-  font-weight: normal;
+  font-weight: bold;
+  color: adjust-hue($primary, 20deg);
+  @media (prefers-color-scheme: dark) {
+    color: saturate(lighten(adjust-hue($primary, 20deg), 10%), 10%);
+  }
 }
 
 del {

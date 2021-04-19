@@ -1,6 +1,6 @@
 +++
 title = "Tensorflow with Go Code Examples: TFRecord Examples, TF Serving Clients"
-date = 2020-03-06
+date = 2021-03-06
 weight = 4
 +++
 

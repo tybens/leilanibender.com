@@ -22,13 +22,13 @@ Anywho, really bright lights are cool. X-Rays are essential for doctors, and you
 
 During our experiment we worked with the XRF technique - X-Ray Fluorescence. The high energy rays of light strike the atoms in the sample, exciting the electrons. Electrons from lower energy orbitals (for example, an electron from n = 2) will be dislodged from the atom, causing an electron from a higher energy orbital to fall into it's place. This will release a very specific amount of energy, which when measured can be used to identify the element. Add a few asterisks to the information you just read, cause it's physics and it's not really that straightforward.
 
-![](../img/synchrotronproject/xrf.png)
+![](../../img/synchrotronproject/xrf.png)
 
 Gorilla Glass tells us that they use an ion-exchange process to add potassium ions to their glass, with the theory that larger ions will cause the glass to be stronger. <span class="pink-highlight">Sodium ions are replaced by larger potassium ions, creating compressive stress in the glass, and thus more resistant to damage.</span>
 
 Here's what we found in our samples;
 
-![](../img/synchrotronproject/full-graph.png)
+![](../../img/synchrotronproject/full-graph.png)
 
 This graph may be a pain to read :p
 
@@ -36,11 +36,11 @@ With the XRF technique, we were able to determine relative compositions. Each pe
 
 In case you're curious, unlabeled peaks are secondary peaks of an element. Depending on the electron that is dislodged, different energies will be released. Arsenic(As) is commonly used in glass production, and is expected to be present in glass. The argon peak at the beginning is just from the air.
 
-![](../img/synchrotronproject/five.png)
+![](../../img/synchrotronproject/five.png)
 
 The iPhone 5C was a cheap and very popular phone. Without a contract, they started at $99 USD while the iPhone 5 started at $649 USD. <span class="pink-highlight">It wasn't just the specs that caused this huge price difference - the differences in quality can be observed in the glass.</span> The iPhone 5C had significantly less potassium(K) and more calcium(Ca). Apple was likely able to use calcium as a cheaper substitute for potassium as they're both Alkali Metals and share similar properties. The Iron(Fe) is most likely an impurity.
 
-![](../img/synchrotronproject/generations.png)
+![](../../img/synchrotronproject/generations.png)
 
 In this graph, you can see the amount of potassium(K) increase when the model of the iPhone is more recent. Additionally, there seems to be a big leap between their approach to getting stronger glass from the iPhone 4 to the 5 and 6 (Good job Apple!). The obvious question, is why not just stuff it with all the potassium possible? With the atomic structure of glass (and other properties), having too many large ions could actually cause bends or bumps in the glass. There's a good chance they have a research team dedicated to improving the glass on their phones.
 

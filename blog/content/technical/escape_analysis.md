@@ -146,7 +146,7 @@ This blog post doesn't cover interpreted languages! The obvious answer is that b
 
 Javascript's V8 engine does escape analysis similarly to the way described in Pypy and LuaJIT. In 2017 though, a bug with overly aggressive escape analysis became a significant vulnerability for Chrome browsers and escape analysis was disabled for about a week before they reimplemented it. This is an Extremely Cool exploit and I'm surprised there wasn't a write-up on it. 
 
-![](../img/allocs/js.png)
+![](../../img/allocs/js.png)
 
 The Chrome team marked this as "high" with a $7500 reward, and the bug is fairly intuitive -- something isn't allocated when it should be and errors will occur due to something not existing when it should be. The reason it's a security vulnerability is unrelated to escape analysis and requires too much background to fully explore in this post.  
 

@@ -95,7 +95,7 @@
         {% endfor %}
 
         <h1>tech related</h1>
-        {% set section = get_section(path="techadjacent/_index.md") %}
+        {% set section = get_section(path="tech/_index.md") %}
         {% for page in section.pages %}
           <article class="c-article p-list-article">
             {{ macros::title(page=page) }}
@@ -110,8 +110,8 @@
             {{ macros::title(page=page) }}
           </article>
         {% endfor %}
-        <h1>reading logs</h1>
-        {% set section = get_section(path="readinglogs/_index.md") %}
+        <h1>logs</h1>
+        {% set section = get_section(path="logs/_index.md") %}
         {% for page in section.pages %}
           <article class="c-article p-list-article">
             {{ macros::title(page=page) }}

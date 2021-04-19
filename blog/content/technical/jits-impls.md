@@ -134,7 +134,7 @@ Hotspot (named after looking for _hot_ spots) is the VM that ships with standard
 
 Strategies used in Hotspot inspired many of the subsequent JITs, the structure of language VMs and especially the development of Javascript engines. It also created a wave of JVM languages such as Scala, Kotlin, JRuby or Jython. JRuby and Jython are fun implementations of Ruby and Python that compile the source code down to the JVM bytecode and then have Hotspot execute it. These projects have been relatively successful at speeding up languages like Python and Ruby (Ruby more so than Python) without having to implement an entire toolchain like Pypy did. Hotspot is also unique in that it's a JIT for a less dynamic language (though it's technically it's a JIT for JVM bytecode and not Java). 
 
-![](../img/jits/vms.png)
+![](../../img/jits/vms.png)
 
 GraalVM is a JavaVM and then some, written in Java. It can run any JVM language (Java, Scala, Kotlin, etc). It also supports a Native Image, to allow AOT compiled code through something called Substrate VM. Twitter runs a significant portion of their Scala services with Graal, so it must be pretty good, and better than the JVM in some ways despite being written in Java. 
 
@@ -152,7 +152,7 @@ C extension support is hard to support for a variety of reasons, the most obviou
 
 Graal solves the problem with Sulong, an engine that runs LLVM Bitcode on GraalVM by making LLVM Bitcode a Truffle language. LLVM is a toolchain, though all we need to know about it is that C can be compiled into LLVM Bitcode (Julia also has an LLVM backend!). It's a bit weird, but basically the solution is to take a perfectly good 40+ year old compiled language and interpret it! Of course, it's not nearly as fast as properly compiling C, but there are a few wins tucked away in here.
 
-![](../img/jits/cextensions.png)
+![](../../img/jits/cextensions.png)
 
 LLVM Bitcode is already fairly low-level, which means that jitting that IR is not as inefficient as jitting C. Some of that cost is earned back in that the Bitcode can be optimized along with the rest of the Ruby program, whereas a compiled C program could not be. All that allocation removal, inlining, dead code elimination, etc can be run on the C and Ruby code together instead of Ruby code just calling a C binary. Select benchmarks even have TruffleRuby C extensions running faster than CRuby C extensions.
 
@@ -166,7 +166,7 @@ We know that JITs come with an interpreter and a compiler, and that they move fr
 
 An important component to making deoptimization fast, is to make sure that switch from the compiler to interpreter is as fast as possible. The most naive implementation would result in the interpreter having to “catch up” with the compiler in order to be able to make the deopt. Additional complexity exists in dealing with deoptimizing asynchronous threads. To deoptimize, Graal will recreate the stack frames and use a mapping from generated code to return to the interpreter. For threads, safepoints in Java threads are used which are in place for threads to constantly pause and go “hi garbage collector, do I stop now?” so not much overhead is added to handle threads. It’s a bit rocky, but fast enough to make deoptimization a good strategy.
 
-![](../img/jits/deopts.png)
+![](../../img/jits/deopts.png)
 
 Similarly to the Pypy bridging example, monkey patching of functions can be deoptimized. The deoptimization there is actually more elegant, as it's not a deoptimization that occurs when a guard fails, rather the deoptimizing-code is added where monkey patching occurs.
 
@@ -229,7 +229,7 @@ So V8 will compile `foo` and determine it is inline-able and inlines it with  wi
 
 Inlining is crazy effective! I ran the code above with a couple extra zeroes, and it was 4 times slower with inlining disabled.
 
-![](../img/jits/inliningbench.png)
+![](../../img/jits/inliningbench.png)
 
 Though this is a blog post about JITs, inlining is also really effective for compiled languages. All LLVM languages will inline aggressively (because LLVM will inline), though Julia actually inlines without LLVM because of its jitty nature. JITs can inline with heuristics that come from runtime information, and can switch from not-inlining to inlining with OSR.
 
@@ -242,7 +242,7 @@ We've taken a look at LLVM bitcode and Python/Ruby/Java-esque bytecode as IR - a
 
 I'm usually all for "try this at home!" but getting graphs to browse is actually a bit difficult, albeit lots of fun and often very helpful for understanding compiler flows. I for one, cannot read all the graphs not only by limits of knowledge but by the computation power of my brain (which can be mediated with compiler options to get rid of behaviours I don't care about)
 
-![](../img/jits/igvyikes.png)
+![](../../img/jits/igvyikes.png)
 
 For V8, you'll need to build V8 and then use the D8 tool with the flag `--print-ast`. For Graal, `--vm.Dgraal.Dump=Truffle:2`. These give you text outputs (formatted such that you can get a graph out of them). I'm not sure how V8 developers generate visual graphs but Oracle provides "Ideal Graph Visualizer", which is used above. I did not have the energy to reinstall IGV so instead I have graphs from Chris Seaton generated with Seafoam which is not currently open sourced.
 
@@ -304,7 +304,7 @@ FUNC at 19
 ``` 
 This is pretty hard to parse, but it actually maps somewhat closely to a parser-level AST (though this won’t be the case for all programs) which will help. The AST below was generated with Acorn.js
 
-![](../img/jits/acorn.png)
+![](../../img/jits/acorn.png)
 
 A distinct difference is the variable declarations. In the parser-AST, no actual declaration is explicit for the parameters, and the declaration for the loop is tucked away under the `ForStatement` node. In the compiler-level AST, all declarations are grouped, along with addresses and metadata. 
 
@@ -326,7 +326,7 @@ The compiler-level AST also uses this wacky `VAR PROXY` thing. The parser-level 
 
 Now, the same program’s AST with Graal!
 
-![](../img/jits/seafoam.jpg)
+![](../../img/jits/seafoam.jpg)
 
 This of course, looks much simpler. Red is control flow, blue is ~~water~~ data flow, and arrows are directions. Note that the fact that this graph appears simpler than the AST from V8, does not indicate that Graal has better simplified the program. Rather, this graph is generated from Java which is much less dynamic. The same Graal graph generated from Ruby would closer resemble that first photo of the graph. 
 
@@ -340,7 +340,7 @@ I've been teasing "Tiering" since Part 1, so let's finally get a look into it! I
 
 Hotspot is a tiering JIT, with two compilers; C1 and C2. The C1 compiler will kick in first and do a quick compile and run then run full profiling to get C2 compiled code. This can help clear up a lot of our concerns with warmup. Unoptimized compiled code is still faster than interpreting and aquiring that unoptimized compiled code is faster. Another fancy thing is that not all code will be compiled by C1 and C2. If a function is deemed trivial enough, it's very likely that optimized C2 output will not be helpful and no attempt will be made (and profiling time is saved!). If perhaps C1 is busy compiling, then the profiling can continue and skip C1 to be compiled by C2 directly.
 
-![](../img/jits/hotspottiers.png)
+![](../../img/jits/hotspottiers.png)
 
 JavaScript Core tiers even harder! In fact, it has _three JITs_. JSC's interpreter also does light profiling, then moves onto the Baseline JIT, then to the DFG (Data Flow Graph) JIT, and finally to the FTL (Faster than Light) JIT. With these tiers, the meaning of deoptimization is no longer limited to a compiler-to-interpreter path, but deoptimization can happen from the DFG to the Baseline JIT (this doesn't seem to be the case for Hotspot C2->C1). These deoptimizations and passes into the next tier are done through on-stack-replacement.
 

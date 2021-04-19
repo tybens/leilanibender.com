@@ -39,9 +39,7 @@ Most networking courses have things I'd want to learn, I hope to find a few vide
 
 I work at an AI company, so I kind of just pick this one up? There's so much more lore on how to become an MLE or Researcher than any of these other subjects so I won't say much. 
 
-The sparkly thing about ML is that you can become an excellent ML Programmer (especially excellent in terms of career) while being extremely specialized. Really 
-
-I dislike being specialized, I'd like to work on scaling model APIs and GPU programming 
+The sparkly thing about ML is that you can become an excellent ML Programmer (especially excellent in terms of career) while being extremely specialized. I dislike being specialized, I'd like to work on scaling model serving and GPU programming.
 
 ## Databases
 
