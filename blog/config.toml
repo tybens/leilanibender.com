@@ -6,11 +6,10 @@ description = "Carol Chen's blog about stuff she does or reads about or observes
 # The default language, used in RSS
 default_language = "en"
 
-# Highlight all code blocks found
-highlight_code = true
+compile_sass = true
 
-# Which theme to use for the code highlighting.
-# See below for list of accepted values
+[markdown]
+highlight_code = true
 highlight_theme = "dracula"
 
 # Whether to generate a RSS feed automatically
@@ -47,7 +46,6 @@ taxonomies = []
 #
 
 # Whether to compile the Sass files found in the `sass` directory
-compile_sass = true
 
 # Whether to build a search index out of the pages and section
 # content for the `default_language`

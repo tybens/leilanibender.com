@@ -4,7 +4,9 @@ date = 2021-03-07
 weight = 1
 +++
 
-The path to earn-to-give effective altruism is one of normalizing donating, not one of character development. Donations converted to CAD, if I donated through an organization that distributes to other charities, the charaties that will be spending the money are listed. 
+The path to earn-to-give effective altruism is mostly one of normalizing donating, not one of character development. Donations converted to CAD, if I donated through an organization that distributes to other charities, the charities that will be spending the money are listed. 
+
+2021 edit: I would've liked to put more money into less anthrocentric causes as well as put some money into meta-research
 
 ### Breakdown
 
