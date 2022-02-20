@@ -58,9 +58,9 @@ const Landing = () => (
               instagram
             </a>{" "}
             ||{" "}
-            <a
-              href="https://leilanibender.com/resume"
-              rel="noredirect noopener noreferrer"
+            <a 
+              href="/LeilaniBenderResume.pdf"
+              download
             >
               button for recruiters
             </a>
