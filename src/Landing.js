@@ -60,7 +60,6 @@ const Landing = () => (
             ||{" "}
             <a
               href="https://leilanibender.com/resume"
-              target="_blank"
               rel="noredirect noopener noreferrer"
             >
               button for recruiters

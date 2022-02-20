@@ -25,7 +25,7 @@ This will auto-refresh and build CSS on all changes!
 
 
 # Deployment
-The general deployment process usually involves running `yarn build` and then `firebase deploy` for firebase hosting.
+The general deployment process involves running `yarn build` and then `firebase deploy` for firebase hosting.
 
 ### Analytics
 An analytics service such as Google Analytics will give you a script that should be added to `public/index.html` in the `footer` element. 
