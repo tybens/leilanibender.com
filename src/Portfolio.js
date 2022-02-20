@@ -1,4 +1,4 @@
-import React, { Component, useState } from 'react';
+import React, { Component } from 'react';
 
 import Slider from 'rc-slider';
 import { Row, Col } from 'react-bootstrap';
@@ -22,7 +22,7 @@ class Portfolio extends Component {
         <section id="portfolio">
           <h2 className="section-heading">things i've done</h2>
           <center>
-            <span>Last Updated May 2020</span>
+            <span>Last Updated February 2022</span>
             <Slider
               defaultValue={2}
               min={1}
@@ -137,9 +137,9 @@ class PortfolioSection extends Component {
                 <div className="portfolio-item">
                   <div className="header">
                     <span className="title">{item.thing}</span>
-                    <span className="divider-strong"> // </span>
+                    <span className="divider-strong"> || </span>
                     <span className="desc">{item.description}</span>
-                    <span className="divider-weak"> // </span>
+                    <span className="divider-weak"> || </span>
                     <span className="date"> {item.date}</span>
                   </div>
                   <ul>

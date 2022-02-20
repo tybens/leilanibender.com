@@ -37,4 +37,4 @@ Once you get out of school, the different axis on which you can succeed grows qu
 If you are interested in not going to school, then the much harder question is what on earth to do. I don't have many coherent thoughts about this that is suitable as general advice, but if you want to email me at hello@carolchen.me we can chat~
 
 <3, 
-Kipply
+Leilani

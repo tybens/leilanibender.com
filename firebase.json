@@ -38,7 +38,7 @@
     "rewrites": [
       {
         "source": "/resume",
-        "destination": "/CarolChenResume.pdf"
+        "destination": "/LeilaniBender.pdf"
       },
       {
         "source": "/bestaplaid",

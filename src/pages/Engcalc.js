@@ -1,4 +1,4 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component } from 'react';
 import './styles/Engcalc.css';
 import {Tex} from 'react-tex';
 import * as math from 'mathjs';
@@ -121,48 +121,48 @@ class Engcalc extends Component {
           }
         </div>
         <div className="row">
-          <img src={process.env.PUBLIC_URL + '/engcalc/1title.gif'}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/2factorial.gif'} onClick={() => this.click("!")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/3openbracket.gif'} onClick={() => this.click("(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/4closingbracket.gif'} onClick={() => this.click(")")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/5modulo.gif'} onClick={() => this.click("%")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/6AC.gif' } onClick={() => this.clear()}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/1title.gif'}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/2factorial.gif'} onClick={() => this.click("!")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/3openbracket.gif'} onClick={() => this.click("(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/4closingbracket.gif'} onClick={() => this.click(")")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/5modulo.gif'} onClick={() => this.click("%")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/6AC.gif' } onClick={() => this.clear()}/>
         </div>
         <div className="row">
-          <img src={process.env.PUBLIC_URL + '/engcalc/7music.png'} onClick={() => this.music()}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/8sin.gif'} onClick={() => this.click("sin(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/9ln.gif'} onClick={() => this.click("ln(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/101.gif'} onClick={() => this.click("1")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/113.gif'} onClick={() => this.click("3")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/125.gif'} onClick={() => this.click("5")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/13:.gif.gif'} onClick={() => this.click("/")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/7music.png'} onClick={() => this.music()}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/8sin.gif'} onClick={() => this.click("sin(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/9ln.gif'} onClick={() => this.click("ln(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/101.gif'} onClick={() => this.click("1")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/113.gif'} onClick={() => this.click("3")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/125.gif'} onClick={() => this.click("5")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/13:.gif.gif'} onClick={() => this.click("/")}/>
         </div>
         <div className="row">
-          <img src={process.env.PUBLIC_URL + '/engcalc/14pi.gif'} onClick={() => this.click("pi")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/15cos.gif'} onClick={() => this.click("cos(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/16log.gif'} onClick={() => this.click("log(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/177.gif'} onClick={() => this.click("7")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/189.gif'} onClick={() => this.click("9")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/190.gif'} onClick={() => this.click("0")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/20x.gif'} onClick={() => this.click("x")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/14pi.gif'} onClick={() => this.click("pi")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/15cos.gif'} onClick={() => this.click("cos(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/16log.gif'} onClick={() => this.click("log(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/177.gif'} onClick={() => this.click("7")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/189.gif'} onClick={() => this.click("9")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/190.gif'} onClick={() => this.click("0")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/20x.gif'} onClick={() => this.click("x")}/>
         </div>
         <div className="row">
-          <img src={process.env.PUBLIC_URL + '/engcalc/21e.gif'} onClick={() => this.click("e")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/22tan.gif'} onClick={() => this.click("tan(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/23sqrt.gif'} onClick={() => this.click("sqrt(")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/242.gif'} onClick={() => this.click("2")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/254.gif'} onClick={() => this.click("4")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/266.gif'} onClick={() => this.click("6")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/27-.gif'} onClick={() => this.click("-")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/21e.gif'} onClick={() => this.click("e")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/22tan.gif'} onClick={() => this.click("tan(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/23sqrt.gif'} onClick={() => this.click("sqrt(")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/242.gif'} onClick={() => this.click("2")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/254.gif'} onClick={() => this.click("4")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/266.gif'} onClick={() => this.click("6")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/27-.gif'} onClick={() => this.click("-")}/>
         </div>
         <div className="row">
-          <img src={process.env.PUBLIC_URL + '/engcalc/28ans.gif'} onClick={() => this.click(this.answer)}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/29exp.png'} onClick={() => this.click("*10^")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/30^.gif'} onClick={() => this.click("^")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/318.gif'} onClick={() => this.click("8")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/32..gif'} onClick={() => this.click(".")}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/33=.png'} onClick={() => this.evaluate()}/>
-          <img src={process.env.PUBLIC_URL + '/engcalc/34+.gif'} onClick={() => this.click("+")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/28ans.gif'} onClick={() => this.click(this.answer)}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/29exp.png'} onClick={() => this.click("*10^")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/30^.gif'} onClick={() => this.click("^")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/318.gif'} onClick={() => this.click("8")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/32..gif'} onClick={() => this.click(".")}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/33=.png'} onClick={() => this.evaluate()}/>
+          <img alt="" src={process.env.PUBLIC_URL + '/engcalc/34+.gif'} onClick={() => this.click("+")}/>
         </div>
         <div className="row">
           Built by Howard Halim, William Zhao and Carol Chen
