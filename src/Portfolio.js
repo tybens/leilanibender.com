@@ -32,7 +32,7 @@ class Portfolio extends Component {
                 2: 'Default',
                 3: 'More things',
                 4: 'Lots of things',
-                5: 'Shit List',
+                5: 'EVERYTHING',
               }}
               dots
               onChange={v => this.setState({ slider: v })}
