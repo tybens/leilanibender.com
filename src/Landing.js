@@ -3,11 +3,10 @@ import { Row, Col } from "react-bootstrap";
 
 import meImg from "./img/me.jpg";
 import meImg2 from "./img/me2.jpg";
-import meImg3 from "./img/me3.jpg";
 import meImg4 from "./img/me4.jpg";
 import meImg5 from "./img/me5.jpg";
 
-const meImages = [meImg, meImg2, meImg3, meImg4, meImg5];
+const meImages = [meImg, meImg2, meImg4, meImg5];
 
 const Landing = () => (
   <div style={{ display: "block" }}>

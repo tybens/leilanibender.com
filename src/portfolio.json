@@ -1,644 +1,137 @@
 {
   "experience": [
     {
-      "thing": "Generic Stealth AI Startup",
-      "description" : "Software Engineer",
-      "date": "May 2020 - Present",
+      "thing": "Matriculate",
+      "description" : "Advising Fellow",
+      "date": "Mar 2022 - Present",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [1, 2, 3, 4, 5],
-          "content": "Hand-sewing designs onto shirts for interns"
-        },
-        {
-          "toggle": [1, 2, 3, 4, 5],
-          "content": "Came up with good project names like \"blobheart\" and \"aurthur\""
-        },
-        {
-          "toggle": [1, 2, 3, 4, 5],
-          "content": "Tweeted tweets responsible for much recruiting"
+          "content": "Advised low-income, high-achieving high school juniors and seniors through the college admissions process"
         }
       ]
     },
     {
-      "thing": "Shopify",
-      "description" : "Production Engineering Intern",
-      "date": "Jan - May 2020",
+      "thing": "Self-Employed",
+      "description" : "Tutor",
+      "date": "Aug 2018 - Present",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [1, 2, 3, 4, 5],
-          "content": "Worked on TruffleRuby, a high-performance implementation of Ruby."
+          "content": "Tutored STEM and SAT prep for students in 8th through 12th grade."
         },
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "Fixed bugs and worked on infra to get the storefront renderer application mirroring traffic in TruffleRuby."
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Prepared personalized lessons based on students’ needs."
         },
         {
-          "toggle": [2, 3, 4, 5],
-          "content": "Worked on profiling, optimizations and wrote a <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>blog post</a>."
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Relied on references and being diligent to seek out new clients."
         }
       ]
     },
     {
-      "thing": "Lighthouse Labs",
-      "description" : "Web Programming Instructor",
-      "date": "Sep - Dec 2019",
+      "thing": "Keiki Kaukau",
+      "description" : "Business Intern",
+      "date": "May - Aug 2021",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "Taught full-stack development courses to adult part-time bootcamp students."
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Packed and delivered online and wholesale orders."
+        },
+        {
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Created social media content for an audience of over 11,000"
+        },
+        {
+          "toggle": [1, 2, 3, 4, 5],
+          "content": "Helped organize events and sales of $10,000+ of merchandise."
         }
       ]
     },
-    {
-      "thing": "Shopify",
-      "description" : "Software Developer Intern, Channels",
-      "date": "Jul - Aug 2018, Jul - Dec 2019",
-      "toggle": [1, 2, 3, 4, 5],
+{
+      "thing": "Tex808",
+      "description" : "Hostess/Food Runner",
+      "date": "Jun 2020 - Jan 2021",
+      "toggle": [3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "Documented and built components for moving to a new authentication system for internal tools. "
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Made multiple apps GDPR compliant, impacting over 50,000 stores. "
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Shipped features for reporting Facebook Ad analytics to Shopify."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Worked on building onboarding for the Instagram Checkout app, reduced API errors."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Shipped code generators for partners to build marketing activity extensions in NodeJS and Rails."
-        }
-      ]
-    },
-    {
-      "thing": "Hatch Canada",
-      "description" : "Software Developer",
-      "date": "Aug 2017 - Jul 2018",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Designed a new CS curriculum currently in-use with a focus on self-learning, targeted towards high school students."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Built a platform for coaches and students to track progress for the new curriculum."
+          "toggle": [4, 5],
+          "content": "Greeted and sat all guests following COVID-19 guidelines at the time."
         },
         {
           "toggle": [4, 5],
-          "content": "Added end-to-end testing with <a target=\"_blank\" href='https://www.cypress.io/'>Cypress</a> while working on small features and bugs."
-        },
-        {
-          "toggle": [5],
-          "content": "Learned to hate writing end-to-end tests."
-        }
-      ]
-    },
-    {
-      "thing": "Lakeridge Ski Resort",
-      "description" : "Ski Instructor",
-      "date": "Jan - Mar 2017",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "CSIA Level 1 License."
+          "content": "Communicated with other restaurant staff to ensure a good dining experience."
         },
         {
           "toggle": [3, 4, 5],
-          "content": "Started teaching after two years of volunteering as an apprentice."
-        },
-        {
-          "toggle": [5],
-          "content": "Won the honours of signing a bent golden(no sparkles or glitter unfortunately) pole as an Instructor of the Week Award."
+          "content": "Brought food to customers’ tables, bussed, and cleaned tables between each party."
         }
       ]
     }
   ],
   "awards": [
     {
-      "thing": "Google Code-in Grand Prize Winner",
-      "description": "Sugar Labs",
-      "date": "Jan 2018",
-      "toggle": [3, 4, 5],
+      "thing": "Rugby",
+      "description": "Academic All-Ivy Fall 2021",
+      "date": "Dec 2021",
+      "toggle": [2, 3, 4, 5],
       "points": [
         {
-          "toggle": [3, 4, 5],
-          "content": "Among fifty winners of over 3500 contestants for two months of open source contribution for One Laptop per Child software. Worked in Python GTK and Javascript."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Merged 27 pull requests and committed 2636 lines of code, worked on translations and documentation."
-        },
-        {
-          "toggle": [5],
-          "content": "Went on a fun trip to Mountain View where I got to meet some cute GCI winners. Proudly skipped a week of school."
+          "toggle": [2, 3, 4, 5],
+          "content": "3.7+ GPA and played in at least two A-side matches in the Fall 2021 season."
         }
       ]
     },
-    {
-      "thing": "Top 21% of Contributors",
-      "description": "Stack Overflow",
-      "date": "2018",
-      "toggle": [3, 4, 5],
-      "points": []
-    },
-    {
-      "thing": "Finalist and Google Prize",
-      "description": "Hack the North (1000 Participants)",
-      "date": "Sept 2017",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Built <a href='https://devpost.com/software/hilite'>a highlighter</a> that sends highlighted text to mobile app in real time with React Native and Python."
-        },
-        {
-          "toggle": [5],
-          "content": "End product was a $20 webcam taped to a can of redbull with a beer bottle opener as a 'nib'."
-        }
-      ]
-    },
-    {
-      "thing": "Best Use of Stdlib",
-      "description": "Hack the 6ix (300 Participants)",
-      "date": "Aug 2018",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Built a <a href='https://devpost.com/software/polycode'>command line tool and Atom plugin</a> that translates JS and Python between spoken languages."
-        }
-      ]
-    },
-    {
-      "thing": "Finalist and Best Use of Stdlib",
-      "description": "U of T Hacks (500 Participants)",
-      "date": "Jan 2018",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Built a native Android app to play a <a href='https://devpost.com/software/sms-treasure'>location-based game</a> based on a peer-to-peer SMS network."
-        }
-      ]
-    },
-    {
-      "thing": "2nd Place and Wolfram Prize",
-      "description": "MHacks9 (300 Participants)",
-      "date": "March 2017",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Built a smart notetaker designed to integrate with drawing diagrams and doing math."
-        }
-      ]
-    },
-    {
-      "thing": "2nd Place and Best Game",
-      "description": "Massey Hacks 3",
-      "date": "March 2017",
+{
+      "thing": "Rugby",
+      "description": "PUWRFC Defensive Player of the Season",
+      "date": "Jan 2022",
       "toggle": [4, 5],
       "points": [
         {
           "toggle": [5],
-          "content": "Built 'Faight', an online game where people can get AIs to compete by programming in any language. Supported Brianfuck."
-        }
-      ]
-    },
-    {
-      "thing": "Best Use of Target API",
-      "description": "MHacks 8",
-      "date": "October 2016",
-      "toggle": [5],
-      "points": []
-    },
-    {
-      "thing": "Cup Stacking Champion",
-      "description": "Hack the Hammer",
-      "date": "February 2018",
-      "toggle": [5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Made the tallest stack of cups. Only won because our team had taller people."
-        }
-      ]
-    },
-    {
-      "thing": "Avogadro Contest",
-      "description": "Top 5% in Canada",
-      "date": "May 2016",
-      "toggle": [5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "It's a chemistry contest. Wow look a non-software thing. Did this to impress a boy, who was not impressed."
+          "content": "Yes I <3 rugby"
         }
       ]
     }
   ],
+
   "hobbies": [
     {
-      "thing": "Aerial Arts",
-      "description": "Mostly hoop, some silks, rope and pole",
-      "date": "August 2018 - Now",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I get really sad when I don't go to the circus space for too long <3."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I've also started playing around with poi and juggling!"
-        }
-      ]
-    },
-    {
-      "thing": "Reading",
-      "description": "Money Stuff, Wait but Why, some others",
-      "date": "",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I don't read a lot of full books, but I never miss an article of Money Stuff (about finance)"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I'm working through Wait but Why, and a bunch of miscellaneous blogs. A lot of my reading time goes towards Reddit / Twitter etc"
-        }
-      ]
-    },
-    {
-      "thing": "Consuming Media",
-      "description": "Anime, TV, Film, etc",
-      "date": "All the damn time",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Anime is always great, and I watch some of the big movies. I watch a lot of TV shows (drama, sitcom, reality, whatever) though the one that still stands out to me in Hannibal."
-        }
-      ]
-    },
-    {
-      "thing": "Beat Saber",
-      "description": "The VR game where you hit stuff to music",
-      "date": "August 2019 - Now",
+      
+        "thing": "Rugby",
+        "description": "President of PUWRFC",
+        "date": "2021- Present",
+        "toggle": [1, 2, 3, 4, 5],
+        "points": [
+          {
+            "toggle": [2, 3, 4, 5],
+            "content": "Lots of team management and overseeing other positions."
+          },
+    
+          {
+            "toggle": [2,3,4,5],
+            "content": "I play lock and flanker in 15s and prop in 7s :)"
+          }
+        ]
+      }, {
+      "thing": "Surfing",
+      "description": "Only when I'm home",
+      "date": "Childhood - Present",
       "toggle": [1, 2, 3, 4, 5],
       "points": [
         {
           "toggle": [4, 5],
-          "content": "I have an Oculus Quest, plays Expert+"
-        }
-      ]
-    },
-    {
-      "thing": "Carnivorous Plant Collecting",
-      "description": "My Basement",
-      "date": "May 2016 - Sept 2018",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Collected nearly 30 species of carnivorous plants, including nepenthes, sarracenia, drosera, dionaea, utricularia and pinguicula"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Grew plants from seed, leaf cuttings and had a custom built lighting and watering setup. Washed and mixed my own soils."
-        }
-      ]
-    },
-    {
-      "thing": "Competitive Programming",
-      "description": "Online Judges",
-      "date": "Did it for a bit and not anymore",
-      "toggle": [4, 5],
-      "points": [
-        {
-          "toggle": [4, 5],
-          "content": "Writes <a href='https://github.com/kipply/competitive-programming'>solutions</a> to contest problems. Has authored <a href='https://dmoj.ca/user/kipply/solved#pp-load-link-wrapper'>some problems</a> too."
-        },
-        {
-          "toggle": [5],
-          "content": "Helped organize logistics DMPG twice, an onsite contest with 200 attendees from the region."
-        }
-      ]
-    },
-    {
-      "thing": "3D Printing",
-      "description": "Home printer, Monoprice Select Plus",
-      "date": "Past",
-      "toggle": [4, 5],
-      "points": []
-    }
-  ],
-  "stuff": [
-    {
-      "thing": "Rejections",
-      "description": "Thiel Fellowship, Many Undergrad Programs, Lots of Crushes",
-      "date": "All the time",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Too lazy (prideful?) to maintain a full failure resume, so there's a brief recap of my top failures!"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I have been rejected by 24 schools (closer to 30 if you count schools that admit programs separately)."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "I applied for two years with similar test scores (35 ACT, good subject tests) and higher grades the second time around. Reason of rejection is grades and being international with need."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Thiel Fellowship Rejected x2, Neo (Fellowship|Program|Club) x1, Miss World Canada x1 (they were unwilling to waive my entrance fee on merit)"
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Internship Rejections: Mozilla, Citadel, Docker, Pagerduty, Square, etc. Full-time Job Rejections: Square, Amazon."
-        }
-      ]
-    },
-    {
-      "thing": "Organizer",
-      "description": "U of T Hacks",
-      "date": "Aug 2018 - Feb 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Yikes this hackathon was literally the weekend in the middle of my exams."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Worked on scheduling, programming of mini-events and application review along with other tasks."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Worked on logistics for a hackathon that supported 550 amazing participants for 36 hours <3."
-        },
-        {
-          "toggle": [5],
-          "content": "Personally brought in highly body positive fitness sessions and FREE MASSAGES for participants "
-        }
-      ]
-    },
-    {
-      "thing": "Event & Hackathon Coordinator",
-      "description": "Toronto Hacker Club",
-      "date": "Dec 2016 - Oct 2017",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "Experience Lead for <a href='https://thacks2.devpost.com/'>THacks 2</a>, with 350 attendees. Managed 1200 applications, judging and workshops."
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "Where's my money? <a href='https://www.cbc.ca/news/canada/toronto/this-toronto-tech-ceo-is-accused-of-taking-advantage-of-high-school-kids-owes-them-16k-1.4476029/'>News Article</a>"
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Organized workshops with Google and Mozilla, as well computing contests and children's events."
-        }
-      ]
-    },
-    {
-      "thing": "Lead Organizer",
-      "description": "Terrible Hack Waterloo",
-      "date": "Nov 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": []
-    },
-    {
-      "thing": "YCombinator Quitter",
-      "description": "",
-      "date": "Dec 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I don't have much to say about running a startup, but I do have a lot to say about managing fomo and interviewing with YC."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "Y-Combinator when you can Not-Combinator lmao"
-        }
-      ]
-    },
-    {
-      "thing": "Student Council",
-      "description": "Richmond Hill High School",
-      "date": "May 2017 - Jun 2019",
-      "toggle": [4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Organizes school dances, carnivals, and spirit days."
-        },
-        {
-          "toggle": [5],
-          "content": "Builds software solutions, such as matchmaking apps, ticketing systems or websites."
-        }
-      ]
-    }
-  ],
-  "events": [
-    {
-      "thing": "Recurse Center",
-      "description": "3-month programming retreat in NYC",
-      "date": "Sometime soon, when I have time and when COVID-19 is through",
-      "toggle": [4, 5],
-      "points": []
-    },
-    {
-      "thing": "Hackathons",
-      "description": "Various of Universities and Venues",
-      "date": "November 2015 - August 2018",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [3],
-          "content": "I grew up with hackathons but now I'm too tired and they're not as beneficial as they used to be."
-        },
-        {
-          "toggle": [3],
-          "content": "Mentored at several hackathons, gave workshops and judged at others."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "16 wins and no longer counting"
-        }
-      ]
-    },
-    {
-      "thing": "Speaker",
-      "description": "Wolfram Technology Conference",
-      "date": "Oct 2017",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Spoke about the applications of Wolfram Alpha in education, and how to used software to improve existing study tools targeted towards sciences."
-        }
-      ]
-    },
-    {
-      "thing": "Speaker",
-      "description": "PyCon Canada",
-      "date": "Nov 2019",
-      "toggle": [1, 2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Spoke about Python design history and some weird highlights."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "It's very all-over-the-place, but I wrote a loosely related <a href='https://carolchen.me/blog/2020/02/24/Python-History-Since-the-Fifteenth-Century/'>blog post</a>."
-        }
-      ]
-    },
-    {
-      "thing": "SPARC",
-      "description": "Student",
-      "date": "July 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "'Applied Rationality' camp, 10 days with ~30 people. See <a href='https://sparc-camp.org/' target=\"_blank\">their website</a> for more info."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I can't quite put it into words, but it was a very impactful experience."
-        }
-      ]
-    },
-    {
-      "thing": "Hack Lodge NY",
-      "description": "Attendee",
-      "date": "Sept 2019",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [4, 5],
-          "content": "Learned to gamble and build HTML5 games. Built the classic touhou bullet hell game with a rhythm element for the ultimate weeb game."
-        }
-      ]
-    },
-    {
-      "thing": "Google I/O",
-      "description": "Google Code Jam to I/O Scholarship",
-      "date": "May 2018",
-      "toggle": [2, 3, 4, 5],
-      "points": []
-    },
-    {
-      "thing": "F8",
-      "description": "F8 Conference Scholarship",
-      "date": "May 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [5],
-          "content": "Saw the Zucc irl."
+          "content": "I am not good."
         }
       ]
     }
   ],
   "projects": [
-    {
-      "thing": "Technical Writing",
-      "description": "Side Project",
-      "date": "Winter 2020 - Present",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "I've written a few posts I'm proud of, so far about JIT compilers. You can <a href='https://engineering.shopify.com/blogs/engineering/optimizing-ruby-lazy-initialization-in-truffleruby-with-deoptimization'>find</a>. <a href='https://carolchen.me/blog/jits-intro/'>them</a>. <a href='https://carolchen.me/blog/jits-impls/'>here</a>. And here are the <a href='https://news.ycombinator.com/item?id=22841847'>corresponding</a>. <a href='https://news.ycombinator.com/item?id=23740655'>HN</a>. <a href='https://lobste.rs/s/b6hpz9/how_jit_compilers_are_implemented_fast'>Discussions</a>. (Last one is lobste.rs)"
-        },
-        {
-          "toggle": [4, 5],
-          "content": "My <a href='https://carolchen.me/blog/founding-bad/'>fairly benign post</a> about why I didn't go to YC <a href='https://news.ycombinator.com/item?id=23894387'>blew up</a> a bit and <a href='https://twitter.com/eastdakota/status/1285093735512956929'>irked the CEO of Cloudflare</a>. (Hi Matthew if you're reading this I know it was the day after Cloudflare had a big outage I forgive you <3)"
-        },
-        {
-          "toggle": [3, 4, 5],
-          "content": "I don't buy into writing about career advice, partially because I'm not qualified and because it's hard to give general advice, but I have tried a few times. <a href='https://carolchen.me/blog/real-good-things-about-internships/'>Why Internships are Super Great</a>. <a href='https://carolchen.me/blog/past-webdev/'>Ideas for Programmers Looking Past Web Development</a>. <a href='https://carolchen.me/blog/founding-bad/'>Why I decided running a startup was a bad idea</a>."
-        }
-      ]
-    },
-    {
-      "thing": "Raytracer",
-      "description": "Side Project",
-      "date": "Summer 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "Built a raytracer that could make a Cornell Box as well as things such as metallics, dielectrics and could do image mapping."
-        },
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "This is probably the least on-paper-impressive thing I've done, and mostly involved following a book. However, I think it single-handedly +5%-ed my programming abilities."
-        }
-      ]
-    },
-    {
-      "thing": "Flying Cursors",
-      "description": "Hackathon Project",
-      "date": "November 2015",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "The first thing I *ever* built, a <a href='https://chrome.google.com/webstore/detail/flying-cursors/onnkoiclhlimgcgcfnidckkkcgladclh'>Chrome Extension</a> that causes cursors to fly around your screen. Peaked at 300+ users."
-        },
-        {
-          "toggle": [4, 5],
-          "content": "The most robust software I've ever built? This website requires maintenance every half year or so because of all the NPM packages but Flying Cursors has worked out of the box since 2016..."
-        }
-      ]
-    },
-    {
-      "thing": "Engineering Calculator",
-      "description": "Hackathon Project",
-      "date": "January 2019",
-      "toggle": [2, 3, 4, 5],
-      "points": [
-        {
-          "toggle": [2, 3, 4, 5],
-          "content": "A calculator that represents all values as a function of constants. <a href='https://carolchen.me/eng-calc'>See demo</a>. Built with two frens, written in C++ and run with WASM."
-        }
-      ]
-    },
-    {
-      "thing": "Sounds of Sorting",
-      "description": "WWDC Scholar Application",
-      "date": "March 2019",
-      "toggle": [3, 4, 5],
-      "points": [
-        {
-          "toggle": [3, 4, 5],
-          "content": "A quick recreation of the classic Sounds of Sorting with some more snazz, see <a href='https://www.youtube.com/watch?v=-fTBJMBzVng'>demo video</a>."
-        }
-      ]
-    }
+ 
   ]
 }
