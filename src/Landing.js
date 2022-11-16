@@ -22,10 +22,9 @@ const Landing = () => (
         <Col sm={8} md={8} style={{ paddingLeft: "50px" }} id="intro-text">
           <h2 className="section-heading">hi i'm emily (leilani) bender</h2>
           <p>
-            I'm from Honolulu, Hawaii and currently am an Intelligent Transportation
-            Systems intern at Atkins. Apart from civil engineering,
-            I enjoy physical activity in the form of rugby, climbing, and
-            weight-lifting.
+            I'm from Honolulu, Hawaii and currently am a Junior at Princeton
+            University. Apart from civil engineering, I enjoy physical activity
+            in the form of rugby, climbing, and weight-lifting.
           </p>
           <p>
             I enjoy conversations about civil policy and rugby and other stuff,
@@ -57,10 +56,7 @@ const Landing = () => (
               instagram
             </a>{" "} */}
             ||{" "}
-            <a 
-              href="/LeilaniBenderResume.pdf"
-              download
-            >
+            <a href="/LeilaniBenderResume.pdf" download>
               button for recruiters
             </a>
           </div>

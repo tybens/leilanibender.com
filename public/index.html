@@ -1,114 +1,92 @@
 <!DOCTYPE html>
 <html lang="en" style="display: none">
-  <head>
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <script type="text/javascript">
-      let fetchStyle = function () {
-        return new Promise((resolve, reject) => {
-          const themes = [
-            "blue",
-            "cyan",
-            "deeppurple",
-            "green",
-            "indigo",
-            "lightblue",
-            "lightgreen",
-            "pink",
-            "purple",
-            "teal",
-          ];
-          const theme =
-            "/styles/themes/" +
-            themes[Math.floor(Math.random() * themes.length)] +
-            ".css";
 
-          let link = document.createElement("link");
-          link.type = "text/css";
-          link.rel = "stylesheet";
-          link.onload = function () {
-            document.documentElement.setAttribute("style", "display:auto");
-            resolve();
-          };
-          link.href = theme;
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
+  <script type="text/javascript">
+    let fetchStyle = function () {
+      return new Promise((resolve, reject) => {
+        const themes = [
+          "blue",
+          "cyan",
+          "deeppurple",
+          "green",
+          "indigo",
+          "lightblue",
+          "lightgreen",
+          "pink",
+          "purple",
+          "teal",
+        ];
+        const theme =
+          "/styles/themes/" +
+          themes[Math.floor(Math.random() * themes.length)] +
+          ".css";
 
-          let headScript = document.querySelector("script");
-          headScript.parentNode.insertBefore(link, headScript);
-        });
-      };
-      fetchStyle();
-    </script>
+        let link = document.createElement("link");
+        link.type = "text/css";
+        link.rel = "stylesheet";
+        link.onload = function () {
+          document.documentElement.setAttribute("style", "display:auto");
+          resolve();
+        };
+        link.href = theme;
 
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        let headScript = document.querySelector("script");
+        headScript.parentNode.insertBefore(link, headScript);
+      });
+    };
+    fetchStyle();
+  </script>
 
-    <meta name="HandheldFriendly" content="True" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta
-      name="description"
-      content="I'm from Honolulu, Hawaii and currently am an Intelligent Transportation
-      Systems intern at Atkins. Apart from civil engineering,
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="I'm from Honolulu, Hawaii and currently am a Junior at Princeton University. Apart from civil engineering,
       I enjoy physical activity in the form of rugby, climbing, and
-      weight-lifting."
-    />
-    <link rel="canonical" href="https://leilanibender.com/" />
-    <link href="https://github.com/tybens" rel="me" />
-    <meta name="author" content="Leilani Bender" />
-    <meta name="theme-color" content="#AB47BC" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#AB47BC" />
+      weight-lifting." />
+  <link rel="canonical" href="https://leilanibender.com/" />
+  <link href="https://github.com/tybens" rel="me" />
+  <meta name="author" content="Leilani Bender" />
+  <meta name="theme-color" content="#AB47BC" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="#AB47BC" />
 
-    <meta property="og:site_name" content="Leilani Bender" />
-    <meta property="og:type" content="website" />
-    <meta property="og:title" content="Leilani Bender" />
-    <meta
-      property="og:description"
-      content="I'm from Honolulu, Hawaii and currently am an Intelligent Transportation
-      Systems intern at Atkins. Apart from civil engineering,
+  <meta property="og:site_name" content="Leilani Bender" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Leilani Bender" />
+  <meta property="og:description" content="I'm from Honolulu, Hawaii and currently am a Junior at Princeton University. Apart from civil engineering,
       I enjoy physical activity in the form of rugby, climbing, and
-      weight-lifting."
-    />
-    <meta property="og:url" content="https://leilanibender.com/" />
-    <meta name="theme-color" content="#000000" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+      weight-lifting." />
+  <meta property="og:url" content="https://leilanibender.com/" />
+  <meta name="theme-color" content="#000000" />
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
 
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans"
-      rel="stylesheet"
-    />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet" />
 
-    <title>Leilani Bender</title>
-  </head>
-  <body>
-    <noscript> You need to enable JavaScript to run this app. </noscript>
-    <div id="root"></div>
-  </body>
-  <footer>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-SD7SGLTVWT"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
+  <title>Leilani Bender</title>
+</head>
 
-      gtag("config", "G-SD7SGLTVWT");
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/katex@0.10.0-alpha/dist/katex.min.css"
-      integrity="sha384-BTL0nVi8DnMrNdMQZG1Ww6yasK9ZGnUxL1ZWukXQ7fygA1py52yPp9W4wrR00VML"
-      crossorigin="anonymous"
-    />
-  </footer>
+<body>
+  <noscript> You need to enable JavaScript to run this app. </noscript>
+  <div id="root"></div>
+</body>
+<footer>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-SD7SGLTVWT"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+
+    gtag("config", "G-SD7SGLTVWT");
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.0-alpha/dist/katex.min.css"
+    integrity="sha384-BTL0nVi8DnMrNdMQZG1Ww6yasK9ZGnUxL1ZWukXQ7fygA1py52yPp9W4wrR00VML" crossorigin="anonymous" />
+</footer>
+
 </html>
